@@ -1,0 +1,20 @@
+.ant-carousel .slick-slide {
+	text-align: center;
+	height: 250px;
+	line-height: 250px;
+	background-image: url("../../assets/fundo.jpg");
+	background-size: cover;
+	overflow: hidden;
+}
+
+/*Desktop*/
+@media screen and (min-width: 1000px) {
+	.ant-carousel .slick-slide {
+		height: 700px;
+		line-height: 700px;
+	}
+
+	.ant-carousel .slick-slide h3 {
+		font-size: 3rem;
+	}
+}
