@@ -52,7 +52,7 @@ function Expertise(props) {
 					<FundOutlined style={{ color: "white", fontSize: "60px" }}/>
 					<Title>FOCO</Title>
 					<Paragraphy>Com centenas de linguagens, <i>frameworks</i> e libs surgindo todos os dias a vontade de ser 
-							o "mago" e estudar tudo é grande. Mas, acredito que para ser execente no que faz precisamos focar 
+							o "mago" e estudar tudo é grande. Mas, acredito que para ser excelente no que faz precisamos focar 
 							em poucas coisas e aplicar muito.
 					</Paragraphy>
 				</Content>
