@@ -17,6 +17,10 @@
 
 :small_blue_diamond: [Como rodar a aplicação](#como-rodar-a-aplicação-arrow_forward)
 
+:small_blue_diamond: [Linguagens, dependencias e libs utilizadas ](#linguagens-dependencias-e-libs-utilizadas)
+
+:small_blue_diamond: [Tarefas em aberto](#tarefas-em-aberto)
+
 ## Descrição do projeto 
 
 <p align="justify">
