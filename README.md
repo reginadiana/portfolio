@@ -54,7 +54,10 @@ No terminal, clone o projeto:
 ```
 git clone https://github.com/Diana-ops/portifolio
 ```
-
+Acesse a pasta
+```
+cd portifolio
+```
 Instale as dependencias 
 ```
 yarn install
