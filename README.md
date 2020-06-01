@@ -90,3 +90,5 @@ Esta é a `segunda versão` do meu site pessoal, mas ainda existem funcionalidad
 :memo: Usar uma API/Tecnologia que permita com que um recrutadoror digite a locação da empresa e veja a distancia entre ela e minha região. 
 
 :memo: Mostrar um calendário/agenda com horários disponíveis para uma entrevista
+
+:memo: Permitir que um recrutador/visitante execute o dowload do meu currículo formal
