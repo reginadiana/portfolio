@@ -1,68 +1,86 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img src="https://img.shields.io/static/v1?label=react&message=framework&color=blue&style=for-the-badge&logo=REACT"/>
+  <img src="https://img.shields.io/static/v1?label=Netlify&message=deploy&color=blue&style=for-the-badge&logo=netlify"/>
+  <img src="http://img.shields.io/static/v1?label=License&message=MIT&color=green&style=for-the-badge"/>
+  <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
+</p>
 
-## Available Scripts
+### Tópicos 
 
-In the project directory, you can run:
+:small_blue_diamond: [Descrição do projeto](#descrição-do-projeto)
 
-### `yarn start`
+:small_blue_diamond: [Funcionalidades](#funcionalidades)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+:small_blue_diamond: [Deploy da Aplicação](#deploy-da-aplicação-dash)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+:small_blue_diamond: [Pré-requisitos](#pré-requisitos)
 
-### `yarn test`
+:small_blue_diamond: [Como rodar a aplicação](#como-rodar-a-aplicação-arrow_forward)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Descrição do projeto 
 
-### `yarn build`
+<p align="justify">
+  Esta é uma aplicação frontend para o meu site pessoal, mostrando informações do meu currículo como skills, formação e projetos de forma criativa e divertida. 
+</p>
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Funcionalidades
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+:heavy_check_mark: Layout Responsívo 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+:heavy_check_mark: Descrição das informações do meu currículo
 
-### `yarn eject`
+## Deploy da Aplicação :dash:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+> Acesse já: https://dianaregina.netlify.app/
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Pré-requisitos
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+:warning: [Yarn](https://yarnpkg.com/lang/pt-BR/docs/install/)
 
-## Learn More
+:warning: [Node](https://nodejs.org/en/download/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Como rodar a aplicação :arrow_forward:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+No terminal, clone o projeto: 
 
-### Code Splitting
+```
+git clone https://github.com/Diana-ops/portifolio
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+Instale as dependencias 
+```
+yarn install
+```
+Execute a aplicação
+```
+yarn start
+```
 
-### Analyzing the Bundle Size
+## Linguagens, dependencias e libs utilizadas 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+:books: [React](https://pt-br.reactjs.org/docs/create-a-new-react-app.html)
 
-### Making a Progressive Web App
+:books: [Styled Component](https://react-pdf.org/)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+## Tarefas em aberto
 
-### Advanced Configuration
+Esta é a `segunda versão` do meu site pessoal, mas ainda existem funcionalidades que melhorariam a aplicação 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+#### Backend 
 
-### Deployment
+:memo: Permir envio de e-mail através do site
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+:memo: Permitir que recrutadores enviem propostas a partir de um formulário. Uma empresa válida deve estar incluida nos campos.  
 
-### `yarn build` fails to minify
+:memo: Permitir que recrutadores/visitantes enviem arquivos PDF, fotos, csv, etc a partir de um formulário
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+:memo: Permitir que recrutadores/visitantes deixem comentários/mensagens na aplicação
+
+:memo: Desenvolver um chatbot para troca de mensagens entre o administrador do site e recrutadores/visitantes
+
+#### Frontend
+
+:memo: Usar uma API/Tecnologia que permita com que um recrutadoror digite a locação da empresa e veja a distancia entre ela e minha região. 
+
+:memo: Mostrar um calendário/agenda com horários disponíveis para uma entrevista
