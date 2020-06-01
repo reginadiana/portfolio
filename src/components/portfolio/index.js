@@ -20,7 +20,7 @@ function Portfolio(props) {
 
 	return (
 		<Wrapper>
-			<TitleIntroduction>Portifólio</TitleIntroduction>
+			<TitleIntroduction>Portfólio</TitleIntroduction>
 
 			<AllCards>
 				<a href={CERTIFICATE}>
