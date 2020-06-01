@@ -68,7 +68,7 @@ yarn start
 
 :books: [React](https://pt-br.reactjs.org/docs/create-a-new-react-app.html)
 
-:books: [Styled Component](https://react-pdf.org/)
+:books: [Styled Component](https://styled-components.com/)
 
 ## Tarefas em aberto
 
