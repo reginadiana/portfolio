@@ -14,7 +14,7 @@ function Header(props) {
 			    	<Title>Sou desenvolvedora Frontend</Title>
 			    </div>
 			    <div>
-			    	<Title>Conheça meu Portifólio</Title>
+			    	<Title>Conheça meu Portfólio </Title>
 			    </div>
 			</Carousel>
 	);
