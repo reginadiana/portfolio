@@ -52,11 +52,11 @@
 No terminal, clone o projeto: 
 
 ```
-git clone https://github.com/Diana-ops/portifolio
+git clone https://github.com/Diana-ops/portfolio
 ```
 Acesse a pasta
 ```
-cd portifolio
+cd portfolio
 ```
 Instale as dependencias 
 ```
