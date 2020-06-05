@@ -1,5 +1,5 @@
 /*Links to Profile*/
-export const GITHUB = "https://github.com/Diana-ops"
+export const GITHUB = "https://github.com/reginadiana"
 export const MEDIUM = "https://medium.com/@dianareginadr19"
 export const LINKEDIN = "https://www.linkedin.com/in/diana-regina-a96840173/"
 export const DEV = "https://dev.to/dianaops"
