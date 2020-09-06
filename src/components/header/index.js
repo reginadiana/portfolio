@@ -1,22 +1,26 @@
 import React from 'react'
-import { Carousel } from 'antd';
-import 'antd/dist/antd.css';
-import './style.css'
-import { Title } from "./style"
+import { Container, Menu, Logo, List, ItemList, Main, Title, Button } from "./style"
 
 function Header(props) {
 	return (
-			<Carousel autoplay>
-			    <div>
-			    	<Title>Olá, me chamo Diana Regina</Title>
-			    </div>
-			    <div>
-			    	<Title>Sou desenvolvedora Frontend</Title>
-			    </div>
-			    <div>
-			    	<Title>Conheça meu Portfólio </Title>
-			    </div>
-			</Carousel>
+		<Container>
+			<Menu>
+				<Logo>
+					Diana Regina | Web Developer
+				</Logo>
+				<List>
+					<ItemList>Sobre mim</ItemList>
+					<ItemList>Valores</ItemList>
+					<ItemList>Portfólio</ItemList>
+					<ItemList>Skills</ItemList>
+					<ItemList>Eventos</ItemList>
+				</List>
+			</Menu>
+			<Main>
+				<Title>Web Developer | Ruby on Rails | React</Title>
+				<Button>Entrar em contato</Button>
+			</Main>
+		</Container>
 	);
 }
 
