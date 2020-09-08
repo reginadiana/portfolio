@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Menu, Logo, List, ItemList, Main, Title, Button } from "./style"
+import { Container, Menu, Logo, List, ItemList, Main, Title, Subtitle } from "./style"
 
 function Header(props) {
 	return (
@@ -17,8 +17,9 @@ function Header(props) {
 				</List>
 			</Menu>
 			<Main>
-				<Title>Web Developer | Ruby on Rails | React</Title>
-				<Button>Entrar em contato</Button>
+				<Title>DIANA</Title>
+				<Title>REGINA</Title>
+				<Subtitle>Web Developer</Subtitle>
 			</Main>
 		</Container>
 	);
