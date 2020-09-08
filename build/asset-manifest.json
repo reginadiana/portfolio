@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0918c3a6.chunk.css",
+    "main.js": "/static/js/main.867b56f6.chunk.js",
+    "main.js.map": "/static/js/main.867b56f6.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.7daa6418.js",
+    "runtime-main.js.map": "/static/js/runtime-main.7daa6418.js.map",
+    "static/css/2.63b65d4e.chunk.css": "/static/css/2.63b65d4e.chunk.css",
+    "static/js/2.00587b03.chunk.js": "/static/js/2.00587b03.chunk.js",
+    "static/js/2.00587b03.chunk.js.map": "/static/js/2.00587b03.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.aa23553f3f447370d13fc4a44cad3107.js": "/precache-manifest.aa23553f3f447370d13fc4a44cad3107.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.63b65d4e.chunk.css.map": "/static/css/2.63b65d4e.chunk.css.map",
+    "static/css/main.0918c3a6.chunk.css.map": "/static/css/main.0918c3a6.chunk.css.map",
+    "static/js/2.00587b03.chunk.js.LICENSE.txt": "/static/js/2.00587b03.chunk.js.LICENSE.txt",
+    "static/media/amo_plantas.png": "/static/media/amo_plantas.b6bcb72f.png",
+    "static/media/certificates_for_everyone.png": "/static/media/certificates_for_everyone.668d4409.png",
+    "static/media/ecommerce.png": "/static/media/ecommerce.09b641b6.png",
+    "static/media/headhunter.png": "/static/media/headhunter.cabf6adc.png",
+    "static/media/rental_cars.png": "/static/media/rental_cars.1d1d6780.png",
+    "static/media/skills.png": "/static/media/skills.60150901.png",
+    "static/media/sobre_mim.png": "/static/media/sobre_mim.0392dbdb.png",
+    "static/media/wallpaper.jpg": "/static/media/wallpaper.1bc911c0.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7daa6418.js",
+    "static/css/2.63b65d4e.chunk.css",
+    "static/js/2.00587b03.chunk.js",
+    "static/css/main.0918c3a6.chunk.css",
+    "static/js/main.867b56f6.chunk.js"
+  ]
+}
