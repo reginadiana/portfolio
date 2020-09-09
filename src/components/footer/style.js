@@ -8,17 +8,8 @@ export const Container = styled.div`
 	text-align: center;
 	padding-left: 20px;
 	padding-right: 20px;
-
-	/*Tablet*/
-	@media screen and (min-width: 700px) and (max-width: 1000px) {
-	}
-
-	/*Desktop*/
-	@media screen and (min-width: 1000px) {
-	}
-
+	padding-bottom: 30px;
 `
-
 export const Logo = styled.h1`
 	font-size: 1.5rem;
 	font-weight: bold;

@@ -1,44 +1,42 @@
-import React from 'react'
-import { Progress } from 'antd';
-import 'antd/dist/antd.css';
-import { Wrapper, ProgressSkills, TitleIntroduction, Lenguage, Message, Img } from "./style"
-import SkillsImg from "../../assets/skills.png"
+import React from 'react';
+import { CodeSandboxOutlined } from '@ant-design/icons'; 
+import { Container, Cards, Card, Icon, Lenguage, Description } from "./style";
 
 function Skills(props) {
 
+	const lightPink = "#e2a599";
+	const lightBrown = "#715f69";
+	const lightOrange = "#e45447";
+	const lightblue = "#90acd1";
+
 	return (
-		<Wrapper style={{ backgroundColor: "#031f2b"}}>
-			<Img src={SkillsImg} />
-			<div style={{ backgroundColor: "#031f2b"}}>
-				<TitleIntroduction>Skills</TitleIntroduction>
+		<Container>
+				<Cards>
+					<Card color={lightPink}>
+						<Icon><CodeSandboxOutlined /></Icon>
+						<Lenguage>HTML</Lenguage>
+						<Description>Para construção da estrutura da página</Description>
+					</Card>
 
-				<ProgressSkills>
-					<Lenguage>HTML</Lenguage>
-					<Progress percent={70} status="active" strokeColor="#308df1" showInfo={false}/>
-					<Lenguage>CSS</Lenguage>
-					<Progress percent={70} status="active" strokeColor="#308df1" showInfo={false}/>
-					<Lenguage>Java Script</Lenguage>
-					<Progress percent={50} status="active" strokeColor="#308df1" showInfo={false}/>
-					<Lenguage>Python</Lenguage>
-					<Progress percent={10} status="active" strokeColor="#308df1" showInfo={false}/>
-
-					<Lenguage>React</Lenguage>
-					<Progress percent={80} status="active" strokeColor="#308df1" showInfo={false}/>
-					<Lenguage>Ruby e Ruby on Rails</Lenguage>
-					<Progress percent={80} status="active" strokeColor="#308df1" showInfo={false}/>
-					<Lenguage>Antdesign</Lenguage>
-					<Progress percent={60} status="active" strokeColor="#308df1" showInfo={false}/>
-
-					<Lenguage>Git e GitHub</Lenguage>
-					<Progress percent={90} status="active" strokeColor="#308df1" showInfo={false}/>
-					<Lenguage>Linux</Lenguage>
-					<Progress percent={30} status="active" strokeColor="#308df1" showInfo={false}/>
-				</ProgressSkills>
-				<Message>*Os indicadores sobre skills e idiomas mostram a frequência com que trabalho com essas 
-						tecnologias/idiomas e <strong>não servem </strong>como uma métrica de conhecimento
-				</Message> 
-			</div>
-		</Wrapper>
+					<Card color={lightBrown}>
+						<Icon><CodeSandboxOutlined /></Icon>
+						<Lenguage>CSS</Lenguage>
+						<Description>Para estilização das telas</Description>
+					</Card>
+					
+					<Card color={lightOrange}>
+						<Icon><CodeSandboxOutlined /></Icon>
+						<Lenguage>JS e React</Lenguage>
+						<Description>Para o frontend das minhas aplicações</Description>
+					</Card>
+				
+					<Card color={lightblue}>
+						<Icon><CodeSandboxOutlined /></Icon>
+						<Lenguage>Ruby e Ruby on Rails</Lenguage>
+						<Description>Para o backend das minhas aplicações</Description>
+					</Card>
+				</Cards>
+		</Container>
 	);
 }
 
