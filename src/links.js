@@ -7,6 +7,13 @@ export const URI = "https://www.urionlinejudge.com.br/judge/en/profile/241809"
 export const REVELO = "https://app.revelo.com.br/candidates/profile?locale=pt-BR"
 export const INSTAGRAM = "https://www.instagram.com/encantosfazenda/"
 
+/* Links to formation and bootcamps*/
+export const ETEC = "http://www.etecjuliodemesquita.com.br/"
+export const FATEC = "http://fatecsantoandre.edu.br/"
+export const WOMAKERSCODE = "https://womakerscode.org/"
+export const CAMPUS = "https://www.treinadev.com.br/"
+export const REBASE = "https://www.rebase.com.br/#/"
+
 /*Links to Portifolio*/
 export const CERTIFICATE = "https://github.com/React-Bootcamp-WoMarkersCode/certificate-generator"
 export const HEADHUNTERS = "https://github.com/Diana-ops/plataforma-headhunters-treina-dev"

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container, Cards, Card, Title, Info, Location, Date, Description } from "./style"
 import TitleSection from '../title_section/index';
+import { ETEC, FATEC, WOMAKERSCODE, CAMPUS, REBASE } from '../../links'
 
 function Education(props) {
 
@@ -15,7 +16,7 @@ function Education(props) {
 					<Info>
 						<div>
 							<Title>Técnico em Eletrônica</Title>
-							<Location>ETEC Julio de Mesquita</Location>
+							<Location href={ETEC}>ETEC Julio de Mesquita</Location>
 						</div>
 						<Date>2016 | 2017</Date>
 					</Info>
@@ -28,7 +29,7 @@ function Education(props) {
 					<Info>
 						<div>
 							<Title>Tecnologia em Mecatrônica Industrial</Title>
-							<Location>FATEC Santo André</Location>
+							<Location href={FATEC}>FATEC Santo André</Location>
 						</div>
 						<Date>2017 | 2019</Date>
 					</Info>
@@ -40,7 +41,7 @@ function Education(props) {
 					<Info>
 						<div>
 							<Title>Estágio em Eletrônica</Title>
-							<Location>ETEC Julio de Mesquita</Location>
+							<Location href={ETEC}>ETEC Julio de Mesquita</Location>
 						</div>
 						<Date>2018</Date>
 					</Info>
@@ -53,7 +54,7 @@ function Education(props) {
 					<Info>
 						<div>
 							<Title>Monitorias de linguagem C</Title>
-							<Location>FATEC Santo André</Location>
+							<Location href={FATEC}>FATEC Santo André</Location>
 						</div>
 						<Date>2019</Date>
 					</Info>
@@ -66,7 +67,7 @@ function Education(props) {
 					<Info>
 						<div>
 							<Title>Bootcamp de React</Title>
-							<Location>WoMakersCode</Location>
+							<Location href={WOMAKERSCODE}>WoMakersCode</Location>
 						</div>
 						<Date>Abril | 2020</Date>
 					</Info>
@@ -77,7 +78,7 @@ function Education(props) {
 					<Info>
 						<div>
 							<Title>Treina Dev</Title>
-							<Location>Campus Code</Location>
+							<Location href={CAMPUS}>Campus Code</Location>
 						</div>
 						<Date>Julho | 2020</Date>
 					</Info>
@@ -88,7 +89,7 @@ function Education(props) {
 					<Info>
 						<div>
 							<Title>Desenvolvedora</Title>
-							<Location>Rebase</Location>
+							<Location href={REBASE}>Rebase</Location>
 						</div>
 						<Date>2020</Date>
 					</Info>

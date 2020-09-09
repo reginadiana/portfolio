@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { lightGray, lightOrange } from '../../style'
+import { lightGray, lightOrange, blue } from '../../style'
 
 /*Mobile First*/ 
 export const Container = styled.div`
@@ -8,6 +8,7 @@ export const Container = styled.div`
 export const Cards = styled.div`
 	display: grid;
 	justify-content: center;
+	margin-bottom: 50px;
 
 	/*Tablet*/
 	@media screen and (min-width: 600px) and (max-width: 1200px) {
@@ -51,8 +52,19 @@ export const Card = styled.div`
 
 	&:hover {
 		box-shadow: 5px 5px 15px gray;
-
 		transition: 1.3s;
+	}
+
+	&:last-child {
+		background-color: ${blue};
+
+		h1, a, p  {
+			color: white;
+		}
+
+		p {
+			font-size: 1rem;
+		}
 	}
 
 	@media screen and (max-width: 400px) {
@@ -63,8 +75,9 @@ export const Title = styled.h1`
 	font-size: 1.2rem;
 	font-weight: 700;
 `
-export const Location = styled.h2`
+export const Location = styled.a`
 	font-size: 1rem;
+	color: black;
 `
 export const Date = styled.h3`
 	background-color: ${lightOrange};
