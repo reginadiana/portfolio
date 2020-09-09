@@ -9,6 +9,7 @@ export const Container = styled.div`
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-bottom: 30px;
+	font-family: "Poppins", sans-serif;
 `
 export const Logo = styled.h1`
 	font-size: 1.5rem;

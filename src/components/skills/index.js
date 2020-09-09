@@ -1,6 +1,6 @@
 import React from 'react';
 import { CodeSandboxOutlined } from '@ant-design/icons'; 
-import { Container, Cards, Card, Icon, Lenguage, Description } from "./style";
+import { Container, ContainerTitle, Title, Line, Text, Cards, Card, Icon, Lenguage, Description } from "./style";
 
 function Skills(props) {
 
@@ -11,6 +11,11 @@ function Skills(props) {
 
 	return (
 		<Container>
+				<ContainerTitle>
+					<Title>Linguagens e Ferramentas</Title>
+					<Line/>
+					<Text>Conheça as principais tecnologias do meu dia a dia</Text>
+				</ContainerTitle>
 				<Cards>
 					<Card color={lightPink}>
 						<Icon><CodeSandboxOutlined /></Icon>
