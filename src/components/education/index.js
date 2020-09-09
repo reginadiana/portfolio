@@ -1,34 +1,101 @@
 import React from 'react'
-import { Timeline  } from 'antd';
-import { CheckCircleTwoTone } from "@ant-design/icons";
-import 'antd/dist/antd.css';
-import { TimelineDiv } from '../bootcamps/style'
-import { TitleIntroduction, Img, Wrapper } from "./style"
-import AcademyImg from '../../assets/academy.png'
+import { Container, Cards, Card, Title, Info, Location, Date, Description } from "./style"
+import TitleSection from '../title_section/index';
 
 function Education(props) {
 
 	return (
-		<Wrapper>
-			<div style={{ paddingTop: "25%"}}>
-				<TitleIntroduction>Formação</TitleIntroduction>
-				<TimelineDiv>
-					<Timeline mode="left">
-						<Timeline.Item 
-				    		label="Dezembro/2019"
-				    		dot={<CheckCircleTwoTone twoToneColor="#52c41a" style={{ fontSize: "16px"}}/>}>
-				    			Técnologo em Mecatrônica Industrial
-				    	</Timeline.Item>
-				    	<Timeline.Item 
-				    		label="Dezembro/2017"
-				    		dot={<CheckCircleTwoTone twoToneColor="#52c41a" style={{ fontSize: "16px"}}/>}>
-				    			Técnico em Eletrônica
-				    	</Timeline.Item>
-				  	</Timeline>
-				</TimelineDiv>
-			</div>
-			<Img src={AcademyImg} />
-		</Wrapper>
+		<Container>
+			<TitleSection 
+				title="Formação e Bootcamps"
+				description="Sabia onde estudei e os bootcamps que participei"
+			/>
+			<Cards>
+				<Card>
+					<Info>
+						<div>
+							<Title>Técnico em Eletrônica</Title>
+							<Location>ETEC Julio de Mesquita</Location>
+						</div>
+						<Date>2016 | 2017</Date>
+					</Info>
+
+					<Description>Corroendo as primeiras plaquinhas e programando PIC's, 
+					tem coisa melhor do que ver um led piscando e saber que funciona?</Description>
+				</Card>
+
+				<Card>
+					<Info>
+						<div>
+							<Title>Tecnologia em Mecatrônica Industrial</Title>
+							<Location>FATEC Santo André</Location>
+						</div>
+						<Date>2017 | 2019</Date>
+					</Info>
+					<Description>Uma das coisas mais importantes da minha vida foi ter feito Mecatrônica. 
+					Foi lá que descobri a tecnologia</Description>
+				</Card>
+
+				<Card>
+					<Info>
+						<div>
+							<Title>Estágio em Eletrônica</Title>
+							<Location>ETEC Julio de Mesquita</Location>
+						</div>
+						<Date>2018</Date>
+					</Info>
+	
+					<Description>Mais do que concertar placas, aprendi a seguir meu coração ao
+					tomar decições na vida profissional</Description>
+				</Card>
+
+				<Card>
+					<Info>
+						<div>
+							<Title>Monitorias de linguagem C</Title>
+							<Location>FATEC Santo André</Location>
+						</div>
+						<Date>2019</Date>
+					</Info>
+
+					<Description>Ajudei muitos alunos onde estudava,
+					sempre tentando mostrar como programar é incrível</Description>
+				</Card>
+
+				<Card>
+					<Info>
+						<div>
+							<Title>Bootcamp de React</Title>
+							<Location>WoMakersCode</Location>
+						</div>
+						<Date>Abril | 2020</Date>
+					</Info>
+					<Description>Lugar onde conheci mulheres incríveis e uma lib que me apaixonei</Description>
+				</Card>
+
+				<Card>
+					<Info>
+						<div>
+							<Title>Treina Dev</Title>
+							<Location>Campus Code</Location>
+						</div>
+						<Date>Julho | 2020</Date>
+					</Info>
+					<Description>Onde aprendi que o importante não é escrever código, é como escrever código</Description>
+				</Card>
+
+				<Card>
+					<Info>
+						<div>
+							<Title>Desenvolvedora</Title>
+							<Location>Rebase</Location>
+						</div>
+						<Date>2020</Date>
+					</Info>
+					<Description>Friozinho na barriga, mas tudo certo. É aqui que vou enfrentar novos desafios.</Description>
+				</Card>
+			</Cards>
+		</Container>
 	);
 }
 

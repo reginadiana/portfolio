@@ -1,21 +1,17 @@
 import React from 'react';
 import { CodeSandboxOutlined } from '@ant-design/icons'; 
-import { Container, ContainerTitle, Title, Line, Text, Cards, Card, Icon, Lenguage, Description } from "./style";
+import { Container, Cards, Card, Icon, Lenguage, Description } from "./style";
+import TitleSection from '../title_section/index';
+import { lightPink, lightBrown, lightOrange, lightBlue } from '../../style'
 
 function Skills(props) {
 
-	const lightPink = "#e2a599";
-	const lightBrown = "#715f69";
-	const lightOrange = "#e45447";
-	const lightblue = "#90acd1";
-
 	return (
 		<Container>
-				<ContainerTitle>
-					<Title>Linguagens e Ferramentas</Title>
-					<Line/>
-					<Text>Conheça as principais tecnologias do meu dia a dia</Text>
-				</ContainerTitle>
+				<TitleSection 
+					title="Linguagens e Ferramentas" 
+					description="Conheça as principais tecnologias do meu dia a dia"
+				/>
 				<Cards>
 					<Card color={lightPink}>
 						<Icon><CodeSandboxOutlined /></Icon>
@@ -35,7 +31,7 @@ function Skills(props) {
 						<Description>Para o frontend das minhas aplicações</Description>
 					</Card>
 				
-					<Card color={lightblue}>
+					<Card color={lightBlue}>
 						<Icon><CodeSandboxOutlined /></Icon>
 						<Lenguage>Ruby e Ruby on Rails</Lenguage>
 						<Description>Para o backend das minhas aplicações</Description>

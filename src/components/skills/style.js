@@ -1,8 +1,5 @@
 import styled from 'styled-components';
-
-//const black = "#222222"
-const lightGray = "#f9f9ff"
-//const lightOrange = "#e45447";
+import { lightGray } from '../../style'
 
 /*Mobile First*/
 
@@ -10,63 +7,6 @@ export const Container = styled.div`
 	padding-top: 5%;
 	padding-bottom: 5%;
 	background-color: ${lightGray};
-	font-family: "Poppins", sans-serif;
-`
-
-export const ContainerTitle = styled.div`
-`
-
-export const Title = styled.h1`
-	text-align: center;
-	font-weight: 700;
-	font-size: 1.6rem;
-	line-height: 50px;
-
-	/*Desktop*/
-	@media screen and (min-width: 800px) {
-		font-size: 2rem;
-	}
-
-	/*Desktop*/
-	@media screen and (max-width: 400px) {
-		font-size: 1.2rem;
-	}
-`
-
-export const Line = styled.h2`
-	content: '';
-	margin: auto;
-	width: 300px;
-	height: 2px;
-	background: #e45447;
-
-	&::after {
-		content: '';
-		width: 10px;
-		height: 10px;
-		background: #e45447;
-		border-radius: 7px;
-		position: absolute;
-		margin-top: -3px;
-	}
-
-	/*Desktop*/
-	@media screen and (max-width: 400px) {
-		width: 290px;
-
-		&::after {
-			display: none;
-		}
-	}
-`
-
-export const Text = styled.h4`
-	text-align: center;
-	margin-top: 40px;
-	margin-bottom: 70px;
-	font-size: 1rem;
-	padding: 10px;
-	line-height: 30px;
 `
 
 export const Cards = styled.div`
@@ -75,6 +15,14 @@ export const Cards = styled.div`
 	margin: auto;
 	text-align: center;
 	color: white;
+
+	/*Tablet*/
+	@media screen and (max-width: 1100px) and (min-width: 750px) {
+		grid-template-columns: repeat(2, 290px);
+		gap: 2em;
+		justify-content: center;
+		text-align: left;
+	}
 
 	/*Desktop*/
 	@media screen and (min-width: 1100px) {
