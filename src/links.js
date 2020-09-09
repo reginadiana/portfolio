@@ -5,6 +5,7 @@ export const LINKEDIN = "https://www.linkedin.com/in/diana-regina-a96840173/"
 export const DEV = "https://dev.to/dianaops"
 export const URI = "https://www.urionlinejudge.com.br/judge/en/profile/241809"
 export const REVELO = "https://app.revelo.com.br/candidates/profile?locale=pt-BR"
+export const INSTAGRAM = "https://www.instagram.com/encantosfazenda/"
 
 /*Links to Portifolio*/
 export const CERTIFICATE = "https://github.com/React-Bootcamp-WoMarkersCode/certificate-generator"
