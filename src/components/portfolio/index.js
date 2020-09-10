@@ -1,16 +1,50 @@
-import React from 'react'
+import React, { useState } from 'react'
 import 'antd/dist/antd.css';
-import { Cards, Card, Container } from './style'
-import WallpaperCertificates  from '../../assets/certificates_for_everyone.png'
-import WallpaperHeadhunters  from '../../assets/headhunter.png'
-import WallpaperRentalCars from '../../assets/rental_cars.png'
-import WallpaperAmoPlantas from '../../assets/amo_plantas.png'
-import WallpaperEcommerce from '../../assets/ecommerce.png'
-import TitleSection from '../title_section/index';
+import { Cards, Container, Options, Button } from './style'
 
-import { CERTIFICATE, HEADHUNTERS, RENTALCARS, AMOPLANTAS, ECOMMERCE } from '../../links'
+import TitleSection from '../title_section/index';
+import ProjectsFrontend from '../projects_frontend/index';
+import ProjectsBackend from '../projects_backend/index';
+import Articles from '../articles/index';
 
 function Portfolio(props) {
+	const active = 'var(--lightOrange)';
+	const default_color = 'var(--lightBlue)';
+
+	const [ showOption, setShowOption ] = useState('all');
+	const [ colorAll, setColorAll ] = useState(active)
+	const [ colorFront, setColorFront ] = useState(default_color)
+	const [ colorBack, setColorBack ] = useState(default_color)
+	const [ colorArticle, setColorArticle ] = useState(default_color)
+
+	const resetColors = () => {
+		setColorFront(default_color)
+		setColorBack(default_color)
+		setColorArticle(default_color)
+		setColorAll(default_color)
+	}
+
+	const renderChoice = (choice) => {
+		setShowOption(choice)
+		resetColors()
+		changeColor(choice);
+	}
+
+	const changeColor = (choice) => {
+		switch (choice) {
+			case 'frontend':
+				setColorFront(active)
+			break;
+			case 'backend':
+				setColorBack(active)
+			break;
+			case 'articles':
+				setColorArticle(active)
+			break;
+			default:
+				setColorAll(active)
+		}
+	}
 
 	return (
 		<Container>
@@ -18,23 +52,16 @@ function Portfolio(props) {
 				title="Meus Projetos"
 				description="Conheça o meu trabalho"
 			/>
-
+			<Options>
+				<Button onClick={() => renderChoice('all')} color={colorAll}>Todos</Button>
+				<Button onClick={() => renderChoice('frontend')} color={colorFront}>Frontend</Button>
+				<Button onClick={() => renderChoice('backend')} color={colorBack}>Backend</Button>
+				<Button onClick={() => renderChoice('articles')} color={colorArticle}>Artigos</Button>
+			</Options>
 			<Cards>
-				<a href={CERTIFICATE}>
-					<Card alt="Certificates for Eveyone" src={WallpaperCertificates}/>
-				</a>
-				<a href={HEADHUNTERS}>
-					<Card alt="Headhunters" src={WallpaperHeadhunters}/>
-				</a>
-				<a href={RENTALCARS}>
-					<Card alt="Rental Cars" src={WallpaperRentalCars}/>
-				</a>
-				<a href={AMOPLANTAS}>
-					<Card alt="Amo Plantas" src={WallpaperAmoPlantas}/>
-				</a>
-				<a href={ECOMMERCE}>
-					<Card alt="Ecommerce" src={WallpaperEcommerce}/>
-				</a>
+				{	( showOption === 'frontend' || showOption === 'all') ? <ProjectsFrontend/> : null }
+				{	( showOption === 'backend' || showOption === 'all') ? <ProjectsBackend /> : null }
+				{	( showOption === 'articles' || showOption === 'all') ? <Articles /> : null }
 			</Cards>
 		</Container>
 	);

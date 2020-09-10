@@ -20,3 +20,5 @@ export const HEADHUNTERS = "https://github.com/Diana-ops/plataforma-headhunters-
 export const RENTALCARS = "https://github.com/Diana-ops/rental-cars-treina-dev-1"
 export const AMOPLANTAS = "https://github.com/Diana-ops/projects-of-selective-process/tree/master/red-venturess"
 export const ECOMMERCE = "https://github.com/Diana-ops/projects-of-selective-process/tree/master/xgb"
+export const MINDFLEX = "https://dev.to/reginadiana/como-ler-sinais-cerebrais-com-mindlfex-e-arduino-1o8l"
+export const README = "https://dev.to/reginadiana/como-escrever-um-readme-md-sensacional-no-github-4509"

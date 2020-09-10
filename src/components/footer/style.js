@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { lightOrange, gray } from '../../style'
 
 /*Mobile First*/
 export const Container = styled.div`
@@ -12,8 +11,8 @@ export const Container = styled.div`
 export const Logo = styled.h1`
 	font-size: 1.5rem;
 	font-weight: bold;
-	color: ${lightOrange};
-	border: 2px ${lightOrange} dashed; 
+	color: var(--lightOrange);
+	border: 2px var(--lightOrange) dashed; 
 	padding: 4px;
 	width: 250px;
 	margin: auto;
@@ -34,11 +33,11 @@ export const Icons = styled.div`
 
 export const Icon = styled.a`
 	font-size: 1.8rem;
-	color: ${gray};
+	color: var(--gray);
 	padding: 15px;
 
 	&:hover {
-		color: ${lightOrange};
+		color: var(--lightOrange);
 		transition: 0.5s;
 	}
 `

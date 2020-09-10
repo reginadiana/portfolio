@@ -1,12 +1,11 @@
 import styled from 'styled-components';
-import { lightGray } from '../../style'
 
 /*Mobile First*/
 
 export const Container = styled.div`
 	padding-top: 5%;
 	padding-bottom: 5%;
-	background-color: ${lightGray};
+	background-color: var(--lightGray);
 `
 
 export const Cards = styled.div`

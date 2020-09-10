@@ -4,3 +4,14 @@ body {
 	background-color: white;
 	font-family: "Poppins", sans-serif;
 }
+
+:root {
+	--lightGray: #f9f9ff;
+	--lightBlue: #90acd1;
+	--lightPink: #e2a599;
+	--lightBrown: #715f69;
+	--lightOrange: #e45447;
+	--gray: #c1bdbe;
+	--blue: #0036b2;
+}
+

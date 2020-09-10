@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { lightGray, lightOrange, blue } from '../../style'
 
 /*Mobile First*/ 
 export const Container = styled.div`
@@ -43,7 +42,7 @@ export const Info = styled.div`
 `
 
 export const Card = styled.div`
-	background-color: ${lightGray};
+	background-color: var(--lightGray);
 	padding: 40px;
 	margin: 15px;
 	color: gray;
@@ -56,7 +55,7 @@ export const Card = styled.div`
 	}
 
 	&:last-child {
-		background-color: ${blue};
+		background-color: var(--blue);
 
 		h1, a, p  {
 			color: white;
@@ -80,7 +79,7 @@ export const Location = styled.a`
 	color: black;
 `
 export const Date = styled.h3`
-	background-color: ${lightOrange};
+	background-color: var(--lightOrange);
 	width: 150px;
 	text-align: center;
 	padding: 10px;
