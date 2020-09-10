@@ -10,11 +10,10 @@ function Header(props) {
 					DR
 				</Logo>
 				<List>
-					<ItemList>Sobre mim</ItemList>
-					<ItemList>Valores</ItemList>
-					<ItemList>Portfólio</ItemList>
-					<ItemList>Skills</ItemList>
-					<ItemList>Eventos</ItemList>
+					<ItemList href="#about_me">About Me</ItemList>
+					<ItemList href="#portfolio">Portfólio</ItemList>
+					<ItemList href="#skills">Skills</ItemList>
+					<ItemList href="#contatos">Contatos</ItemList>
 				</List>
 			</Menu>
 			<Main>

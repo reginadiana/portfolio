@@ -6,7 +6,7 @@ import TitleSection from '../title_section/index';
 function Skills(props) {
 
 	return (
-		<Container>
+		<Container id="skills">
 				<TitleSection 
 					title="Linguagens e Ferramentas" 
 					description="Conheça as principais tecnologias do meu dia a dia"

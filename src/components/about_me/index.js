@@ -7,7 +7,7 @@ import AboutWebsite from '../../assets/about_site.jpeg'
 function AboutMe(props) {
 
 	return (
-		<Wrapper>
+		<Wrapper id="about_me">
 			<Img src={AboutMeImg} />
 			<div>
 					<TitleSection 

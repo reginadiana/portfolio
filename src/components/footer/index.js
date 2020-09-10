@@ -7,7 +7,7 @@ import { GITHUB, MEDIUM, LINKEDIN, DEV, INSTAGRAM } from '../../links';
 function Footer(props) {
 
 	return (
-		<Container>
+		<Container id="contatos">
 			<Logo>Diana Regina</Logo>
 			<Title>Contatos</Title>
 			<Icons>

@@ -1,14 +1,16 @@
 import styled from 'styled-components';
-//import wallpaper from '../../assets/wallpaper.svg'
+import wallpaper from '../../assets/wallpaper.jpg'
 
 //const pink = "#f05ce1"
 
 /*Mobile First*/
 export const Container = styled.div`
+	background-image: url(${wallpaper});
 	background-repeat:no-repeat;
 	background-size: cover;
 	text-align: center;
 	height: 800px;
+	box-shadow: 10px 10px 25px var(--lightBrown);
 `
 
 export const Menu = styled.div`
@@ -21,6 +23,7 @@ export const Menu = styled.div`
 		display: flex;
 		padding: 0;
 		justify-content: center;
+		box-shadow: 10px 10px 25px gray;
 	}
 `
 export const Logo = styled.h1`
@@ -51,7 +54,7 @@ export const List = styled.ul`
 		padding-top: 30px;
 	}
 `
-export const ItemList = styled.li`
+export const ItemList = styled.a`
 	color: black;
 	list-style: none;
 	font-size: 1rem;
@@ -91,7 +94,7 @@ export const Title = styled.h1`
 	font-size: 2rem;
 	letter-spacing: 3px;
 	font-weight: bold;
-	color: black;
+	color: white;
 	text-align: center;
 	margin: auto;
 
@@ -118,9 +121,9 @@ export const Title = styled.h1`
 export const Subtitle = styled.h2`
 	font-size: 2rem;
 	font-weight: bold;
-	color: var(--lightOrange);
+	color: white;
 	margin-top: 40px;
-	border: 2px var(--lightOrange) dashed; 
+	border: 2px white dashed; 
 	padding: 4px;
 	text-align: center;
 
