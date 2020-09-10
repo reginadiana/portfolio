@@ -2,7 +2,7 @@ import React from 'react';
 import { Main } from "./style"
 import './App.css'
 //import Header from "./components/header/index";
-//import Introduction from "./components/introduction/index";
+import AboutMe from "./components/about_me/index";
 import Skills from "./components/skills/index";
 import Education from "./components/education/index";
 //import Bootcamps from "./components/bootcamps/index";
@@ -13,6 +13,7 @@ function App() {
 
 	return (
 		<Main>
+			<AboutMe />
 			<Portfolio/>
 			<Education/>
 			<Skills/>

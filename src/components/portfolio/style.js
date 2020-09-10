@@ -5,14 +5,22 @@ export const Container = styled.div`
 	background-color: var(--lightGray);
 	margin-bottom: 80px;
 	padding-bottom: 80px;
+	padding-top: 100px;
 `
 
 export const Options = styled.div`
 	display: grid;
+	margin-top: -50px;
 
 	/*Desktop*/
-	@media screen and (min-width: 800px) {
+	@media screen and (min-width: 600px) {
 		grid-template-columns: repeat(4, 150px);
+		justify-content: center;
+		text-align: left;
+	}
+
+	@media screen and (max-width: 600px) {
+		grid-template-columns: repeat(2, 140px);
 		justify-content: center;
 		text-align: left;
 	}
@@ -28,6 +36,10 @@ export const Button = styled.button`
 	cursor: pointer;
 	margin-bottom: 15px;
 	border-radius: 20px;
+
+	@media screen and (max-width: 600px) {
+		width: 130px;
+	}
 `
 
 export const Cards = styled.div`
