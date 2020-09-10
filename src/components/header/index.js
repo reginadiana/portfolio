@@ -1,12 +1,13 @@
-import React from 'react'
-import { Container, Menu, Logo, List, ItemList, Main, Title, Subtitle } from "./style"
+import React from 'react';
+import { Container, Menu, Logo, List, 
+				 ItemList, Main, Title, Subtitle, Button } from "./style"
 
 function Header(props) {
 	return (
 		<Container>
 			<Menu>
 				<Logo>
-					Diana Regina | Web Developer
+					DR
 				</Logo>
 				<List>
 					<ItemList>Sobre mim</ItemList>
@@ -17,9 +18,9 @@ function Header(props) {
 				</List>
 			</Menu>
 			<Main>
-				<Title>DIANA</Title>
-				<Title>REGINA</Title>
+				<Title>Diana Regina</Title>
 				<Subtitle>Web Developer</Subtitle>
+				<Button>Baixar Curriculo</Button>
 			</Main>
 		</Container>
 	);

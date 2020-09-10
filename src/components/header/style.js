@@ -1,139 +1,154 @@
 import styled from 'styled-components';
-import wallpaper from '../../assets/wallpaper.jpg'
+//import wallpaper from '../../assets/wallpaper.svg'
 
-const pink = "#f05ce1"
-const yellow = "#e9ca3f"
+//const pink = "#f05ce1"
 
 /*Mobile First*/
 export const Container = styled.div`
-background-image: url(${wallpaper});
-background-repeat:no-repeat;
-background-size: cover;
-text-align: center;
-height: 800px;`
+	background-repeat:no-repeat;
+	background-size: cover;
+	text-align: center;
+	height: 800px;
+`
 
 export const Menu = styled.div`
-padding-top: 30px;
-background-color: ${pink};
+	padding-top: 30px;
+	background-color: var(--lightGray);
+	color: white;
 
-/*Desktop*/
-@media screen and (min-width: 1100px) {
-	display: flex;
-	padding: 0;
-	justify-content: space-around;
-}
+	/*Desktop*/
+	@media screen and (min-width: 1100px) {
+		display: flex;
+		padding: 0;
+		justify-content: center;
+	}
 `
 export const Logo = styled.h1`
-color: white;
-width: 400px;
-margin: auto;
-font-weight: bold;
-cursor: pointer;
-font-size: 1.1rem;
+	color: var(--lightBlue);
+	border: 4px var(--lightOrange) solid; 
+	padding: 5px;
+	width: 60px;
+	margin: auto;
+	font-weight: bold;
+	cursor: pointer;
+	font-size: 1.5rem;
 
-/*Desktop*/
-@media screen and (min-width: 1100px) {
-	margin: 0;
-	margin-top: auto;
-	margin-bottom: auto;
-}
-
-@media screen and (max-width: 400px) {
-	width: 300px;
-}
+	/*Desktop*/
+	@media screen and (min-width: 1100px) {
+		margin: auto 100px auto 0;
+	}
 `
 
 export const List = styled.ul`
-padding: 0;
-padding-bottom: 20px;
-padding-top: 40px;
+	padding: 0;
+	padding-bottom: 20px;
+	padding-top: 40px;
 
-/*Desktop*/
-@media screen and (min-width: 1100px) {
-	display: flex;
-	padding-bottom: 5px;
-	padding-top: 30px;
-}
+	/*Desktop*/
+	@media screen and (min-width: 1100px) {
+		display: flex;
+		padding-bottom: 5px;
+		padding-top: 30px;
+	}
 `
 export const ItemList = styled.li`
-color: #fff;
-list-style: none;
-font-size: 1rem;
-text-align: left;
-padding-left: 40px;
-width: 150px;
-margin-bottom: 10px;
-cursor: pointer;
+	color: black;
+	list-style: none;
+	font-size: 1rem;
+	text-align: left;
+	padding-left: 40px;
+	width: 150px;
+	margin-bottom: 10px;
+	cursor: pointer;
 
-&:hover {
-	background-color: ${yellow};
-	color: #ae282e;
-	transition: 0.5s;
-}
-
-/*Desktop*/
-@media screen and (min-width: 1100px) {
 	&:hover {
-		background-color: transparent;
-		color: ${yellow};
+		color: var(--lightOrange);
 		transition: 0.5s;
 	}
-}
+
+	&:first-child {
+		color: var(--lightOrange);
+		font-weight: bold;
+	}
 `
 export const Main = styled.div`
-width: 350px;
-margin: auto;
+	width: 380px;
+	margin: auto;
 
-/*Desktop*/
-@media screen and (min-width: 1100px) {
-	width: 700px;
-	margin-left: 200px;
-}
+	@media screen and (min-width: 1100px) {
+		width: 800px;
+		margin-top: 80px;
+		text-align: left;
+		margin-left: 20%;
+	}
 
-@media screen and (max-width: 400px) {
-	width: 270px;
-}
+	@media screen and (max-width: 500px) {
+		width: 280px;
+	}
 `
 
 export const Title = styled.h1`
-font-size: 3rem;
-letter-spacing: 3px;
-font-weight: bold;
-color: white;
-margin-bottom: 0;
-text-align: left;
-
-&:first-letter {
-	font-size: 3.5rem;
-	color: ${pink};
-}
-
-&:nth-child(6)::letter {
-	color: white;
-}
-
-/*Desktop*/
-@media screen and (min-width: 1100px) {
-	font-size: 5rem;
-	margin-bottom: -60px;
+	font-size: 2rem;
+	letter-spacing: 3px;
+	font-weight: bold;
+	color: black;
+	text-align: center;
+	margin: auto;
 
 	&:first-letter {
-		font-size: 7rem;
-		color: ${pink};
+		font-size: 2.5rem;
+		color: var(--lightOrange);
 	}
-}
+
+	&:nth-child(6)::letter {
+		color: white;
+	}
+
+	/*Desktop*/
+	@media screen and (min-width: 1100px) {
+		font-size: 5rem;
+		text-align: left;
+
+		&:first-letter {
+			font-size: 6rem;
+		}
+	}
 `
 
 export const Subtitle = styled.h2`
-font-size: 2rem;
-font-weight: bold;
-color: ${pink};
-margin-top: 50px;
-border: 2px ${pink} dashed; 
-padding: 4px;
+	font-size: 2rem;
+	font-weight: bold;
+	color: var(--lightOrange);
+	margin-top: 40px;
+	border: 2px var(--lightOrange) dashed; 
+	padding: 4px;
+	text-align: center;
 
-/*Desktop*/
-@media screen and (min-width: 1100px) {
-	width: 400px;
-}
+	/*Desktop*/
+	@media screen and (min-width: 1100px) {
+		width: 400px;
+	}
+`
+
+export const Button = styled.button`
+	background-color: var(--lightOrange);
+	border-color: transparent;
+	color: white;
+	font-size: 1.2rem;
+	cursor: pointer;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 50px;
+	margin-top: 50px;
+
+	&:hover {
+		background-color: var(--lightGray);
+		border-color: var(--lightOrange);
+		color: var(--lightOrange);
+		font-weight: bold;
+		transition: 1s;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
 `
