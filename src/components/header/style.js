@@ -36,7 +36,12 @@ font-size: 1.1rem;
 	margin: 0;
 	margin-top: auto;
 	margin-bottom: auto;
-}`
+}
+
+@media screen and (max-width: 400px) {
+	width: 300px;
+}
+`
 
 export const List = styled.ul`
 padding: 0;
@@ -83,6 +88,10 @@ margin: auto;
 @media screen and (min-width: 1100px) {
 	width: 700px;
 	margin-left: 200px;
+}
+
+@media screen and (max-width: 400px) {
+	width: 270px;
 }
 `
 
