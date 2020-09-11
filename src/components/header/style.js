@@ -46,6 +46,7 @@ export const List = styled.ul`
 	padding: 0;
 	padding-bottom: 20px;
 	padding-top: 40px;
+	display: grid;
 
 	/*Desktop*/
 	@media screen and (min-width: 1100px) {

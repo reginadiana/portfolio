@@ -5,19 +5,34 @@ export const Container = styled.div`
 	text-align: center;
 	padding-left: 20px;
 	padding-right: 20px;
-	padding-bottom: 30px;
+	padding-bottom: 90px;
 	font-family: "Poppins", sans-serif;
 `
+
+export const IconToUp = styled.a`
+	font-size: 3rem;
+	color: var(--lightBlue);
+	position: fixed;
+	bottom: 10px;
+	right: 20px;
+
+	&:hover {
+		color: var(--lightBrow);
+		transition: 0.5s;
+	}
+`
+
 export const Logo = styled.h1`
-	font-size: 1.5rem;
-	font-weight: bold;
-	color: var(--lightOrange);
-	border: 2px var(--lightOrange) dashed; 
-	padding: 4px;
-	width: 250px;
+	color: var(--lightBlue);
+	border: 4px var(--lightOrange) solid; 
+	padding: 5px;
+	width: 60px;
 	margin: auto;
-	margin-bottom: 50px;
-	margin-top: 50px;
+	font-weight: bold;
+	cursor: pointer;
+	font-size: 1.5rem;
+	margin-bottom: 40px;
+	margin-top: 20px;
 `
 
 export const Title = styled.h2`
