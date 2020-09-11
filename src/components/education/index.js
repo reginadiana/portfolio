@@ -46,8 +46,8 @@ function Education(props) {
 						<Date>2018</Date>
 					</Info>
 	
-					<Description>Mais do que concertar placas, aprendi a seguir meu coração ao
-					tomar decições na vida profissional</Description>
+					<Description>Mais do que consertar placas, aprendi a seguir meu coração ao
+					tomar decisões na vida profissional</Description>
 				</Card>
 
 				<Card>

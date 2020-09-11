@@ -15,7 +15,7 @@ function Skills(props) {
 					<Card color="var(--lightPink)">
 						<Icon><CodeSandboxOutlined /></Icon>
 						<Lenguage>HTML</Lenguage>
-						<Description>Para construção da estrutura da página</Description>
+						<Description>Para construção da estrutura das páginas</Description>
 					</Card>
 
 					<Card color="var(--lightBrown)">
