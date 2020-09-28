@@ -1,8 +1,6 @@
 import styled from "styled-components";
 import wallpaper from "../../assets/wallpaper.jpg";
 
-//const pink = "#f05ce1"
-
 /*Mobile First*/
 export const Container = styled.div`
   background-image: url(${wallpaper});
@@ -43,16 +41,13 @@ export const Logo = styled.h1`
 `;
 
 export const List = styled.ul`
-  padding: 0;
-  padding-bottom: 20px;
-  padding-top: 40px;
+  padding: 40px 0 20px 0;
   display: grid;
 
   /*Desktop*/
   @media screen and (min-width: 1100px) {
     display: flex;
-    padding-bottom: 5px;
-    padding-top: 30px;
+    padding: 30px 0 5px 0;
   }
 `;
 export const ItemList = styled.a`
@@ -136,18 +131,14 @@ export const Subtitle = styled.h2`
 
 export const Link = styled.a`
   background-color: var(--lightOrange);
-  border-color: transparent;
   color: white;
   font-size: 1.2rem;
   cursor: pointer;
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 10px 20px;
   border-radius: 50px;
 
   &:hover {
     background-color: var(--lightGray);
-    border-color: var(--lightOrange);
     color: var(--lightOrange);
     font-weight: bold;
     transition: 1s;

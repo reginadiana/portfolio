@@ -29,7 +29,7 @@ function Header(props) {
         <Title>Diana Regina</Title>
         <Subtitle>Web Developer</Subtitle>
         <Download>
-          <Link href={pdf}>Baixar Curriculo</Link>
+          <Link href={pdf}>Ver Curriculo (PDF)</Link>
         </Download>
       </Main>
     </Container>
