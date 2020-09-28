@@ -1,4 +1,8 @@
 <p align="center">
+<a href="https://dianaregina.netlify.app/"><img src="https://user-images.githubusercontent.com/46378210/93837769-cfff6200-fc5d-11ea-8e5a-ebc0489b8e76.png" width="50" alt="Meu site"></a>
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/static/v1?label=react&message=framework&color=blue&style=for-the-badge&logo=REACT"/>
   <img src="https://img.shields.io/static/v1?label=Netlify&message=deploy&color=blue&style=for-the-badge&logo=netlify"/>
   <img src="http://img.shields.io/static/v1?label=License&message=MIT&color=green&style=for-the-badge"/>
@@ -92,5 +96,3 @@ Esta é a `segunda versão` do meu site pessoal, mas ainda existem funcionalidad
 :memo: Usar uma API/Tecnologia que permita com que um recrutadoror digite a locação da empresa e veja a distancia entre ela e minha região. 
 
 :memo: Mostrar um calendário/agenda com horários disponíveis para uma entrevista
-
-:memo: Permitir que um recrutador/visitante execute o dowload do meu currículo formal
