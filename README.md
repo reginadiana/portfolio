@@ -1,5 +1,3 @@
-![portifolio](https://user-images.githubusercontent.com/46378210/83368437-297e1100-a38f-11ea-9614-c92cf58ed9f3.PNG)
-
 <p align="center">
   <img src="https://img.shields.io/static/v1?label=react&message=framework&color=blue&style=for-the-badge&logo=REACT"/>
   <img src="https://img.shields.io/static/v1?label=Netlify&message=deploy&color=blue&style=for-the-badge&logo=netlify"/>
