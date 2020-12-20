@@ -54,7 +54,7 @@
 No terminal, clone o projeto: 
 
 ```
-git clone https://github.com/Diana-ops/portfolio
+git clone https://github.com/reginadiana/portfolio
 ```
 Acesse a pasta
 ```
