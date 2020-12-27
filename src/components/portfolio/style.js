@@ -1,8 +1,10 @@
 import styled from "styled-components";
+import { themes } from "../../themes";
 
-/*Mobile First*/
+const { lightGray } = themes.colors;
+
 export const Container = styled.div`
-  background-color: var(--lightGray);
+  background-color: ${lightGray};
   margin-bottom: 80px;
   padding-bottom: 80px;
   padding-top: 100px;

@@ -1,34 +1,35 @@
 import styled from "styled-components";
+import { themes } from "../../themes";
 
-/*Mobile First*/
+const { lightBlue, lightBrow, lightOrange, gray } = themes.colors;
+
 export const Container = styled.div`
   text-align: center;
-  padding: 0 20px 90px 20px;
-  font-family: "Poppins", sans-serif;
+  padding: 20px 20px;
 `;
 
 export const IconToUp = styled.a`
   font-size: 3rem;
-  color: var(--lightBlue);
+  color: ${lightBlue};
   position: fixed;
   bottom: 10px;
   right: 20px;
 
   &:hover {
-    color: var(--lightBrow);
+    color: ${lightBrow};
     transition: 0.5s;
   }
 `;
 
 export const Logo = styled.h1`
-  color: var(--lightBlue);
-  border: 4px var(--lightOrange) solid;
+  color: ${lightBlue};
+  border: 4px ${lightOrange} solid;
   padding: 5px;
   width: 60px;
   font-weight: bold;
   cursor: pointer;
   font-size: 1.5rem;
-  margin: 20px auto 40px auto;
+  margin: 0 auto 40px;
 `;
 
 export const Title = styled.h2`
@@ -44,13 +45,11 @@ export const Icons = styled.div`
 
 export const Icon = styled.a`
   font-size: 1.8rem;
-  color: var(--gray);
+  color: ${gray};
   padding: 15px;
 
   &:hover {
-    color: var(--lightOrange);
+    color: ${lightOrange};
     transition: 0.5s;
   }
 `;
-
-export const SubTitle = styled.p``;

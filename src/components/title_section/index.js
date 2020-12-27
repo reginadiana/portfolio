@@ -1,17 +1,12 @@
-import React from 'react';
-import { Container, Title, Line, Text } from "./style";
+import React from "react";
+import { Title, Line, Text } from "./style";
 
-function TitleSection(props) {
-
-  const { title, description } = props;
-
-	return (
-    <Container>
-      <Title>{title}</Title>
-      <Line/>
-      <Text>{description}</Text>
-    </Container>
-	);
-}
+const TitleSection = ({ title, description }) => (
+  <div>
+    <Title>{title}</Title>
+    <Line />
+    <Text>{description}</Text>
+  </div>
+);
 
 export default TitleSection;

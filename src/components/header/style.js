@@ -1,19 +1,21 @@
 import styled from "styled-components";
 import wallpaper from "../../assets/wallpaper.jpg";
+import { themes } from "../../themes";
 
-/*Mobile First*/
+const { lightBrown, lightGray, lightOrange, lightBlue } = themes.colors;
+
 export const Container = styled.div`
   background-image: url(${wallpaper});
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   height: 800px;
-  box-shadow: 10px 10px 25px var(--lightBrown);
+  box-shadow: 10px 10px 25px ${lightBrown};
 `;
 
 export const Menu = styled.div`
   padding-top: 30px;
-  background-color: var(--lightGray);
+  background-color: ${lightGray};
   color: white;
 
   /*Desktop*/
@@ -24,15 +26,14 @@ export const Menu = styled.div`
     box-shadow: 10px 10px 25px gray;
   }
 `;
-export const Logo = styled.h1`
-  color: var(--lightBlue);
-  border: 4px var(--lightOrange) solid;
+export const Logo = styled.h2`
+  color: ${lightBlue};
+  border: 4px ${lightOrange} solid;
   padding: 5px;
   width: 60px;
   margin: auto;
   font-weight: bold;
   cursor: pointer;
-  font-size: 1.5rem;
 
   /*Desktop*/
   @media screen and (min-width: 1100px) {
@@ -41,13 +42,13 @@ export const Logo = styled.h1`
 `;
 
 export const List = styled.ul`
-  padding: 40px 0 20px 0;
+  padding: 40px 0 20px;
   display: grid;
 
   /*Desktop*/
   @media screen and (min-width: 1100px) {
     display: flex;
-    padding: 30px 0 5px 0;
+    padding: 30px 0 5px;
   }
 `;
 export const ItemList = styled.a`
@@ -61,12 +62,12 @@ export const ItemList = styled.a`
   cursor: pointer;
 
   &:hover {
-    color: var(--lightOrange);
+    color: ${lightOrange};
     transition: 0.5s;
   }
 
   &:first-child {
-    color: var(--lightOrange);
+    color: ${lightOrange};
     font-weight: bold;
   }
 `;
@@ -87,7 +88,6 @@ export const Main = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 2rem;
   letter-spacing: 3px;
   font-weight: bold;
   color: white;
@@ -96,7 +96,7 @@ export const Title = styled.h1`
 
   &:first-letter {
     font-size: 2.5rem;
-    color: var(--lightOrange);
+    color: ${lightOrange};
   }
 
   &:nth-child(6)::letter {
@@ -114,8 +114,7 @@ export const Title = styled.h1`
   }
 `;
 
-export const Subtitle = styled.h2`
-  font-size: 2rem;
+export const Subtitle = styled.h1`
   font-weight: bold;
   color: white;
   margin-top: 40px;
@@ -130,7 +129,7 @@ export const Subtitle = styled.h2`
 `;
 
 export const Link = styled.a`
-  background-color: var(--lightOrange);
+  background-color: ${lightOrange};
   color: white;
   font-size: 1.2rem;
   cursor: pointer;
@@ -138,12 +137,11 @@ export const Link = styled.a`
   border-radius: 50px;
 
   &:hover {
-    background-color: var(--lightGray);
-    color: var(--lightOrange);
+    background-color: ${lightGray};
+    color: ${lightOrange};
     font-weight: bold;
     transition: 1s;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 10px 30px;
   }
 `;
 

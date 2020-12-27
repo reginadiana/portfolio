@@ -1,7 +1,6 @@
 import styled from "styled-components";
+import { themes } from "../../themes";
 
-/*Mobile First*/
-export const Container = styled.div``;
 export const Cards = styled.div`
   display: grid;
   justify-content: center;
@@ -40,7 +39,7 @@ export const Info = styled.div`
 `;
 
 export const Card = styled.div`
-  background-color: var(--lightGray);
+  background-color: ${themes.colors.lightGray};
   padding: 40px;
   margin: 15px;
   color: gray;
@@ -53,7 +52,7 @@ export const Card = styled.div`
   }
 
   &:last-child {
-    background-color: var(--blue);
+    background-color: ${themes.colors.blue};
 
     h1,
     a,
@@ -79,7 +78,7 @@ export const Location = styled.a`
   color: black;
 `;
 export const Date = styled.h3`
-  background-color: var(--lightOrange);
+  background-color: ${themes.colors.lightOrange};
   width: 150px;
   text-align: center;
   padding: 10px;
@@ -89,9 +88,7 @@ export const Date = styled.h3`
   margin-bottom: 20px;
 
   @media screen and (max-width: 400px) {
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin: 20px auto 30px;
   }
 `;
 export const Description = styled.p`
