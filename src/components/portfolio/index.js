@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "antd/dist/antd.css";
 import { Cards, Container, Options, Button } from "./style";
 
 import TitleSection from "../title_section/index";

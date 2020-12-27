@@ -4,7 +4,15 @@ import { Container, Cards, Card, Icon, Lenguage, Description } from "./style";
 import TitleSection from "../title_section/index";
 import { themes } from "../../themes";
 
-const { lightPink, lightBrown, lightOrange, lightBlue } = themes.colors;
+const {
+  lightPink,
+  lightBrown,
+  lightOrange,
+  lightBlue,
+  green,
+  blue,
+  orange,
+} = themes.colors;
 
 const Skills = () => (
   <Container id="skills">
@@ -37,7 +45,7 @@ const Skills = () => (
         <Description>Para o frontend das minhas aplicações</Description>
       </Card>
 
-      <Card color={lightOrange}>
+      <Card color={green}>
         <Icon>
           <CodeSandboxOutlined />
         </Icon>
@@ -53,7 +61,7 @@ const Skills = () => (
         <Description>Para o backend das minhas aplicações</Description>
       </Card>
 
-      <Card color={lightBlue}>
+      <Card color={orange}>
         <Icon>
           <CodeSandboxOutlined />
         </Icon>
@@ -61,7 +69,7 @@ const Skills = () => (
         <Description>Para o backend das minhas aplicações</Description>
       </Card>
 
-      <Card color={lightBlue}>
+      <Card color={blue}>
         <Icon>
           <CodeSandboxOutlined />
         </Icon>

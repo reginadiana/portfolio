@@ -5,8 +5,10 @@ export const themes = {
     lightPink: "#e2a599",
     lightBrown: "#715f69",
     lightOrange: "#e45447",
+    orange: "#ffaa00",
     green: "#49b675",
     gray: "#c1bdbe",
-    blue: "#0036b2",
+    blue: "#00b9fd",
+    darkBlue: "#0036b2",
   },
 };

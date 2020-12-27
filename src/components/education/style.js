@@ -52,7 +52,7 @@ export const Card = styled.div`
   }
 
   &:last-child {
-    background-color: ${themes.colors.blue};
+    background-color: ${themes.colors.darkBlue};
 
     h1,
     a,
