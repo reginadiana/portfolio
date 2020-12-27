@@ -1,15 +1,15 @@
 import React from "react";
 import { PhoneFilled } from "@ant-design/icons";
-import { Container, Title } from "./style";
+import * as Styled from "./style";
 
 const Contact = () => (
-  <Container>
-    <Title>
+  <Styled.Container>
+    <Styled.Title>
       Fale comigo <PhoneFilled />
-    </Title>
+    </Styled.Title>
     <h3>dianaregina22@outlook.com.br</h3>
     <h3>(11) 954660546</h3>
-  </Container>
+  </Styled.Container>
 );
 
 export default Contact;

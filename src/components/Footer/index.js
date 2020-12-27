@@ -8,38 +8,44 @@ import {
   BookOutlined,
   UpCircleFilled,
 } from "@ant-design/icons";
-import { Container, IconToUp, Logo, Title, Icons, Icon } from "./style";
+import * as Styled from "./style";
 import { socialMedia } from "../../services/links";
 
 const Footer = () => (
-  <Container id="contatos">
-    <IconToUp href="#main">
+  <Styled.Container id="contatos">
+    <Styled.IconToUp href="#main">
       <UpCircleFilled />
-    </IconToUp>
-    <Logo>DR</Logo>
-    <Title>Follow Me</Title>
-    <Icons>
-      <Icon href={socialMedia.github}>
+    </Styled.IconToUp>
+
+    <Styled.Logo>DR</Styled.Logo>
+    <Styled.Title>Follow Me</Styled.Title>
+
+    <Styled.Icons>
+      <Styled.Icon href={socialMedia.github}>
         <GithubOutlined />
-      </Icon>
-      <Icon href={socialMedia.linkedin}>
+      </Styled.Icon>
+
+      <Styled.Icon href={socialMedia.linkedin}>
         <LinkedinOutlined />
-      </Icon>
-      <Icon href={socialMedia.medium}>
+      </Styled.Icon>
+
+      <Styled.Icon href={socialMedia.medium}>
         <MediumOutlined />
-      </Icon>
-      <Icon href={socialMedia.instagram}>
+      </Styled.Icon>
+
+      <Styled.Icon href={socialMedia.instagram}>
         <InstagramOutlined />
-      </Icon>
-      <Icon href={socialMedia.dev}>
+      </Styled.Icon>
+
+      <Styled.Icon href={socialMedia.dev}>
         <BookOutlined />
-      </Icon>
-    </Icons>
+      </Styled.Icon>
+    </Styled.Icons>
     <p>
       Copyright ©2020 All rights reserved | This website was developed by Diana
       Regina
     </p>
-  </Container>
+  </Styled.Container>
 );
 
 export default Footer;

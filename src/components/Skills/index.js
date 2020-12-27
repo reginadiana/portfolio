@@ -1,6 +1,6 @@
 import React from "react";
 import { CodeSandboxOutlined } from "@ant-design/icons";
-import { Container, Cards, Card, Icon, Lenguage, Description } from "./style";
+import * as Styled from "./style";
 import TitleSection from "../TitleSection/index";
 import { themes } from "../../themes";
 
@@ -15,71 +15,81 @@ const {
 } = themes.colors;
 
 const Skills = () => (
-  <Container id="skills">
+  <Styled.Container id="skills">
     <TitleSection
       title="Linguagens e Ferramentas"
       description="Conheça as principais tecnologias do meu dia a dia"
     />
-    <Cards>
-      <Card color={lightPink}>
-        <Icon>
+    <Styled.Cards>
+      <Styled.Card color={lightPink}>
+        <Styled.Icon>
           <CodeSandboxOutlined />
-        </Icon>
-        <Lenguage>HTML</Lenguage>
-        <Description>Para construção da estrutura das páginas</Description>
-      </Card>
+        </Styled.Icon>
+        <Styled.Lenguage>HTML</Styled.Lenguage>
+        <Styled.Description>
+          Para construção da estrutura das páginas
+        </Styled.Description>
+      </Styled.Card>
 
-      <Card color={lightBrown}>
-        <Icon>
+      <Styled.Card color={lightBrown}>
+        <Styled.Icon>
           <CodeSandboxOutlined />
-        </Icon>
-        <Lenguage>CSS</Lenguage>
-        <Description>Para estilização das telas</Description>
-      </Card>
+        </Styled.Icon>
+        <Styled.Lenguage>CSS</Styled.Lenguage>
+        <Styled.Description>Para estilização das telas</Styled.Description>
+      </Styled.Card>
 
-      <Card color={lightOrange}>
-        <Icon>
+      <Styled.Card color={lightOrange}>
+        <Styled.Icon>
           <CodeSandboxOutlined />
-        </Icon>
-        <Lenguage>JS e React</Lenguage>
-        <Description>Para o frontend das minhas aplicações</Description>
-      </Card>
+        </Styled.Icon>
+        <Styled.Lenguage>JS e React</Styled.Lenguage>
+        <Styled.Description>
+          Para o frontend das minhas aplicações
+        </Styled.Description>
+      </Styled.Card>
 
-      <Card color={green}>
-        <Icon>
+      <Styled.Card color={green}>
+        <Styled.Icon>
           <CodeSandboxOutlined />
-        </Icon>
-        <Lenguage>Vue</Lenguage>
-        <Description>Para o frontend das minhas aplicações</Description>
-      </Card>
+        </Styled.Icon>
+        <Styled.Lenguage>Vue</Styled.Lenguage>
+        <Styled.Description>
+          Para o frontend das minhas aplicações
+        </Styled.Description>
+      </Styled.Card>
 
-      <Card color={lightBlue}>
-        <Icon>
+      <Styled.Card color={lightBlue}>
+        <Styled.Icon>
           <CodeSandboxOutlined />
-        </Icon>
-        <Lenguage>Ruby e Ruby on Rails</Lenguage>
-        <Description>Para o backend das minhas aplicações</Description>
-      </Card>
+        </Styled.Icon>
+        <Styled.Lenguage>Ruby e Ruby on Rails</Styled.Lenguage>
+        <Styled.Description>
+          Para o backend das minhas aplicações
+        </Styled.Description>
+      </Styled.Card>
 
-      <Card color={orange}>
-        <Icon>
+      <Styled.Card color={orange}>
+        <Styled.Icon>
           <CodeSandboxOutlined />
-        </Icon>
-        <Lenguage>Elixir e Phoenix</Lenguage>
-        <Description>Para o backend das minhas aplicações</Description>
-      </Card>
+        </Styled.Icon>
+        <Styled.Lenguage>Elixir e Phoenix</Styled.Lenguage>
+        <Styled.Description>
+          Para o backend das minhas aplicações
+        </Styled.Description>
+      </Styled.Card>
 
-      <Card color={blue}>
-        <Icon>
+      <Styled.Card color={blue}>
+        <Styled.Icon>
           <CodeSandboxOutlined />
-        </Icon>
-        <Lenguage>Docker</Lenguage>
-        <Description>
+        </Styled.Icon>
+        <Styled.Lenguage>Docker</Styled.Lenguage>
+        <Styled.Description>
           Para executar minhas aplicações em ambientes virtuais
-        </Description>
-      </Card>
-    </Cards>
-  </Container>
+        </Styled.Description>
+      </Styled.Card>
+    </Styled.Cards>
+  </Styled.Container>
 );
 
 export default Skills;

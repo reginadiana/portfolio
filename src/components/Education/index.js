@@ -1,5 +1,5 @@
 import React from "react";
-import { Cards, Card, Title, Info, Location, Date, Description } from "./style";
+import * as Styled from "./style";
 import TitleSection from "../TitleSection/index";
 import { profissional } from "../../services/links";
 
@@ -9,107 +9,119 @@ const Education = () => (
       title="Formação e Bootcamps"
       description="Sabia onde estudei e os bootcamps que participei"
     />
-    <Cards>
-      <Card>
-        <Info>
+    <Styled.Cards>
+      <Styled.Card>
+        <Styled.Info>
           <div>
-            <Title>Técnico em Eletrônica</Title>
-            <Location href={profissional.etec}>ETEC Julio de Mesquita</Location>
+            <Styled.Title>Técnico em Eletrônica</Styled.Title>
+            <Styled.Location href={profissional.etec}>
+              ETEC Julio de Mesquita
+            </Styled.Location>
           </div>
-          <Date>2016 | 2017</Date>
-        </Info>
+          <Styled.Date>2016 | 2017</Styled.Date>
+        </Styled.Info>
 
-        <Description>
+        <Styled.Description>
           Corroendo as primeiras plaquinhas e programando PIC's, tem coisa
           melhor do que ver um led piscando e saber que funciona?
-        </Description>
-      </Card>
+        </Styled.Description>
+      </Styled.Card>
 
-      <Card>
-        <Info>
+      <Styled.Card>
+        <Styled.Info>
           <div>
-            <Title>Tecnologia em Mecatrônica Industrial</Title>
-            <Location href={profissional.fatec}>FATEC Santo André</Location>
+            <Styled.Title>Tecnologia em Mecatrônica Industrial</Styled.Title>
+            <Styled.Location href={profissional.fatec}>
+              FATEC Santo André
+            </Styled.Location>
           </div>
-          <Date>2017 | 2019</Date>
-        </Info>
-        <Description>
+          <Styled.Date>2017 | 2019</Styled.Date>
+        </Styled.Info>
+        <Styled.Description>
           Uma das coisas mais importantes da minha vida foi ter feito
           Mecatrônica. Foi lá que descobri a tecnologia
-        </Description>
-      </Card>
+        </Styled.Description>
+      </Styled.Card>
 
-      <Card>
-        <Info>
+      <Styled.Card>
+        <Styled.Info>
           <div>
-            <Title>Estágio em Eletrônica</Title>
-            <Location href={profissional.etec}>ETEC Julio de Mesquita</Location>
+            <Styled.Title>Estágio em Eletrônica</Styled.Title>
+            <Styled.Location href={profissional.etec}>
+              ETEC Julio de Mesquita
+            </Styled.Location>
           </div>
-          <Date>2018</Date>
-        </Info>
+          <Styled.Date>2018</Styled.Date>
+        </Styled.Info>
 
-        <Description>
+        <Styled.Description>
           Mais do que consertar placas, aprendi a seguir meu coração ao tomar
           decisões na vida profissional
-        </Description>
-      </Card>
+        </Styled.Description>
+      </Styled.Card>
 
-      <Card>
-        <Info>
+      <Styled.Card>
+        <Styled.Info>
           <div>
-            <Title>Monitorias de linguagem C</Title>
-            <Location href={profissional.fatec}>FATEC Santo André</Location>
+            <Styled.Title>Monitorias de linguagem C</Styled.Title>
+            <Styled.Location href={profissional.fatec}>
+              FATEC Santo André
+            </Styled.Location>
           </div>
-          <Date>2019</Date>
-        </Info>
+          <Styled.Date>2019</Styled.Date>
+        </Styled.Info>
 
-        <Description>
+        <Styled.Description>
           Ajudei muitos alunos onde estudava, sempre tentando mostrar como
           programar é incrível
-        </Description>
-      </Card>
+        </Styled.Description>
+      </Styled.Card>
 
-      <Card>
-        <Info>
+      <Styled.Card>
+        <Styled.Info>
           <div>
-            <Title>Bootcamp de React</Title>
-            <Location href={profissional.womakerscode}>WoMakersCode</Location>
+            <Styled.Title>Bootcamp de React</Styled.Title>
+            <Styled.Location href={profissional.womakerscode}>
+              WoMakersCode
+            </Styled.Location>
           </div>
-          <Date>Abril | 2020</Date>
-        </Info>
-        <Description>
+          <Styled.Date>Abril | 2020</Styled.Date>
+        </Styled.Info>
+        <Styled.Description>
           Lugar onde conheci mulheres incríveis e uma lib que me apaixonei
-        </Description>
-      </Card>
+        </Styled.Description>
+      </Styled.Card>
 
-      <Card>
-        <Info>
+      <Styled.Card>
+        <Styled.Info>
           <div>
-            <Title>Treina Dev</Title>
-            <Location href={profissional.campus}>Campus Code</Location>
+            <Styled.Title>Treina Dev</Styled.Title>
+            <Styled.Location href={profissional.campus}>
+              Campus Code
+            </Styled.Location>
           </div>
-          <Date>Julho | 2020</Date>
-        </Info>
-        <Description>
+          <Styled.Date>Julho | 2020</Styled.Date>
+        </Styled.Info>
+        <Styled.Description>
           Onde aprendi que o importante não é escrever código, é como escrever
           código
-        </Description>
-      </Card>
+        </Styled.Description>
+      </Styled.Card>
 
-      <Card>
-        <Info>
+      <Styled.Card>
+        <Styled.Info>
           <div>
-            <Title>Desenvolvedora</Title>
-            <Location href={profissional.rebase}>Rebase</Location>
+            <Styled.Title>Desenvolvedora</Styled.Title>
+            <Styled.Location href={profissional.rebase}>Rebase</Styled.Location>
           </div>
-          <Date>2020</Date>
-        </Info>
-        <Description>
+          <Styled.Date>2020</Styled.Date>
+        </Styled.Info>
+        <Styled.Description>
           Friozinho na barriga, mas tudo certo. É aqui que vou enfrentar novos
           desafios.
-        </Description>
-      </Card>
-    </Cards>
+        </Styled.Description>
+      </Styled.Card>
+    </Styled.Cards>
   </div>
 );
 
