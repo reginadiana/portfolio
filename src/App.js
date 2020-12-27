@@ -1,28 +1,42 @@
-import React from 'react';
-import { Main } from "./style"
-import './App.css'
+import React from "react";
+import { Main } from "./style";
+import "./App.css";
 import Header from "./components/header/index";
 import AboutMe from "./components/about_me/index";
 import Skills from "./components/skills/index";
 import Education from "./components/education/index";
 import Portfolio from "./components/portfolio/index";
 import Contact from "./components/contact/index";
-import Footer from "./components/footer/index"
+import Footer from "./components/footer/index";
+import { I18nextProvider } from "react-i18next";
+import i18next from "i18next";
+import { withTranslation } from "react-i18next";
+import pt from "./locales/en/translation.json";
 
-function App() { 
+const resources = {
+  pt: {
+    common: pt["pt-BR"],
+  },
+};
 
-	return (
-		<Main id="main">
-			<Header />
-			<AboutMe />
-			<Portfolio/>
-			<Education/>
-			<Skills/>
-			<Contact />
-			<Footer/>
-		</Main>
-	);
+i18next.init({
+  resources,
+});
+
+function App({ t }) {
+  return (
+    <Main id="main">
+      <I18nextProvider i18n={i18next}>
+        <Header />
+        <AboutMe />
+        <Portfolio />
+        <Education />
+        <Skills />
+        <Contact />
+        <Footer />
+      </I18nextProvider>
+    </Main>
+  );
 }
 
-export default App;
-
+export default withTranslation()(App);

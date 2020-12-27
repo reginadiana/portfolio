@@ -1,13 +1,15 @@
-import React from 'react';
-import { PhoneFilled } from '@ant-design/icons'; 
-import { Container, Title, Email, Phone } from './style'
+import React from "react";
+import { PhoneFilled } from "@ant-design/icons";
+import { Container, Title } from "./style";
 
 function Contact(props) {
-  return(
+  return (
     <Container>
-      <Title>Fale comigo <PhoneFilled /></Title>
-      <Email>dianaregina22@outlook.com.br</Email>
-      <Phone>(11) 954660546</Phone>
+      <Title>
+        Fale comigo <PhoneFilled />
+      </Title>
+      <h3>dianaregina22@outlook.com.br</h3>
+      <h3>(11) 954660546</h3>
     </Container>
   );
 }

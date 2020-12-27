@@ -35,12 +35,38 @@ function Skills(props) {
           <Description>Para o frontend das minhas aplicações</Description>
         </Card>
 
+        <Card color="var(--lightOrange)">
+          <Icon>
+            <CodeSandboxOutlined />
+          </Icon>
+          <Lenguage>Vue</Lenguage>
+          <Description>Para o frontend das minhas aplicações</Description>
+        </Card>
+
         <Card color="var(--lightBlue)">
           <Icon>
             <CodeSandboxOutlined />
           </Icon>
           <Lenguage>Ruby e Ruby on Rails</Lenguage>
           <Description>Para o backend das minhas aplicações</Description>
+        </Card>
+
+        <Card color="var(--lightBlue)">
+          <Icon>
+            <CodeSandboxOutlined />
+          </Icon>
+          <Lenguage>Elixir e Phoenix</Lenguage>
+          <Description>Para o backend das minhas aplicações</Description>
+        </Card>
+
+        <Card color="var(--lightBlue)">
+          <Icon>
+            <CodeSandboxOutlined />
+          </Icon>
+          <Lenguage>Docker</Lenguage>
+          <Description>
+            Para executar minhas aplicações em ambientes virtuais
+          </Description>
         </Card>
       </Cards>
     </Container>
