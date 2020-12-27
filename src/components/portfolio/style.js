@@ -38,6 +38,7 @@ export const Button = styled.button`
   cursor: pointer;
   margin-bottom: 15px;
   border-radius: 20px;
+  outline: none;
 
   @media screen and (max-width: 600px) {
     width: 130px;

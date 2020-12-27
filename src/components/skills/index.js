@@ -2,6 +2,9 @@ import React from "react";
 import { CodeSandboxOutlined } from "@ant-design/icons";
 import { Container, Cards, Card, Icon, Lenguage, Description } from "./style";
 import TitleSection from "../title_section/index";
+import { themes } from "../../themes";
+
+const { lightPink, lightBrown, lightOrange, lightBlue } = themes.colors;
 
 const Skills = () => (
   <Container id="skills">
@@ -10,7 +13,7 @@ const Skills = () => (
       description="Conheça as principais tecnologias do meu dia a dia"
     />
     <Cards>
-      <Card color="var(--lightPink)">
+      <Card color={lightPink}>
         <Icon>
           <CodeSandboxOutlined />
         </Icon>
@@ -18,7 +21,7 @@ const Skills = () => (
         <Description>Para construção da estrutura das páginas</Description>
       </Card>
 
-      <Card color="var(--lightBrown)">
+      <Card color={lightBrown}>
         <Icon>
           <CodeSandboxOutlined />
         </Icon>
@@ -26,7 +29,7 @@ const Skills = () => (
         <Description>Para estilização das telas</Description>
       </Card>
 
-      <Card color="var(--lightOrange)">
+      <Card color={lightOrange}>
         <Icon>
           <CodeSandboxOutlined />
         </Icon>
@@ -34,7 +37,7 @@ const Skills = () => (
         <Description>Para o frontend das minhas aplicações</Description>
       </Card>
 
-      <Card color="var(--lightOrange)">
+      <Card color={lightOrange}>
         <Icon>
           <CodeSandboxOutlined />
         </Icon>
@@ -42,7 +45,7 @@ const Skills = () => (
         <Description>Para o frontend das minhas aplicações</Description>
       </Card>
 
-      <Card color="var(--lightBlue)">
+      <Card color={lightBlue}>
         <Icon>
           <CodeSandboxOutlined />
         </Icon>
@@ -50,7 +53,7 @@ const Skills = () => (
         <Description>Para o backend das minhas aplicações</Description>
       </Card>
 
-      <Card color="var(--lightBlue)">
+      <Card color={lightBlue}>
         <Icon>
           <CodeSandboxOutlined />
         </Icon>
@@ -58,7 +61,7 @@ const Skills = () => (
         <Description>Para o backend das minhas aplicações</Description>
       </Card>
 
-      <Card color="var(--lightBlue)">
+      <Card color={lightBlue}>
         <Icon>
           <CodeSandboxOutlined />
         </Icon>

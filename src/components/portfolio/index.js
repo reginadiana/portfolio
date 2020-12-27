@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "antd/dist/antd.css";
 import { Cards, Container, Options, Button } from "./style";
 
@@ -7,44 +7,33 @@ import ProjectsFrontend from "../projects_frontend/index";
 import ProjectsBackend from "../projects_backend/index";
 import Articles from "../articles/index";
 
+import { themes } from "../../themes";
+
+const { lightOrange, lightBlue } = themes.colors;
+
+const disable = {
+  status: false,
+  color: lightBlue,
+};
+
+const active = {
+  status: true,
+  color: lightOrange,
+};
+
+const defaultChoices = {
+  all: disable,
+  frontend: disable,
+  backend: disable,
+  articles: disable,
+};
+
 const Portfolio = () => {
-  const active = "var(--lightOrange)";
-  const default_color = "var(--lightBlue)";
+  const [choice, setChoice] = useState(defaultChoices);
 
-  const [showOption, setShowOption] = useState("all");
-  const [colorAll, setColorAll] = useState(active);
-  const [colorFront, setColorFront] = useState(default_color);
-  const [colorBack, setColorBack] = useState(default_color);
-  const [colorArticle, setColorArticle] = useState(default_color);
-
-  const resetColors = () => {
-    setColorFront(default_color);
-    setColorBack(default_color);
-    setColorArticle(default_color);
-    setColorAll(default_color);
-  };
-
-  const renderChoice = (choice) => {
-    setShowOption(choice);
-    resetColors();
-    changeColor(choice);
-  };
-
-  const changeColor = (choice) => {
-    switch (choice) {
-      case "frontend":
-        setColorFront(active);
-        break;
-      case "backend":
-        setColorBack(active);
-        break;
-      case "articles":
-        setColorArticle(active);
-        break;
-      default:
-        setColorAll(active);
-    }
-  };
+  useEffect(() => {
+    setChoice({ ...defaultChoices, all: active });
+  }, []);
 
   return (
     <Container id="portfolio">
@@ -53,27 +42,35 @@ const Portfolio = () => {
         description="Conheça o meu trabalho"
       />
       <Options>
-        <Button onClick={() => renderChoice("all")} color={colorAll}>
+        <Button
+          onClick={() => setChoice({ ...defaultChoices, all: active })}
+          color={choice.all.color}
+        >
           Todos
         </Button>
-        <Button onClick={() => renderChoice("frontend")} color={colorFront}>
+        <Button
+          onClick={() => setChoice({ ...defaultChoices, frontend: active })}
+          color={choice.frontend.color}
+        >
           Frontend
         </Button>
-        <Button onClick={() => renderChoice("backend")} color={colorBack}>
+        <Button
+          onClick={() => setChoice({ ...defaultChoices, backend: active })}
+          color={choice.backend.color}
+        >
           Backend
         </Button>
-        <Button onClick={() => renderChoice("articles")} color={colorArticle}>
+        <Button
+          onClick={() => setChoice({ ...defaultChoices, articles: active })}
+          color={choice.articles.color}
+        >
           Artigos
         </Button>
       </Options>
       <Cards>
-        {(showOption === "frontend" || showOption === "all") && (
-          <ProjectsFrontend />
-        )}
-        {(showOption === "backend" || showOption === "all") && (
-          <ProjectsBackend />
-        )}
-        {(showOption === "articles" || showOption === "all") && <Articles />}
+        {(choice.frontend.status || choice.all.status) && <ProjectsFrontend />}
+        {(choice.backend.status || choice.all.status) && <ProjectsBackend />}
+        {(choice.articles.status || choice.all.status) && <Articles />}
       </Cards>
     </Container>
   );
