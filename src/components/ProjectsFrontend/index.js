@@ -3,7 +3,7 @@ import WallpaperAmoPlantas from "../../assets/amo_plantas.png";
 import WallpaperEcommerce from "../../assets/ecommerce.png";
 import WallpaperCertificates from "../../assets/certificates_for_everyone.png";
 import { CERTIFICATE, AMOPLANTAS, ECOMMERCE } from "../../services/links";
-import { Img } from "../portfolio/style";
+import { Img } from "../Portfolio/style";
 
 const ProjectsFrontend = () => (
   <>

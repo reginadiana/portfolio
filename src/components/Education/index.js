@@ -1,6 +1,6 @@
 import React from "react";
 import { Cards, Card, Title, Info, Location, Date, Description } from "./style";
-import TitleSection from "../title_section/index";
+import TitleSection from "../TitleSection/index";
 import {
   ETEC,
   FATEC,

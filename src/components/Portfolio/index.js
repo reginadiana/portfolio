@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Cards, Container, Options, Button } from "./style";
 
-import TitleSection from "../title_section/index";
-import ProjectsFrontend from "../projects_frontend/index";
-import ProjectsBackend from "../projects_backend/index";
-import Articles from "../articles/index";
+import TitleSection from "../TitleSection/index";
+import ProjectsFrontend from "../ProjectsFrontend/index";
+import ProjectsBackend from "../ProjectsBackend/index";
+import Articles from "../Articles/index";
+import Lives from "../Lives/index";
 
 import { themes } from "../../themes";
 
@@ -25,6 +26,7 @@ const defaultChoices = {
   frontend: disable,
   backend: disable,
   articles: disable,
+  lives: disable,
 };
 
 const Portfolio = () => {
@@ -65,11 +67,18 @@ const Portfolio = () => {
         >
           Artigos
         </Button>
+        <Button
+          onClick={() => setChoice({ ...defaultChoices, lives: active })}
+          color={choice.lives.color}
+        >
+          Lives
+        </Button>
       </Options>
       <Cards>
         {(choice.frontend.status || choice.all.status) && <ProjectsFrontend />}
         {(choice.backend.status || choice.all.status) && <ProjectsBackend />}
         {(choice.articles.status || choice.all.status) && <Articles />}
+        {(choice.lives.status || choice.all.status) && <Lives />}
       </Cards>
     </Container>
   );

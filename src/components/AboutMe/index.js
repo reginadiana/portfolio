@@ -1,6 +1,6 @@
 import React from "react";
 import { Wrapper, Paragraphy, Img } from "./style";
-import TitleSection from "../title_section/index";
+import TitleSection from "../TitleSection/index";
 import AboutMeImg from "../../assets/me.jpeg";
 import AboutWebsite from "../../assets/about_site.jpeg";
 

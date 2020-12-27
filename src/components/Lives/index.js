@@ -1,5 +1,5 @@
 import React from "react";
-import { Img } from "../portfolio/style";
+import { Img } from "../Portfolio/style";
 import WallpaperHeadhunters from "../../assets/headhunter.png";
 import WallpaperRentalCars from "../../assets/rental_cars.png";
 import { HEADHUNTERS, RENTALCARS } from "../../services/links";

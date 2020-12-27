@@ -2,7 +2,7 @@ import React from "react";
 import WallpaperReadme from "../../assets/readme.jpeg";
 import WallpaperMindex from "../../assets/mindfex.jpeg";
 import { MINDFLEX, README } from "../../services/links";
-import { Img } from "../portfolio/style";
+import { Img } from "../Portfolio/style";
 
 const Articles = () => {
   return (

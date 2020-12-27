@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Paragraphy = styled.p`
-  margin: 0 auto 50px auto;
+  margin: 0 auto 50px;
   text-align: justify;
   width: 80%;
   font-size: 1rem;

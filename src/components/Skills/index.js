@@ -1,7 +1,7 @@
 import React from "react";
 import { CodeSandboxOutlined } from "@ant-design/icons";
 import { Container, Cards, Card, Icon, Lenguage, Description } from "./style";
-import TitleSection from "../title_section/index";
+import TitleSection from "../TitleSection/index";
 import { themes } from "../../themes";
 
 const {
