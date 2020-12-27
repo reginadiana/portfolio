@@ -1,33 +1,36 @@
 {
   "files": {
-    "main.css": "/static/css/main.0918c3a6.chunk.css",
-    "main.js": "/static/js/main.867b56f6.chunk.js",
-    "main.js.map": "/static/js/main.867b56f6.chunk.js.map",
+    "main.css": "/static/css/main.d9df74ee.chunk.css",
+    "main.js": "/static/js/main.9829b6f6.chunk.js",
+    "main.js.map": "/static/js/main.9829b6f6.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.7daa6418.js",
     "runtime-main.js.map": "/static/js/runtime-main.7daa6418.js.map",
     "static/css/2.63b65d4e.chunk.css": "/static/css/2.63b65d4e.chunk.css",
-    "static/js/2.00587b03.chunk.js": "/static/js/2.00587b03.chunk.js",
-    "static/js/2.00587b03.chunk.js.map": "/static/js/2.00587b03.chunk.js.map",
+    "static/js/2.92f35afb.chunk.js": "/static/js/2.92f35afb.chunk.js",
+    "static/js/2.92f35afb.chunk.js.map": "/static/js/2.92f35afb.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.aa23553f3f447370d13fc4a44cad3107.js": "/precache-manifest.aa23553f3f447370d13fc4a44cad3107.js",
+    "precache-manifest.57026b0560bc1d167fc07503f2706ab8.js": "/precache-manifest.57026b0560bc1d167fc07503f2706ab8.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.63b65d4e.chunk.css.map": "/static/css/2.63b65d4e.chunk.css.map",
-    "static/css/main.0918c3a6.chunk.css.map": "/static/css/main.0918c3a6.chunk.css.map",
-    "static/js/2.00587b03.chunk.js.LICENSE.txt": "/static/js/2.00587b03.chunk.js.LICENSE.txt",
+    "static/css/main.d9df74ee.chunk.css.map": "/static/css/main.d9df74ee.chunk.css.map",
+    "static/js/2.92f35afb.chunk.js.LICENSE.txt": "/static/js/2.92f35afb.chunk.js.LICENSE.txt",
     "static/media/amo_plantas.png": "/static/media/amo_plantas.b6bcb72f.png",
     "static/media/certificates_for_everyone.png": "/static/media/certificates_for_everyone.668d4409.png",
+    "static/media/document.pdf": "/static/media/document.7f8323e5.pdf",
     "static/media/ecommerce.png": "/static/media/ecommerce.09b641b6.png",
     "static/media/headhunter.png": "/static/media/headhunter.cabf6adc.png",
+    "static/media/me.jpeg": "/static/media/me.a9e5615d.jpeg",
+    "static/media/mindfex.jpeg": "/static/media/mindfex.1e1a75e5.jpeg",
+    "static/media/readme.jpeg": "/static/media/readme.7ec5c0b0.jpeg",
     "static/media/rental_cars.png": "/static/media/rental_cars.1d1d6780.png",
-    "static/media/skills.png": "/static/media/skills.60150901.png",
-    "static/media/sobre_mim.png": "/static/media/sobre_mim.0392dbdb.png",
-    "static/media/wallpaper.jpg": "/static/media/wallpaper.1bc911c0.jpg"
+    "static/media/site.jpeg": "/static/media/site.e88ec7b4.jpeg",
+    "static/media/wallpaper.jpg": "/static/media/wallpaper.b07f85c6.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.7daa6418.js",
     "static/css/2.63b65d4e.chunk.css",
-    "static/js/2.00587b03.chunk.js",
-    "static/css/main.0918c3a6.chunk.css",
-    "static/js/main.867b56f6.chunk.js"
+    "static/js/2.92f35afb.chunk.js",
+    "static/css/main.d9df74ee.chunk.css",
+    "static/js/main.9829b6f6.chunk.js"
   ]
 }

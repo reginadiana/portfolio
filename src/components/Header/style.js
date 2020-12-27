@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import wallpaper from "../../assets/wallpaper.jpg";
+import wallpaper from "../../assets/header/wallpaper.jpg";
 import { themes } from "../../themes";
 
 const { lightBrown, lightGray, lightOrange, lightBlue } = themes.colors;

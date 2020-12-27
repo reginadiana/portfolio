@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 import { Cards, Container, Options, Button } from "./style";
 
 import TitleSection from "../TitleSection/index";
-import ProjectsFrontend from "../ProjectsFrontend/index";
-import ProjectsBackend from "../ProjectsBackend/index";
-import Articles from "../Articles/index";
-import Lives from "../Lives/index";
+import ProjectsFrontend from "./ProjectsFrontend/index";
+import ProjectsBackend from "./ProjectsBackend/index";
+import Articles from "./Articles/index";
+import Lives from "./Lives/index";
 
 import { themes } from "../../themes";
 

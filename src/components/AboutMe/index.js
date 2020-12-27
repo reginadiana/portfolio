@@ -1,8 +1,8 @@
 import React from "react";
 import { Wrapper, Paragraphy, Img } from "./style";
 import TitleSection from "../TitleSection/index";
-import AboutMeImg from "../../assets/me.jpeg";
-import AboutWebsite from "../../assets/about_site.jpeg";
+import AboutMeImg from "../../assets/about/me.jpeg";
+import AboutWebsite from "../../assets/about/site.jpeg";
 
 const AboutMe = () => (
   <Wrapper id="about_me">
