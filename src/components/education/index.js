@@ -1,7 +1,13 @@
 import React from "react";
 import { Cards, Card, Title, Info, Location, Date, Description } from "./style";
 import TitleSection from "../title_section/index";
-import { ETEC, FATEC, WOMAKERSCODE, CAMPUS, REBASE } from "../../links";
+import {
+  ETEC,
+  FATEC,
+  WOMAKERSCODE,
+  CAMPUS,
+  REBASE,
+} from "../../services/links";
 
 const Education = () => (
   <div>

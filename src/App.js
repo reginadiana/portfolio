@@ -1,5 +1,4 @@
 import React from "react";
-import { Main } from "./style";
 import "./App.css";
 import Header from "./components/header/index";
 import AboutMe from "./components/about_me/index";
@@ -23,20 +22,18 @@ i18next.init({
   resources,
 });
 
-function App({ t }) {
-  return (
-    <Main id="main">
-      <I18nextProvider i18n={i18next}>
-        <Header />
-        <AboutMe />
-        <Portfolio />
-        <Education />
-        <Skills />
-        <Contact />
-        <Footer />
-      </I18nextProvider>
-    </Main>
-  );
-}
+const App = ({ t }) => (
+  <div id="main">
+    <I18nextProvider i18n={i18next}>
+      <Header />
+      <AboutMe />
+      <Portfolio />
+      <Education />
+      <Skills />
+      <Contact />
+      <Footer />
+    </I18nextProvider>
+  </div>
+);
 
 export default withTranslation()(App);

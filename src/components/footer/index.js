@@ -9,7 +9,7 @@ import {
   UpCircleFilled,
 } from "@ant-design/icons";
 import { Container, IconToUp, Logo, Title, Icons, Icon } from "./style";
-import { GITHUB, MEDIUM, LINKEDIN, DEV, INSTAGRAM } from "../../links";
+import { GITHUB, MEDIUM, LINKEDIN, DEV, INSTAGRAM } from "../../services/links";
 
 const Footer = () => (
   <Container id="contatos">
