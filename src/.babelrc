@@ -1,0 +1,10 @@
+{
+  "plugins": [
+    ["babel-plugin-module-resolver", {
+      "alias": {
+        "root": ["./src"],
+        "@themes": "./src/themes"
+      }
+    }]
+  ]
+}

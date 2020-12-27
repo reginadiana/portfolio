@@ -7,33 +7,20 @@ import ProjectsBackend from "./ProjectsBackend/index";
 import Articles from "./Articles/index";
 import Lives from "./Lives/index";
 
-import { themes } from "../../themes";
-
-const { lightOrange, lightBlue } = themes.colors;
-
-const disable = {
-  status: false,
-  color: lightBlue,
-};
-
-const active = {
-  status: true,
-  color: lightOrange,
-};
-
 const defaultChoices = {
-  all: disable,
-  frontend: disable,
-  backend: disable,
-  articles: disable,
-  lives: disable,
+  all: false,
+  frontend: false,
+  backend: false,
+  articles: false,
+  lives: false,
 };
 
 const Portfolio = () => {
   const [choice, setChoice] = useState(defaultChoices);
+  const active = true;
 
   useEffect(() => {
-    setChoice({ ...defaultChoices, all: active });
+    setChoice({ ...defaultChoices, all: true });
   }, []);
 
   return (
@@ -45,40 +32,40 @@ const Portfolio = () => {
       <Options>
         <Button
           onClick={() => setChoice({ ...defaultChoices, all: active })}
-          color={choice.all.color}
+          active={choice.all}
         >
           Todos
         </Button>
         <Button
           onClick={() => setChoice({ ...defaultChoices, frontend: active })}
-          color={choice.frontend.color}
+          active={choice.frontend}
         >
           Frontend
         </Button>
         <Button
           onClick={() => setChoice({ ...defaultChoices, backend: active })}
-          color={choice.backend.color}
+          active={choice.backend}
         >
           Backend
         </Button>
         <Button
           onClick={() => setChoice({ ...defaultChoices, articles: active })}
-          color={choice.articles.color}
+          active={choice.articles}
         >
           Artigos
         </Button>
         <Button
           onClick={() => setChoice({ ...defaultChoices, lives: active })}
-          color={choice.lives.color}
+          active={choice.lives}
         >
           Lives
         </Button>
       </Options>
       <Cards>
-        {(choice.frontend.status || choice.all.status) && <ProjectsFrontend />}
-        {(choice.backend.status || choice.all.status) && <ProjectsBackend />}
-        {(choice.articles.status || choice.all.status) && <Articles />}
-        {(choice.lives.status || choice.all.status) && <Lives />}
+        {(choice.frontend || choice.all) && <ProjectsFrontend />}
+        {(choice.backend || choice.all) && <ProjectsBackend />}
+        {(choice.articles || choice.all) && <Articles />}
+        {(choice.lives || choice.all) && <Lives />}
       </Cards>
     </Container>
   );

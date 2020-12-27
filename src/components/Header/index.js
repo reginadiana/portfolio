@@ -20,6 +20,7 @@ const Header = () => (
       <List>
         <ItemList href="#about_me">About Me</ItemList>
         <ItemList href="#portfolio">Portfólio</ItemList>
+        <ItemList href="#education">Formação</ItemList>
         <ItemList href="#skills">Skills</ItemList>
         <ItemList href="#contatos">Contatos</ItemList>
       </List>

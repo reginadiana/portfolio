@@ -8,6 +8,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "antd": "^4.2.5",
+    "eslint-import-resolver-babel-module": "^5.2.0",
     "i18next": "^19.8.4",
     "i18next-browser-languagedetector": "^6.0.1",
     "i18next-http-backend": "^1.0.21",
@@ -41,6 +42,7 @@
     ]
   },
   "devDependencies": {
+    "babel-plugin-module-resolver": "^4.1.0",
     "netlify-lambda": "^1.4.5"
   }
 }

@@ -1,16 +1,10 @@
 import React from "react";
 import { Cards, Card, Title, Info, Location, Date, Description } from "./style";
 import TitleSection from "../TitleSection/index";
-import {
-  ETEC,
-  FATEC,
-  WOMAKERSCODE,
-  CAMPUS,
-  REBASE,
-} from "../../services/links";
+import { profissional } from "../../services/links";
 
 const Education = () => (
-  <div>
+  <div id="education">
     <TitleSection
       title="Formação e Bootcamps"
       description="Sabia onde estudei e os bootcamps que participei"
@@ -20,7 +14,7 @@ const Education = () => (
         <Info>
           <div>
             <Title>Técnico em Eletrônica</Title>
-            <Location href={ETEC}>ETEC Julio de Mesquita</Location>
+            <Location href={profissional.etec}>ETEC Julio de Mesquita</Location>
           </div>
           <Date>2016 | 2017</Date>
         </Info>
@@ -35,7 +29,7 @@ const Education = () => (
         <Info>
           <div>
             <Title>Tecnologia em Mecatrônica Industrial</Title>
-            <Location href={FATEC}>FATEC Santo André</Location>
+            <Location href={profissional.fatec}>FATEC Santo André</Location>
           </div>
           <Date>2017 | 2019</Date>
         </Info>
@@ -49,7 +43,7 @@ const Education = () => (
         <Info>
           <div>
             <Title>Estágio em Eletrônica</Title>
-            <Location href={ETEC}>ETEC Julio de Mesquita</Location>
+            <Location href={profissional.etec}>ETEC Julio de Mesquita</Location>
           </div>
           <Date>2018</Date>
         </Info>
@@ -64,7 +58,7 @@ const Education = () => (
         <Info>
           <div>
             <Title>Monitorias de linguagem C</Title>
-            <Location href={FATEC}>FATEC Santo André</Location>
+            <Location href={profissional.fatec}>FATEC Santo André</Location>
           </div>
           <Date>2019</Date>
         </Info>
@@ -79,7 +73,7 @@ const Education = () => (
         <Info>
           <div>
             <Title>Bootcamp de React</Title>
-            <Location href={WOMAKERSCODE}>WoMakersCode</Location>
+            <Location href={profissional.womakerscode}>WoMakersCode</Location>
           </div>
           <Date>Abril | 2020</Date>
         </Info>
@@ -92,7 +86,7 @@ const Education = () => (
         <Info>
           <div>
             <Title>Treina Dev</Title>
-            <Location href={CAMPUS}>Campus Code</Location>
+            <Location href={profissional.campus}>Campus Code</Location>
           </div>
           <Date>Julho | 2020</Date>
         </Info>
@@ -106,7 +100,7 @@ const Education = () => (
         <Info>
           <div>
             <Title>Desenvolvedora</Title>
-            <Location href={REBASE}>Rebase</Location>
+            <Location href={profissional.rebase}>Rebase</Location>
           </div>
           <Date>2020</Date>
         </Info>

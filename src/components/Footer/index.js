@@ -9,7 +9,7 @@ import {
   UpCircleFilled,
 } from "@ant-design/icons";
 import { Container, IconToUp, Logo, Title, Icons, Icon } from "./style";
-import { GITHUB, MEDIUM, LINKEDIN, DEV, INSTAGRAM } from "../../services/links";
+import { socialMedia } from "../../services/links";
 
 const Footer = () => (
   <Container id="contatos">
@@ -19,19 +19,19 @@ const Footer = () => (
     <Logo>DR</Logo>
     <Title>Follow Me</Title>
     <Icons>
-      <Icon href={GITHUB}>
+      <Icon href={socialMedia.github}>
         <GithubOutlined />
       </Icon>
-      <Icon href={LINKEDIN}>
+      <Icon href={socialMedia.linkedin}>
         <LinkedinOutlined />
       </Icon>
-      <Icon href={MEDIUM}>
+      <Icon href={socialMedia.medium}>
         <MediumOutlined />
       </Icon>
-      <Icon href={INSTAGRAM}>
+      <Icon href={socialMedia.instagram}>
         <InstagramOutlined />
       </Icon>
-      <Icon href={DEV}>
+      <Icon href={socialMedia.dev}>
         <BookOutlined />
       </Icon>
     </Icons>
