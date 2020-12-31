@@ -5,6 +5,7 @@ import AboutMe from "./components/AboutMe/index";
 import Skills from "./components/Skills/index";
 import Education from "./components/Education/index";
 import Portfolio from "./components/Portfolio/index";
+import Others from "./components/Others/index";
 import Contact from "./components/Contact/index";
 import Footer from "./components/Footer/index";
 import { I18nextProvider } from "react-i18next";
@@ -38,6 +39,7 @@ const App = () => {
           <Header />
           <AboutMe />
           <Portfolio />
+          <Others />
           <Education />
           <Skills />
           <Contact />

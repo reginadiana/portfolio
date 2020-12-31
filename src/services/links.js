@@ -147,4 +147,26 @@ export const portfolio = {
       ],
     },
   },
+  certificates: {
+    introduction_web: {
+      title: "Readme - A Live",
+      description:
+        "Plataforma para gerar certificados em PDF para participantes de eventos",
+      github:
+        "https://github.com/React-Bootcamp-WoMarkersCode/certificate-generator",
+      deploy: "https://certificates-for-everyone-womakerscode.netlify.app/",
+      techs: [
+        "html",
+        "css",
+        "js",
+        "react",
+        "react pdf",
+        "react router",
+        "antd design",
+        "reactjs popup",
+        "react signature canvas",
+        "react spinkit",
+      ],
+    },
+  },
 };

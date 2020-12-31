@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { themes } from "../../themes";
 
-const { lightGray, lightOrange, lightBlue } = themes.colors;
+const { lightGray, lightOrange } = themes.colors;
 
 export const Container = styled.div`
   background-color: ${lightGray};
@@ -12,7 +12,6 @@ export const Container = styled.div`
 
 export const Options = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
 
   @media screen and (max-width: 600px) {
@@ -22,13 +21,19 @@ export const Options = styled.div`
 
 export const Button = styled.button`
   width: 130px;
-  background-color: ${({ active }) => (active ? lightOrange : lightBlue)};
+  background-color: transparent;
   border-color: transparent;
-  color: white;
+  color: ${({ active }) => active && lightOrange};
   cursor: pointer;
   margin: 0 15px 40px;
   border-radius: 20px;
   outline: none;
+
+  &:hover {
+    background-color: ${lightOrange};
+    color: white;
+    transition: 1s;
+  }
 
   @media screen and (max-width: 600px) {
     width: 130px;
@@ -38,9 +43,11 @@ export const Button = styled.button`
 
 export const Cards = styled.div`
   text-align: center;
+
   /*Desktop*/
   @media screen and (min-width: 1500px) {
     width: 70%;
+    text-align: left;
     margin: auto;
   }
 `;

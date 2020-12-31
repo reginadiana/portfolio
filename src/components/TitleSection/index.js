@@ -1,11 +1,10 @@
 import React from "react";
 import * as Styled from "./style";
 
-const TitleSection = ({ title, description }) => (
+const TitleSection = ({ title }) => (
   <div>
     <Styled.Title>{title}</Styled.Title>
     <Styled.Line />
-    <Styled.Text>{description}</Styled.Text>
   </div>
 );
 

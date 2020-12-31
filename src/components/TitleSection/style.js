@@ -26,6 +26,7 @@ export const Line = styled.h2`
   width: 300px;
   height: 2px;
   background: ${lightOrange};
+  margin-bottom: 40px;
 
   &::after {
     content: "";
@@ -45,13 +46,4 @@ export const Line = styled.h2`
       display: none;
     }
   }
-`;
-
-export const Text = styled.h4`
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 70px;
-  font-size: 1rem;
-  padding: 10px;
-  line-height: 30px;
 `;

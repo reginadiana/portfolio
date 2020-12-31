@@ -3,7 +3,7 @@ import WallpaperAmoPlantas from "../../../assets/portfolio/frontend/amo_plantas.
 import WallpaperEcommerce from "../../../assets/portfolio/frontend/ecommerce.png";
 import WallpaperCertificates from "../../../assets/portfolio/frontend/certificates_for_everyone.png";
 import { portfolio } from "../../../services/links";
-import Card from "../Card/index";
+import Card from "../../../common/Card/index";
 
 const ProjectsFrontend = () => (
   <>

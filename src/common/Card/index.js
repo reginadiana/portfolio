@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Img } from "../../Portfolio/style";
+import { Img } from "../../components/Portfolio/style";
 import { Modal, Button } from "antd";
 import * as Styled from "./style";
-import { themes } from "../../../themes";
+import { themes } from "../../themes";
 
 const Card = ({ project, src, alt }) => {
   const [isModalVisible, setIsModalVisible] = useState(false);

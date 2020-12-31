@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../Card/index";
+import Card from "../../../common/Card/index";
 import WallpaperReadme from "../../../assets/portfolio/lives/readme.jpeg";
 import WallpaperTreinaDev from "../../../assets/portfolio/lives/treina.jpeg";
 import { portfolio } from "../../../services/links";

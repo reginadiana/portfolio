@@ -2,7 +2,7 @@ import React from "react";
 import WallpaperReadme from "../../../assets/portfolio/articles/readme.jpeg";
 import WallpaperMindex from "../../../assets/portfolio/articles/mindfex.jpeg";
 import { portfolio } from "../../../services/links";
-import Card from "../Card/index.js";
+import Card from "../../../common/Card/index";
 
 const Articles = () => (
   <>

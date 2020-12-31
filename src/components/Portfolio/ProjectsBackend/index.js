@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../Card/index";
+import Card from "../../../common/Card/index";
 import WallpaperHeadhunters from "../../../assets/portfolio/backend/headhunter.png";
 import WallpaperRentalCars from "../../../assets/portfolio/backend/rental_cars.png";
 import { portfolio } from "../../../services/links";
