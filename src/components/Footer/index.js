@@ -18,7 +18,7 @@ const Footer = () => (
     </Styled.IconToUp>
 
     <Styled.Logo>DR</Styled.Logo>
-    <Styled.Title>Follow Me</Styled.Title>
+    <Styled.Title>Redes Sociais</Styled.Title>
 
     <Styled.Icons>
       <Styled.Icon href={socialMedia.github}>

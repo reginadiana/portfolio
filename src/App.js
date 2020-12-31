@@ -11,6 +11,7 @@ import { I18nextProvider } from "react-i18next";
 import i18next from "i18next";
 import { withTranslation } from "react-i18next";
 import pt from "./locales/en/translation.json";
+import Spinner from "./components/Spinner/index";
 
 const resources = {
   pt: {
@@ -24,7 +25,8 @@ i18next.init({
 
 const App = ({ t }) => (
   <div id="main">
-    <I18nextProvider i18n={i18next}>
+    <Spinner />
+    {/* <I18nextProvider i18n={i18next}>
       <Header />
       <AboutMe />
       <Portfolio />
@@ -32,7 +34,7 @@ const App = ({ t }) => (
       <Skills />
       <Contact />
       <Footer />
-    </I18nextProvider>
+    </I18nextProvider> */}
   </div>
 );
 
