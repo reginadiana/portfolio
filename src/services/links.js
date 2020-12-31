@@ -18,8 +18,15 @@ export const profissional = {
 
 export const portfolio = {
   frontend: {
-    certificate:
-      "https://github.com/React-Bootcamp-WoMarkersCode/certificate-generator",
+    certificate: {
+      github:
+        "https://github.com/React-Bootcamp-WoMarkersCode/certificate-generator",
+      title: "Certificates for Everyone",
+      description:
+        "Plataforma para gerar certificados em PDF para participantes de eventos",
+      deploy: "https://certificates-for-everyone-womakerscode.netlify.app/",
+      techs: ["html", "css", "javascript", "react"],
+    },
     amoPlantas:
       "https://github.com/Diana-ops/projects-of-selective-process/tree/master/red-venturess",
     ecommerce:
@@ -35,8 +42,11 @@ export const portfolio = {
       "https://dev.to/reginadiana/como-ler-sinais-cerebrais-com-mindlfex-e-arduino-1o8l",
     readme:
       "https://dev.to/reginadiana/como-escrever-um-readme-md-sensacional-no-github-4509",
-    arduino:
-      "https://dev.to/reginadiana/como-fazer-um-pisca-pisca-com-led-e-arduinouno-thinker-card-2p5d",
+    arduino: {
+      link:
+        "https://dev.to/reginadiana/como-fazer-um-pisca-pisca-com-led-e-arduinouno-thinker-card-2p5d",
+      giff: "https://media.giphy.com/media/26u49Th00gLm5bGus/giphy.gif",
+    },
   },
   lives: {
     readme: "https://www.youtube.com/watch?v=2A_ebBA3jzM&t=32s",

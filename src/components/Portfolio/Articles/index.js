@@ -16,6 +16,12 @@ const Articles = () => (
       src={WallpaperMindex}
       alt="Artigo Mindlex"
     />
+
+    <Card
+      redirect={portfolio.articles.arduino.link}
+      src={portfolio.articles.arduino.giff}
+      alt="Artigo Arduino"
+    />
   </>
 );
 

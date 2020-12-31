@@ -38,7 +38,6 @@ export const Button = styled.button`
 
 export const Cards = styled.div`
   text-align: center;
-
   /*Desktop*/
   @media screen and (min-width: 1500px) {
     width: 70%;
@@ -50,12 +49,13 @@ export const Img = styled.img`
   width: 350px;
   margin: 20px;
   border-radius: 5px;
-  opacity: 0.4;
+  opacity: 1;
   transition: 0.5s ease;
   backface-visibility: hidden;
+  cursor: pointer;
 
   &:hover {
-    opacity: 1;
+    opacity: 0.4;
   }
 
   @media screen and (max-width: 400px) {
