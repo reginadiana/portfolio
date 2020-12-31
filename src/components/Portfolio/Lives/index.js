@@ -7,12 +7,12 @@ import { portfolio } from "../../../services/links";
 const Lives = () => (
   <>
     <Card
-      redirect={portfolio.readme}
+      project={portfolio.lives.readme}
       src={WallpaperReadme}
       alt="Live sobre Readme"
     />
     <Card
-      redirect={portfolio.treinaDev}
+      project={portfolio.lives.treinaDev}
       src={WallpaperTreinaDev}
       alt="Live sobre Treina Dev"
     />

@@ -7,19 +7,19 @@ import Card from "../Card/index.js";
 const Articles = () => (
   <>
     <Card
-      redirect={portfolio.articles.readme}
+      project={portfolio.articles.readme}
       src={WallpaperReadme}
       alt="Artigo Readme"
     />
     <Card
-      redirect={portfolio.articles.mindflex}
+      project={portfolio.articles.mindlex}
       src={WallpaperMindex}
       alt="Artigo Mindlex"
     />
 
     <Card
-      redirect={portfolio.articles.arduino.link}
-      src={portfolio.articles.arduino.giff}
+      project={portfolio.articles.arduino}
+      src={WallpaperMindex}
       alt="Artigo Arduino"
     />
   </>

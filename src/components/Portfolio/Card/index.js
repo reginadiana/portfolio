@@ -4,8 +4,10 @@ import { Modal, Button } from "antd";
 import * as Styled from "./style";
 import { themes } from "../../../themes";
 
-const Card = ({ redirect, src, alt }) => {
+const Card = ({ project, src, alt }) => {
   const [isModalVisible, setIsModalVisible] = useState(false);
+
+  console.log(project.title);
 
   const showModal = () => {
     setIsModalVisible(true);
@@ -15,54 +17,37 @@ const Card = ({ redirect, src, alt }) => {
     setIsModalVisible(false);
   };
 
-  const handleRedirect = ({ path }) => {
+  const handleRedirect = (path) => {
     setIsModalVisible(false);
 
-    if (path === "github")
-      return (window.location.href =
-        "https://github.com/React-Bootcamp-WoMarkersCode/certificate-generator");
-
-    if (path === "deploy")
-      return (window.location.href =
-        "https://certificates-for-everyone-womakerscode.netlify.app/");
+    window.location.href = path;
   };
 
   return (
     <>
       <Modal
-        title={"Certificates for Everyone"}
+        title={project.title}
         visible={isModalVisible}
         onCancel={handleCancel}
         footer={[
-          <Button danger onClick={() => handleRedirect({ path: "github" })}>
+          <Button danger onClick={() => handleRedirect(project.github)}>
             Ver no Gihub
           </Button>,
           <Button
             type="primary"
             danger
-            onClick={() => handleRedirect({ path: "deploy" })}
+            disabled={!project.deploy}
+            onClick={() => handleRedirect(project.deploy)}
           >
             Deploy
           </Button>,
         ]}
       >
-        <Styled.Description>
-          Uma plataforma para gerar certificados em PDF para participantes de
-          eventos
-        </Styled.Description>
+        <Styled.Description>{project.description}</Styled.Description>
         <Styled.Tags>
-          <Styled.Tag color={themes.colors.orange}>html</Styled.Tag>
-          <Styled.Tag color={themes.colors.orange}>css</Styled.Tag>
-          <Styled.Tag color={themes.colors.orange}>javascript</Styled.Tag>
-          <Styled.Tag color={themes.colors.orange}>react</Styled.Tag>
-          <Styled.Tag color={themes.colors.orange}>react pdf</Styled.Tag>
-          <Styled.Tag color={themes.colors.orange}>react router</Styled.Tag>
-          <Styled.Tag color={themes.colors.orange}>antdesign</Styled.Tag>
-          <Styled.Tag color={themes.colors.orange}>reactjs popup</Styled.Tag>
-          <Styled.Tag color={themes.colors.orange}>
-            react signature canvas
-          </Styled.Tag>
-          <Styled.Tag color={themes.colors.orange}>react spinkit</Styled.Tag>
+          {project.techs.map((tech) => (
+            <Styled.Tag color={themes.colors.orange}>{tech}</Styled.Tag>
+          ))}
         </Styled.Tags>
       </Modal>
       <Img alt={alt} src={src} onClick={showModal} />

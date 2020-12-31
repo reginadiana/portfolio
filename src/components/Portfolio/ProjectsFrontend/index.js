@@ -8,17 +8,17 @@ import Card from "../Card/index";
 const ProjectsFrontend = () => (
   <>
     <Card
-      redirect={portfolio.frontend.certificate}
+      project={portfolio.frontend.certificate}
       src={WallpaperCertificates}
       alt="Certificates for Eveyone"
     />
     <Card
-      redirect={portfolio.frontend.amoPlantas}
+      project={portfolio.frontend.amoPlantas}
       src={WallpaperAmoPlantas}
       alt="Amo Plantas"
     />
     <Card
-      redirect={portfolio.frontend.ecommerce}
+      project={portfolio.frontend.ecommerce}
       src={WallpaperEcommerce}
       alt="Ecommerce"
     />
