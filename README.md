@@ -32,6 +32,12 @@
   Esta é uma aplicação frontend para o meu site pessoal, mostrando informações do meu currículo como skills, formação e projetos de forma criativa e divertida. 
 </p>
 
+## Descrição de termos
+
+**Tags em azul:** linguagens
+**Tags em verde:** frameworks
+**Tags em laranja:** dependencias e/ou libs
+
 ## Funcionalidades
 
 :heavy_check_mark: Layout Responsívo 
