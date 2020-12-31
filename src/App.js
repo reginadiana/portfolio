@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Header from "./components/Header/index";
 import AboutMe from "./components/AboutMe/index";
@@ -23,19 +23,29 @@ i18next.init({
   resources,
 });
 
-const App = ({ t }) => (
-  <div id="main">
-    <Spinner />
-    {/* <I18nextProvider i18n={i18next}>
-      <Header />
-      <AboutMe />
-      <Portfolio />
-      <Education />
-      <Skills />
-      <Contact />
-      <Footer />
-    </I18nextProvider> */}
-  </div>
-);
+const App = () => {
+  const [loading, setLoading] = useState(true);
+  let timeToLoader = 1000; /* milliseconds */
+
+  setTimeout(() => setLoading(false), timeToLoader);
+
+  return (
+    <div id="main">
+      {loading ? (
+        <Spinner />
+      ) : (
+        <I18nextProvider i18n={i18next}>
+          <Header />
+          <AboutMe />
+          <Portfolio />
+          <Education />
+          <Skills />
+          <Contact />
+          <Footer />
+        </I18nextProvider>
+      )}
+    </div>
+  );
+};
 
 export default withTranslation()(App);
