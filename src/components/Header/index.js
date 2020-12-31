@@ -15,8 +15,8 @@ const Header = () => (
       </Styled.List>
     </Styled.Menu>
     <Styled.Main>
-      <Styled.Title>Diana Regina</Styled.Title>
-      <Styled.Subtitle>Web Developer</Styled.Subtitle>
+      <Styled.Title>Hello. Diana</Styled.Title>
+      <Styled.Subtitle>Software Developer - Frontend</Styled.Subtitle>
       <Styled.Download>
         <Styled.Link href={pdf}>Ver Curriculo (PDF)</Styled.Link>
       </Styled.Download>

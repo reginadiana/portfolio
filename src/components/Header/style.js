@@ -10,25 +10,26 @@ export const Container = styled.div`
   background-size: cover;
   text-align: center;
   height: 800px;
-  box-shadow: 10px 10px 25px ${lightBrown};
+  /*box-shadow: 10px 10px 25px ${lightBrown};*/
 `;
 
 export const Menu = styled.div`
   padding-top: 30px;
-  background-color: ${lightGray};
-  color: white;
+  background-color: transparent;
+  /* background-color: ${lightGray}; */
+  /*color: white;*/
 
   /*Desktop*/
   @media screen and (min-width: 1100px) {
     display: flex;
     padding: 0;
     justify-content: center;
-    box-shadow: 10px 10px 25px gray;
+    /* box-shadow: 10px 10px 25px gray; */
   }
 `;
 export const Logo = styled.h2`
   color: ${lightBlue};
-  border: 4px ${lightOrange} solid;
+  border: 3px ${lightOrange} solid;
   padding: 5px;
   width: 60px;
   margin: auto;
@@ -57,6 +58,7 @@ export const ItemList = styled.a`
   font-size: 1rem;
   text-align: left;
   padding-left: 40px;
+  padding-bottom: 10px;
   width: 150px;
   margin-bottom: 10px;
   cursor: pointer;
@@ -67,37 +69,42 @@ export const ItemList = styled.a`
   }
 
   &:first-child {
-    color: ${lightOrange};
-    font-weight: bold;
+    border-bottom: 3px ${lightOrange} solid;
+    /* color: ${lightOrange};
+    font-weight: bold; */
   }
 `;
 export const Main = styled.div`
-  width: 380px;
-  margin: auto;
+  /* width: 380px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   @media screen and (min-width: 1100px) {
-    width: 800px;
+    /* width: 800px; */
     margin-top: 80px;
-    text-align: left;
-    margin-left: 20%;
+    /* text-align: left; */
+    /* margin-left: 20%; */
   }
 
-  @media screen and (max-width: 500px) {
+  /* @media screen and (max-width: 500px) {
     width: 280px;
-  }
+  } */
 `;
 
 export const Title = styled.h1`
   letter-spacing: 3px;
-  font-weight: bold;
-  color: white;
-  text-align: center;
-  margin: auto;
+  font-weight: 300;
+  font-size: 2rem;
+  /*color: white;*/
+  /* text-align: center;
+  margin: auto; */
 
-  &:first-letter {
+  /* &:first-letter {
     font-size: 2.5rem;
     color: ${lightOrange};
-  }
+  } */
 
   &:nth-child(6)::letter {
     color: white;
@@ -106,45 +113,45 @@ export const Title = styled.h1`
   /*Desktop*/
   @media screen and (min-width: 1100px) {
     font-size: 5rem;
-    text-align: left;
+    /*text-align: left; */
 
-    &:first-letter {
-      font-size: 6rem;
-    }
+    /* &:first-letter {
+      font-size: 3rem;
+    } */
   }
 `;
 
-export const Subtitle = styled.h1`
-  font-weight: bold;
-  color: white;
-  margin-top: 40px;
-  border: 2px white dashed;
+export const Subtitle = styled.p`
+  /* font-weight: 500; */
+  font-size: 1.5rem;
+  /*color: white;*/
+  /* margin-top: 40px; */
+  /* border: 2px white dashed; */
   padding: 4px;
-  text-align: center;
+  /* text-align: center; */
 
   /*Desktop*/
   @media screen and (min-width: 1100px) {
-    width: 400px;
+    font-size: 3rem;
   }
 `;
 
 export const Link = styled.a`
-  background-color: ${lightOrange};
-  color: white;
-  font-size: 1.2rem;
+  /* background-color: ${lightGray}; */
+  color: ${lightOrange};
+  font-size: 1rem;
   cursor: pointer;
   padding: 10px 20px;
   border-radius: 50px;
 
   &:hover {
-    background-color: ${lightGray};
-    color: ${lightOrange};
-    font-weight: bold;
+    background-color: ${lightOrange};
+    color: white;
     transition: 1s;
     padding: 10px 30px;
   }
 `;
 
 export const Download = styled.div`
-  margin-top: 100px;
+  margin-top: 80px;
 `;

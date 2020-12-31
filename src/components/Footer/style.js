@@ -23,7 +23,7 @@ export const IconToUp = styled.a`
 
 export const Logo = styled.h1`
   color: ${lightBlue};
-  border: 4px ${lightOrange} solid;
+  border: 3px ${lightOrange} solid;
   padding: 5px;
   width: 60px;
   font-weight: bold;
