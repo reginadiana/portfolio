@@ -32,12 +32,6 @@
   Esta é uma aplicação frontend para o meu site pessoal, mostrando informações do meu currículo como skills, formação e projetos de forma criativa e divertida. 
 </p>
 
-## Descrição de termos
-
-**Tags em azul:** linguagens
-**Tags em verde:** frameworks
-**Tags em laranja:** dependencias e/ou libs
-
 ## Funcionalidades
 
 :heavy_check_mark: Layout Responsívo 
@@ -80,25 +74,3 @@ yarn start
 :books: [React](https://pt-br.reactjs.org/docs/create-a-new-react-app.html)
 
 :books: [Styled Component](https://styled-components.com/)
-
-## Tarefas em aberto
-
-Esta é a `segunda versão` do meu site pessoal, mas ainda existem funcionalidades que melhorariam a aplicação 
-
-#### Backend 
-
-:memo: Permir envio de e-mail através do site
-
-:memo: Permitir que recrutadores enviem propostas a partir de um formulário. Uma empresa válida deve estar incluida nos campos.  
-
-:memo: Permitir que recrutadores/visitantes enviem arquivos PDF, fotos, csv, etc a partir de um formulário
-
-:memo: Permitir que recrutadores/visitantes deixem comentários/mensagens na aplicação
-
-:memo: Desenvolver um chatbot para troca de mensagens entre o administrador do site e recrutadores/visitantes
-
-#### Frontend
-
-:memo: Usar uma API/Tecnologia que permita com que um recrutadoror digite a locação da empresa e veja a distancia entre ela e minha região. 
-
-:memo: Mostrar um calendário/agenda com horários disponíveis para uma entrevista
