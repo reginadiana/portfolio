@@ -8,21 +8,7 @@ import Portfolio from "./components/Portfolio/index";
 import Others from "./components/Others/index";
 import Contact from "./components/Contact/index";
 import Footer from "./components/Footer/index";
-import { I18nextProvider } from "react-i18next";
-import i18next from "i18next";
-import { withTranslation } from "react-i18next";
-import pt from "./locales/en/translation.json";
 import Spinner from "./components/Spinner/index";
-
-const resources = {
-  pt: {
-    common: pt["pt-BR"],
-  },
-};
-
-i18next.init({
-  resources,
-});
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -35,7 +21,7 @@ const App = () => {
       {loading ? (
         <Spinner />
       ) : (
-        <I18nextProvider i18n={i18next}>
+          <div>
           <Header />
           <AboutMe />
           <Portfolio />
@@ -44,10 +30,10 @@ const App = () => {
           <Skills />
           <Contact />
           <Footer />
-        </I18nextProvider>
+          </div>
       )}
     </div>
   );
 };
 
-export default withTranslation()(App);
+export default App;

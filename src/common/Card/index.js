@@ -45,8 +45,8 @@ const Card = ({ project, src, alt }) => {
       >
         <Styled.Description>{project.description}</Styled.Description>
         <Styled.Tags>
-          {project.techs.map((tech) => (
-            <Styled.Tag color={themes.colors.orange}>{tech}</Styled.Tag>
+          {project.techs.map((tech, key) => (
+            <Styled.Tag key={key} color={themes.colors.orange}>{tech}</Styled.Tag>
           ))}
         </Styled.Tags>
       </Modal>

@@ -62,6 +62,8 @@ cd portfolio
 ```
 Instale as dependencias 
 ```
+docker-compose up -d --build
+docker-compose run --rm --service-ports app bash
 yarn install
 ```
 Execute a aplicação
