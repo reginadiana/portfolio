@@ -60,13 +60,12 @@ Acesse a pasta
 ```
 cd portfolio
 ```
-Instale as dependencias 
+Construa o docker e sua a aplicação com o container:
 ```
 docker-compose up -d --build
 docker-compose run --rm --service-ports app bash
-yarn install
 ```
-Execute a aplicação
+Dentro do container, execute a aplicação:
 ```
 yarn start
 ```
