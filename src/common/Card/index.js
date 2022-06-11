@@ -2,12 +2,10 @@ import React, { useState } from "react";
 import { Img } from "../../components/Portfolio/style";
 import { Modal, Button } from "antd";
 import * as Styled from "./style";
-import { themes } from "../../themes";
+import { theme } from "../../theme";
 
 const Card = ({ project, src, alt }) => {
   const [isModalVisible, setIsModalVisible] = useState(false);
-
-  console.log(project.title);
 
   const showModal = () => {
     setIsModalVisible(true);
@@ -46,7 +44,7 @@ const Card = ({ project, src, alt }) => {
         <Styled.Description>{project.description}</Styled.Description>
         <Styled.Tags>
           {project.techs.map((tech, key) => (
-            <Styled.Tag key={key} color={themes.colors.orange}>{tech}</Styled.Tag>
+            <Styled.Tag key={key} color={theme.color.orange}>{tech}</Styled.Tag>
           ))}
         </Styled.Tags>
       </Modal>

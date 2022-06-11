@@ -2,17 +2,7 @@ import React from "react";
 import { CodeSandboxOutlined } from "@ant-design/icons";
 import * as Styled from "./style";
 import TitleSection from "../TitleSection/index";
-import { themes } from "../../themes";
-
-const {
-  lightPink,
-  lightBrown,
-  lightOrange,
-  lightBlue,
-  green,
-  blue,
-  orange,
-} = themes.colors;
+import { theme } from "../../theme";
 
 const Skills = () => (
   <Styled.Container id="skills">
@@ -21,7 +11,7 @@ const Skills = () => (
       description="Conheça as principais tecnologias do meu dia a dia"
     />
     <Styled.Cards>
-      <Styled.Card color={lightPink}>
+      <Styled.Card color={theme.color.pink.light}>
         <Styled.Icon>
           <CodeSandboxOutlined />
         </Styled.Icon>
@@ -31,7 +21,7 @@ const Skills = () => (
         </Styled.Description>
       </Styled.Card>
 
-      <Styled.Card color={lightBrown}>
+      <Styled.Card color={theme.color.brown.light}>
         <Styled.Icon>
           <CodeSandboxOutlined />
         </Styled.Icon>
@@ -39,7 +29,7 @@ const Skills = () => (
         <Styled.Description>Para estilização das telas</Styled.Description>
       </Styled.Card>
 
-      <Styled.Card color={lightOrange}>
+      <Styled.Card color={theme.color.orange.light}>
         <Styled.Icon>
           <CodeSandboxOutlined />
         </Styled.Icon>
@@ -49,7 +39,7 @@ const Skills = () => (
         </Styled.Description>
       </Styled.Card>
 
-      <Styled.Card color={green}>
+      <Styled.Card color={theme.color.green}>
         <Styled.Icon>
           <CodeSandboxOutlined />
         </Styled.Icon>
@@ -59,7 +49,7 @@ const Skills = () => (
         </Styled.Description>
       </Styled.Card>
 
-      <Styled.Card color={lightBlue}>
+      <Styled.Card color={theme.color.blue.light}>
         <Styled.Icon>
           <CodeSandboxOutlined />
         </Styled.Icon>
@@ -69,7 +59,7 @@ const Skills = () => (
         </Styled.Description>
       </Styled.Card>
 
-      <Styled.Card color={orange}>
+      <Styled.Card color={theme.color.orange.regular}>
         <Styled.Icon>
           <CodeSandboxOutlined />
         </Styled.Icon>
@@ -79,7 +69,7 @@ const Skills = () => (
         </Styled.Description>
       </Styled.Card>
 
-      <Styled.Card color={blue}>
+      <Styled.Card color={theme.color.blue.regular}>
         <Styled.Icon>
           <CodeSandboxOutlined />
         </Styled.Icon>

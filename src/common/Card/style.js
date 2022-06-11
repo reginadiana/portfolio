@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../../theme";
 
 export const Description = styled.div`
   text-align: justify;
@@ -19,7 +20,7 @@ export const Tag = styled.p`
   margin: 5px 0 5px 5px;
   padding: 5px;
   border-radius: 2px;
-  color: white;
+  color: ${theme.color.white};
 
   :nth-child(4n + 1) {
     margin-left: 0;

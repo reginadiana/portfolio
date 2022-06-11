@@ -1,7 +1,5 @@
 import styled from "styled-components";
-import { themes } from "../../themes";
-
-const { lightBlue, lightBrow, lightOrange, gray } = themes.colors;
+import { theme } from "../../theme";
 
 export const Container = styled.div`
   text-align: center;
@@ -10,20 +8,20 @@ export const Container = styled.div`
 
 export const IconToUp = styled.a`
   font-size: 3rem;
-  color: ${lightBlue};
+  color: ${theme.color.blue.light};
   position: fixed;
   bottom: 10px;
   right: 20px;
 
   &:hover {
-    color: ${lightBrow};
+    color: ${theme.color.brown.light};
     transition: 0.5s;
   }
 `;
 
 export const Logo = styled.h1`
-  color: ${lightBlue};
-  border: 3px ${lightOrange} solid;
+  color: ${theme.color.blue.light};
+  border: 3px ${theme.color.orange.light} solid;
   padding: 5px;
   width: 60px;
   font-weight: bold;
@@ -45,11 +43,11 @@ export const Icons = styled.div`
 
 export const Icon = styled.a`
   font-size: 1.8rem;
-  color: ${gray};
+  color: ${theme.color.gray.regular};
   padding: 15px;
 
   &:hover {
-    color: ${lightOrange};
+    color: ${theme.color.orange.light};
     transition: 0.5s;
   }
 `;

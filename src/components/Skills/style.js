@@ -1,11 +1,9 @@
 import styled from "styled-components";
-import { themes } from "../../themes";
-
-const { lightGray } = themes.colors;
+import { theme } from "../../theme";
 
 export const Container = styled.div`
   padding: 5% 0;
-  background-color: ${lightGray};
+  background-color: ${theme.color.gray.light};
 `;
 
 export const Cards = styled.div`
@@ -13,7 +11,7 @@ export const Cards = styled.div`
   width: 90%;
   margin: auto;
   text-align: center;
-  color: white;
+  color: ${theme.color.white};
 
   /*Tablet*/
   @media screen and (max-width: 1100px) and (min-width: 750px) {
@@ -49,7 +47,7 @@ export const Card = styled.div`
 `;
 
 export const Lenguage = styled.h3`
-  color: white;
+  color: ${theme.color.white};
   font-size: 21px;
   line-height: 27px;
   font-weight: 700;

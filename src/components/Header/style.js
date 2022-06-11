@@ -1,8 +1,6 @@
 import styled from "styled-components";
 import wallpaper from "../../assets/header/wallpaper.jpg";
-import { themes } from "../../themes";
-
-const { lightOrange, lightBlue } = themes.colors;
+import { theme } from "../../theme";
 
 export const Container = styled.div`
   background-image: url(${wallpaper});
@@ -24,8 +22,8 @@ export const Menu = styled.div`
   }
 `;
 export const Logo = styled.h2`
-  color: ${lightBlue};
-  border: 3px ${lightOrange} solid;
+  color: ${theme.color.blue.light};
+  border: 3px ${theme.color.orange.light} solid;
   padding: 5px;
   width: 60px;
   margin: auto;
@@ -60,12 +58,12 @@ export const ItemList = styled.a`
   cursor: pointer;
 
   &:hover {
-    color: ${lightOrange};
+    color: ${theme.color.orange.light};
     transition: 0.5s;
   }
 
   &:first-child {
-    border-bottom: 3px ${lightOrange} solid;
+    border-bottom: 3px ${theme.color.orange.light} solid;
   }
 `;
 export const Main = styled.div`
@@ -85,7 +83,7 @@ export const Title = styled.h1`
   font-size: 2rem;
 
   &:nth-child(6)::letter {
-    color: white;
+    color: ${theme.color.white};
   }
 
   /*Desktop*/
@@ -105,15 +103,15 @@ export const Subtitle = styled.p`
 `;
 
 export const Link = styled.a`
-  color: ${lightOrange};
+  color: ${theme.color.orange.light};
   font-size: 1rem;
   cursor: pointer;
   padding: 10px 20px;
   border-radius: 50px;
 
   &:hover {
-    background-color: ${lightOrange};
-    color: white;
+    background-color: ${theme.color.orange.light};
+    color: ${theme.color.white};
     transition: 1s;
     padding: 10px 30px;
   }

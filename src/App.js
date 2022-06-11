@@ -21,7 +21,7 @@ const App = () => {
       {loading ? (
         <Spinner />
       ) : (
-          <div>
+        <>
           <Header />
           <AboutMe />
           <Portfolio />
@@ -30,7 +30,7 @@ const App = () => {
           <Skills />
           <Contact />
           <Footer />
-          </div>
+        </>
       )}
     </div>
   );

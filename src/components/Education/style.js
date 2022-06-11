@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { themes } from "../../themes";
+import { theme } from "../../theme";
 
 export const Cards = styled.div`
   display: grid;
@@ -39,7 +39,7 @@ export const Info = styled.div`
 `;
 
 export const Card = styled.div`
-  background-color: ${themes.colors.lightGray};
+  background-color: ${theme.color.gray.light};
   padding: 40px;
   margin: 15px;
   color: gray;
@@ -52,12 +52,12 @@ export const Card = styled.div`
   }
 
   &:last-child {
-    background-color: ${themes.colors.darkBlue};
+    background-color: ${theme.color.blue.dark};
 
     h1,
     a,
     p {
-      color: white;
+      color: ${theme.color.white};
     }
 
     p {
@@ -78,12 +78,12 @@ export const Location = styled.a`
   color: black;
 `;
 export const Date = styled.h3`
-  background-color: ${themes.colors.lightOrange};
+  background-color: ${theme.color.orange.light};
   width: 150px;
   text-align: center;
   padding: 10px;
   border-radius: 25px;
-  color: white;
+  color: ${theme.color.white};
   margin-top: 10px;
   margin-bottom: 20px;
 

@@ -1,7 +1,5 @@
 import styled from "styled-components";
-import { themes } from "../../themes";
-
-const { lightOrange } = themes.colors;
+import { theme } from "../../theme";
 
 export const Title = styled.h1`
   text-align: center;
@@ -25,14 +23,14 @@ export const Line = styled.h2`
   margin: auto;
   width: 300px;
   height: 2px;
-  background: ${lightOrange};
+  background: ${theme.color.orange.light};
   margin-bottom: 40px;
 
   &::after {
     content: "";
     width: 10px;
     height: 10px;
-    background: ${lightOrange};
+    background: ${theme.color.orange.light};
     border-radius: 7px;
     position: absolute;
     margin-top: -3px;

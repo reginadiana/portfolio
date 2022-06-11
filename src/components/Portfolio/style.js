@@ -1,10 +1,8 @@
 import styled from "styled-components";
-import { themes } from "../../themes";
-
-const { lightGray, lightOrange } = themes.colors;
+import { theme } from "../../theme";
 
 export const Container = styled.div`
-  background-color: ${lightGray};
+  background-color: ${theme.color.gray.light};
   margin-bottom: 80px;
   padding-bottom: 80px;
   padding-top: 100px;
@@ -23,15 +21,15 @@ export const Button = styled.button`
   width: 130px;
   background-color: transparent;
   border-color: transparent;
-  color: ${({ active }) => active && lightOrange};
+  color: ${({ active }) => active && theme.color.orange.light};
   cursor: pointer;
   margin: 0 15px 40px;
   border-radius: 20px;
   outline: none;
 
   &:hover {
-    background-color: ${lightOrange};
-    color: white;
+    background-color: ${theme.color.orange.light};
+    color: ${theme.color.white};
     transition: 1s;
   }
 
