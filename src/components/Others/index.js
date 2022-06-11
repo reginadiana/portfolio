@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Cards, Container, Options, Button } from "../Portfolio/style";
 
 import TitleSection from "../TitleSection/index";
@@ -6,56 +6,53 @@ import Articles from "./Articles/index";
 import Lives from "./Lives/index";
 import Certificates from "./Certificates/index";
 
-const defaultChoices = {
-  all: false,
-  articles: false,
-  lives: false,
-  certificates: false,
-};
-
 const Others = () => {
-  const [choice, setChoice] = useState(defaultChoices);
-  const active = true;
+  const [activeChoice, setActiveChoice] = useState("all");
 
-  useEffect(() => {
-    setChoice({ ...defaultChoices, all: true });
-  }, []);
+  const options = [
+    {
+      key: "all",
+      description: "Todos",
+    },
+    {
+      key: "articles",
+      description: "Artigos",
+    },
+    {
+      key: "lives",
+      description: "Lives",
+    },
+    {
+      key: "certificates",
+      description: "Certificados",
+    },
+  ];
 
   return (
     <Container id="others">
       <TitleSection title="Eventos, Artigos e Certificados" />
       <Cards>
         <Options>
-          <Button
-            onClick={() => setChoice({ ...defaultChoices, all: active })}
-            active={choice.all}
-          >
-            Todos
-          </Button>
-          <Button
-            onClick={() => setChoice({ ...defaultChoices, articles: active })}
-            active={choice.articles}
-          >
-            Artigos
-          </Button>
-          <Button
-            onClick={() => setChoice({ ...defaultChoices, lives: active })}
-            active={choice.lives}
-          >
-            Lives
-          </Button>
-          <Button
-            onClick={() =>
-              setChoice({ ...defaultChoices, certificates: active })
-            }
-            active={choice.certificates}
-          >
-            Certificados
-          </Button>
+          {options.map((option, index) => {
+            return (
+              <Button
+                key={index}
+                onClick={() => setActiveChoice(option.key)}
+                active={activeChoice === option.key}
+              >
+                {option.description}
+              </Button>
+            );
+          })}
         </Options>
-        {(choice.articles || choice.all) && <Articles />}
-        {(choice.lives || choice.all) && <Lives />}
-        {(choice.certificates || choice.all) && <Certificates />}
+
+        {(activeChoice === "articles" || activeChoice === "all") && (
+          <Articles />
+        )}
+        {(activeChoice === "lives" || activeChoice === "all") && <Lives />}
+        {(activeChoice === "certificates" || activeChoice === "all") && (
+          <Certificates />
+        )}
       </Cards>
     </Container>
   );

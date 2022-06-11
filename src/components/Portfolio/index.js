@@ -1,50 +1,51 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Cards, Container, Options, Button } from "./style";
 
 import TitleSection from "../TitleSection/index";
 import ProjectsFrontend from "./ProjectsFrontend/index";
 import ProjectsBackend from "./ProjectsBackend/index";
 
-const defaultChoices = {
-  all: false,
-  frontend: false,
-  backend: false,
-};
-
 const Portfolio = () => {
-  const [choice, setChoice] = useState(defaultChoices);
-  const active = true;
+  const [activeChoice, setActiveChoice] = useState("all");
 
-  useEffect(() => {
-    setChoice({ ...defaultChoices, all: true });
-  }, []);
+  const options = [
+    {
+      key: "all",
+      description: "Todos",
+    },
+    {
+      key: "front",
+      description: "Frontend",
+    },
+    {
+      key: "back",
+      description: "Backend",
+    },
+  ];
 
   return (
     <Container id="portfolio">
       <TitleSection title="Projetos" />
       <Cards>
         <Options>
-          <Button
-            onClick={() => setChoice({ ...defaultChoices, all: active })}
-            active={choice.all}
-          >
-            Todos
-          </Button>
-          <Button
-            onClick={() => setChoice({ ...defaultChoices, frontend: active })}
-            active={choice.frontend}
-          >
-            Frontend
-          </Button>
-          <Button
-            onClick={() => setChoice({ ...defaultChoices, backend: active })}
-            active={choice.backend}
-          >
-            Backend
-          </Button>
+          {options.map((option, index) => {
+            return (
+              <Button
+                key={index}
+                onClick={() => setActiveChoice(option.key)}
+                active={activeChoice === option.key}
+              >
+                {option.description}
+              </Button>
+            );
+          })}
         </Options>
-        {(choice.frontend || choice.all) && <ProjectsFrontend />}
-        {(choice.backend || choice.all) && <ProjectsBackend />}
+        {(activeChoice === "frontend" || activeChoice === "all") && (
+          <ProjectsFrontend />
+        )}
+        {(activeChoice === "backend" || activeChoice === "all") && (
+          <ProjectsBackend />
+        )}
       </Cards>
     </Container>
   );
