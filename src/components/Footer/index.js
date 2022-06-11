@@ -42,7 +42,7 @@ const Footer = () => (
       </Styled.Icon>
     </Styled.Icons>
     <p>
-      Copyright ©2020 All rights reserved | This website was developed by Diana
+      Copyright ©2022 All rights reserved | This website was developed by Diana
       Regina
     </p>
   </Styled.Container>
