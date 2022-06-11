@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@ant-design/icons": "^4.1.0",
-    "antd": "^4.2.5",
-    "eslint-import-resolver-babel-module": "^5.2.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "@ant-design/icons": "^4.7.0",
+    "antd": "^4.21.0",
+    "eslint-import-resolver-babel-module": "^5.3.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
     "react-scripts": "4.0.3",
-    "styled-components": "^5.1.1"
+    "styled-components": "^5.3.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -35,6 +35,6 @@
     ]
   },
   "devDependencies": {
-    "netlify-lambda": "^2.0.14"
+    "netlify-lambda": "^2.0.15"
   }
 }
