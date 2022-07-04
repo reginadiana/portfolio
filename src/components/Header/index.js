@@ -7,10 +7,10 @@ const Header = () => (
     <Styled.Menu>
       <Styled.Logo>DR</Styled.Logo>
       <Styled.List>
-        <Styled.ItemList href="#about_me">About Me</Styled.ItemList>
+        <Styled.ItemList href="#about_me">Sobre mim</Styled.ItemList>
         <Styled.ItemList href="#portfolio">Portfólio</Styled.ItemList>
         <Styled.ItemList href="#education">Formação</Styled.ItemList>
-        <Styled.ItemList href="#skills">Skills</Styled.ItemList>
+        <Styled.ItemList href="#skills">Habilidades</Styled.ItemList>
         <Styled.ItemList href="#contatos">Contatos</Styled.ItemList>
       </Styled.List>
     </Styled.Menu>

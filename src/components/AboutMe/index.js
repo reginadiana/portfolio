@@ -8,7 +8,7 @@ const AboutMe = () => (
   <Styled.Wrapper id="about_me">
     <Styled.Img src={AboutMeImg} />
     <div>
-      <TitleSection title="About Me" description="Quem é a Diana?" />
+      <TitleSection title="Sobre mim" description="Quem é a Diana?" />
       <Styled.Paragraphy>
         Sou uma mulher <strong>criativa</strong>, <strong>organizada</strong>, e{" "}
         <strong>muito</strong> dedicada. Gosto de ler, dançar, pintar, assistir

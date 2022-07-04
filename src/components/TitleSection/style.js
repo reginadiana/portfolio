@@ -1,22 +1,29 @@
 import styled from "styled-components";
 import { theme } from "../../theme";
 
+export const Section = styled.section`
+  margin-bottom: 40px;
+`
+
 export const Title = styled.h1`
   text-align: center;
   font-weight: 700;
   font-size: 1.6rem;
   line-height: 50px;
 
-  /*Desktop*/
   @media screen and (min-width: 800px) {
     font-size: 2rem;
   }
 
-  /*Desktop*/
   @media screen and (max-width: 400px) {
     font-size: 1.2rem;
   }
 `;
+
+export const Paragraphy = styled.p`
+  color: gray;
+  text-align: center;
+`
 
 export const Line = styled.h2`
   content: "";
@@ -24,21 +31,23 @@ export const Line = styled.h2`
   width: 300px;
   height: 2px;
   background: ${theme.color.orange.light};
-  margin-bottom: 40px;
+  position: relative;
 
   &::after {
     content: "";
     width: 10px;
     height: 10px;
     background: ${theme.color.orange.light};
-    border-radius: 7px;
+    border-radius: 50%;
     position: absolute;
-    margin-top: -3px;
+    top: 50%;
+    left: -5px;
+    transform: translateY(-50%);
   }
 
-  /*Desktop*/
+  /* Mobile */
   @media screen and (max-width: 400px) {
-    width: 290px;
+    width: 90%;
 
     &::after {
       display: none;

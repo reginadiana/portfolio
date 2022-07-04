@@ -74,4 +74,4 @@ yarn start
 
 :books: [React](https://pt-br.reactjs.org/docs/create-a-new-react-app.html)
 
-:books: [Styled Component](https://styled-components.com/)
+:books: [Styled Components](https://styled-components.com/)

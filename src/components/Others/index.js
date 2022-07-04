@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import { Cards, Container, Options, Button } from "../Portfolio/style";
-
 import TitleSection from "../TitleSection/index";
 import Articles from "./Articles/index";
 import Lives from "./Lives/index";
-import Certificates from "./Certificates/index";
 
 const Others = () => {
   const [activeChoice, setActiveChoice] = useState("all");
@@ -22,15 +20,11 @@ const Others = () => {
       key: "lives",
       description: "Lives",
     },
-    {
-      key: "certificates",
-      description: "Certificados",
-    },
   ];
 
   return (
     <Container id="others">
-      <TitleSection title="Eventos, Artigos e Certificados" />
+      <TitleSection title="Eventos, Artigos" />
       <Cards>
         <Options>
           {options.map((option, index) => {
@@ -50,9 +44,6 @@ const Others = () => {
           <Articles />
         )}
         {(activeChoice === "lives" || activeChoice === "all") && <Lives />}
-        {(activeChoice === "certificates" || activeChoice === "all") && (
-          <Certificates />
-        )}
       </Cards>
     </Container>
   );

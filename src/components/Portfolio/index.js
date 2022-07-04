@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { Cards, Container, Options, Button } from "./style";
-
-import TitleSection from "../TitleSection/index";
 import ProjectsFrontend from "./ProjectsFrontend/index";
 import ProjectsBackend from "./ProjectsBackend/index";
+import TitleSection from "../TitleSection/index";
 
 const Portfolio = () => {
   const [activeChoice, setActiveChoice] = useState("all");
@@ -40,10 +39,10 @@ const Portfolio = () => {
             );
           })}
         </Options>
-        {(activeChoice === "frontend" || activeChoice === "all") && (
+        {(activeChoice === "front" || activeChoice === "all") && (
           <ProjectsFrontend />
         )}
-        {(activeChoice === "backend" || activeChoice === "all") && (
+        {(activeChoice === "back" || activeChoice === "all") && (
           <ProjectsBackend />
         )}
       </Cards>
