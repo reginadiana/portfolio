@@ -3,7 +3,7 @@ import { theme } from "../../theme";
 
 export const Section = styled.section`
   margin-bottom: 40px;
-`
+`;
 
 export const Title = styled.h1`
   text-align: center;
@@ -23,7 +23,7 @@ export const Title = styled.h1`
 export const Paragraphy = styled.p`
   color: gray;
   text-align: center;
-`
+`;
 
 export const Line = styled.h2`
   content: "";

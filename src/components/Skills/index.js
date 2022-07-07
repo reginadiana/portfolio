@@ -75,8 +75,8 @@ const Skills = () => (
         </Styled.Span>
         <Styled.TH3>Antd</Styled.TH3>
         <Styled.Paragraphy>
-          Para aproveitar recursos de layout para construir telas de forma mais rápida e 
-          dar manutenção de forma dinamica
+          Para aproveitar recursos de layout para construir telas de forma mais
+          rápida e dar manutenção de forma dinamica
         </Styled.Paragraphy>
       </Styled.Card>
 
@@ -86,7 +86,8 @@ const Skills = () => (
         </Styled.Span>
         <Styled.TH3>Git</Styled.TH3>
         <Styled.Paragraphy>
-          Para realizar o controle de versão dos projetos, alterações em código, etc.
+          Para realizar o controle de versão dos projetos, alterações em código,
+          etc.
         </Styled.Paragraphy>
       </Styled.Card>
 

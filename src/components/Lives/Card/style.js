@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { theme } from "../../theme";
+import { theme } from "../../../theme";
 
 export const Description = styled.div`
   text-align: justify;
@@ -24,5 +24,23 @@ export const Tag = styled.p`
 
   :nth-child(4n + 1) {
     margin-left: 0;
+  }
+`;
+
+export const Img = styled.img`
+  width: 350px;
+  margin: 20px;
+  border-radius: 5px;
+  opacity: 1;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.4;
+  }
+
+  @media screen and (max-width: 400px) {
+    width: 250px;
   }
 `;

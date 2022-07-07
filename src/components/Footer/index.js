@@ -42,8 +42,9 @@ const Footer = () => (
       </Styled.Icon>
     </Styled.Icons>
     <p>
-      Copyright © 2022 Todos os direitos reservados | Este site foi desenvolvido por 
-      <br/>
+      Copyright © 2022 Todos os direitos reservados | Este site foi desenvolvido
+      por
+      <br />
       <a href="https://www.linkedin.com/in/diana-regina/">Diana Regina</a>
     </p>
   </Styled.Container>

@@ -13,6 +13,11 @@ export const Container = styled.div`
 export const Menu = styled.div`
   padding-top: 30px;
   background-color: transparent;
+  /* position: fixed;
+  background-color: honeydew;
+  width: 100%;
+  top: 0;
+  z-index: 1; */
 
   /*Desktop*/
   @media screen and (min-width: 1100px) {
@@ -21,6 +26,7 @@ export const Menu = styled.div`
     justify-content: center;
   }
 `;
+
 export const Logo = styled.h2`
   color: ${theme.color.blue.light};
   border: 3px ${theme.color.orange.light} solid;
@@ -50,9 +56,7 @@ export const ItemList = styled.a`
   color: black;
   list-style: none;
   font-size: 1rem;
-  text-align: left;
-  padding-left: 40px;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
   width: 150px;
   margin-bottom: 10px;
   cursor: pointer;
@@ -65,7 +69,13 @@ export const ItemList = styled.a`
   &:first-child {
     border-bottom: 3px ${theme.color.orange.light} solid;
   }
+
+  @media screen and (max-width: 1100px) {
+    padding-left: 32px;
+    text-align: left;
+  }
 `;
+
 export const Main = styled.div`
   display: flex;
   flex-direction: column;
