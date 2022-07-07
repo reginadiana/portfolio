@@ -9,7 +9,7 @@ import {
   UpCircleFilled,
 } from "@ant-design/icons";
 import * as Styled from "./style";
-import { socialMedia } from "../../services/links";
+import { link } from "../../services/links";
 
 const Footer = () => (
   <Styled.Container id="contatos">
@@ -21,23 +21,23 @@ const Footer = () => (
     <Styled.Title>Redes Sociais</Styled.Title>
 
     <Styled.Icons>
-      <Styled.Icon href={socialMedia.github}>
+      <Styled.Icon href={link.github}>
         <GithubOutlined />
       </Styled.Icon>
 
-      <Styled.Icon href={socialMedia.linkedin}>
+      <Styled.Icon href={link.linkedin}>
         <LinkedinOutlined />
       </Styled.Icon>
 
-      <Styled.Icon href={socialMedia.medium}>
+      <Styled.Icon href={link.medium}>
         <MediumOutlined />
       </Styled.Icon>
 
-      <Styled.Icon href={socialMedia.instagram}>
+      <Styled.Icon href={link.instagram}>
         <InstagramOutlined />
       </Styled.Icon>
 
-      <Styled.Icon href={socialMedia.dev}>
+      <Styled.Icon href={link.dev}>
         <BookOutlined />
       </Styled.Icon>
     </Styled.Icons>

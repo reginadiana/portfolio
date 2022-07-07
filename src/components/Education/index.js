@@ -1,7 +1,7 @@
 import React from "react";
 import * as Styled from "./style";
 import TitleSection from "../TitleSection/index";
-import { profissional } from "../../services/links";
+import { link } from "../../services/links";
 
 const Education = () => (
   <div id="education">
@@ -14,7 +14,7 @@ const Education = () => (
         <Styled.Info>
           <div>
             <Styled.Title>Técnico em Eletrônica</Styled.Title>
-            <Styled.Location href={profissional.etec}>
+            <Styled.Location href={link.etec}>
               ETEC Julio de Mesquita
             </Styled.Location>
           </div>
@@ -31,7 +31,7 @@ const Education = () => (
         <Styled.Info>
           <div>
             <Styled.Title>Tecnologia em Mecatrônica Industrial</Styled.Title>
-            <Styled.Location href={profissional.fatec}>
+            <Styled.Location href={link.fatec}>
               FATEC Santo André
             </Styled.Location>
           </div>
@@ -47,7 +47,7 @@ const Education = () => (
         <Styled.Info>
           <div>
             <Styled.Title>Estágio em Eletrônica</Styled.Title>
-            <Styled.Location href={profissional.etec}>
+            <Styled.Location href={link.etec}>
               ETEC Julio de Mesquita
             </Styled.Location>
           </div>
@@ -64,7 +64,7 @@ const Education = () => (
         <Styled.Info>
           <div>
             <Styled.Title>Monitorias de linguagem C</Styled.Title>
-            <Styled.Location href={profissional.fatec}>
+            <Styled.Location href={link.fatec}>
               FATEC Santo André
             </Styled.Location>
           </div>
@@ -81,7 +81,7 @@ const Education = () => (
         <Styled.Info>
           <div>
             <Styled.Title>Bootcamp de React</Styled.Title>
-            <Styled.Location href={profissional.womakerscode}>
+            <Styled.Location href={link.womakerscode}>
               WoMakersCode
             </Styled.Location>
           </div>
@@ -96,9 +96,7 @@ const Education = () => (
         <Styled.Info>
           <div>
             <Styled.Title>Treina Dev</Styled.Title>
-            <Styled.Location href={profissional.campus}>
-              Campus Code
-            </Styled.Location>
+            <Styled.Location href={link.campus}>Campus Code</Styled.Location>
           </div>
           <Styled.Date>Julho | 2020</Styled.Date>
         </Styled.Info>
@@ -112,7 +110,7 @@ const Education = () => (
         <Styled.Info>
           <div>
             <Styled.Title>Desenvolvedora</Styled.Title>
-            <Styled.Location href={profissional.rebase}>Rebase</Styled.Location>
+            <Styled.Location href={link.rebase}>Rebase</Styled.Location>
           </div>
           <Styled.Date>2020</Styled.Date>
         </Styled.Info>

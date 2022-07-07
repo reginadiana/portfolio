@@ -7,20 +7,18 @@ export const Description = styled.div`
 `;
 
 export const Tags = styled.div`
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 16px;
 `;
 
 export const Tag = styled.p`
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-  background: ${({ color }) => color};
-  margin: 5px 0 5px 5px;
+  background-color: ${theme.color.pink.light};
+  margin: 0 8px 8px 0;
   padding: 5px;
   border-radius: 2px;
-  color: ${theme.color.white};
+  color: ${theme.color.black};
 
   :nth-child(4n + 1) {
     margin-left: 0;
@@ -31,13 +29,13 @@ export const Img = styled.img`
   width: 350px;
   margin: 20px;
   border-radius: 5px;
-  opacity: 1;
   transition: 0.5s ease;
   backface-visibility: hidden;
   cursor: pointer;
+  opacity: 0.4;
 
   &:hover {
-    opacity: 0.4;
+    opacity: 1;
   }
 
   @media screen and (max-width: 400px) {
