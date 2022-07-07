@@ -27,11 +27,14 @@ export const Menu = styled.div`
   }
 `;
 
-export const Logo = styled.h2`
+export const Logo = styled.button`
   color: ${theme.color.blue.light};
   border: 3px ${theme.color.orange.light} solid;
   padding: 5px;
   width: 60px;
+  height: 50px;
+  font-size: 1.4rem;
+  background-color: ${theme.color.white};
   margin: auto;
   font-weight: bold;
   cursor: pointer;
@@ -39,12 +42,20 @@ export const Logo = styled.h2`
   /*Desktop*/
   @media screen and (min-width: 1100px) {
     margin: auto 100px auto 0;
+    outline: none;
   }
 `;
 
 export const List = styled.ul`
   padding: 40px 0 20px;
   display: grid;
+
+  ${({ openMenu }) => {
+    if (openMenu) return;
+    return {
+      display: "none",
+    };
+  }}
 
   /*Desktop*/
   @media screen and (min-width: 1100px) {

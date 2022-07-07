@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import * as Styled from "./style";
 import pdf from "../../services/document.pdf";
 
 const Header = () => {
+  const [openMenu, setOpenMenu] = useState(false);
+
   return (
     <Styled.Container>
       <Styled.Menu>
-        <Styled.Logo>DR</Styled.Logo>
-        <Styled.List>
+        <Styled.Logo onClick={() => setOpenMenu(!openMenu)}>DR</Styled.Logo>
+        <Styled.List openMenu={openMenu}>
           <Styled.ItemList href="#about_me">Sobre mim</Styled.ItemList>
           <Styled.ItemList href="#projects">Projetos</Styled.ItemList>
           <Styled.ItemList href="#education">Formação</Styled.ItemList>
