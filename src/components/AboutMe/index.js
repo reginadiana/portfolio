@@ -5,7 +5,7 @@ import AboutMeImg from "../../assets/about/me.jpeg";
 import AboutWebsite from "../../assets/about/site.jpeg";
 
 const AboutMe = () => (
-  <Styled.Wrapper id="about_me">
+  <Styled.Section id="about_me">
     <Styled.Img src={AboutMeImg} />
     <div>
       <TitleSection title="Sobre mim" description="Quem é a Diana?" />
@@ -41,7 +41,7 @@ const AboutMe = () => (
       </Styled.Paragraphy>
     </div>
     <Styled.Img src={AboutWebsite} />
-  </Styled.Wrapper>
+  </Styled.Section>
 );
 
 export default AboutMe;

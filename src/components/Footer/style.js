@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { theme } from "../../theme";
 
-export const Container = styled.div`
+export const Footer = styled.footer`
   text-align: center;
-  padding: 20px 20px;
+  padding: 40px;
 `;
 
 export const IconToUp = styled.a`

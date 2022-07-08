@@ -1,13 +1,14 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
-  padding: 70px 0;
+export const Section = styled.section`
+  padding-top: calc(95px + 32px);
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   justify-content: center;
 
   /*Desktop*/
   @media screen and (min-width: 1200px) {
+    padding: calc(95px + 32px) 70px 0;
     grid-template-columns: repeat(2, 600px);
   }
 `;

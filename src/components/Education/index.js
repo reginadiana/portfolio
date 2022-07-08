@@ -4,7 +4,7 @@ import TitleSection from "../TitleSection/index";
 import { link } from "../../services/links";
 
 const Education = () => (
-  <div id="education">
+  <Styled.Section id="education">
     <TitleSection
       title="Formação e Bootcamps"
       description="Sabia onde estudei e os bootcamps que participei"
@@ -120,7 +120,7 @@ const Education = () => (
         </Styled.Description>
       </Styled.Card>
     </Styled.Cards>
-  </div>
+  </Styled.Section>
 );
 
 export default Education;

@@ -1,6 +1,10 @@
 import styled from "styled-components";
 import { theme } from "../../theme";
 
+export const Section = styled.section`
+  padding-top: calc(95px + 32px);
+`;
+
 export const Cards = styled.div`
   display: grid;
   justify-content: center;

@@ -1,18 +1,21 @@
 import styled from "styled-components";
 import { theme } from "../../theme";
 
-export const Container = styled.div`
+export const Section = styled.section`
   background-color: ${theme.color.orange.light};
   text-align: center;
-  padding: 80px 0;
-  margin-bottom: 20px;
+  padding: 60px 0;
 
   h1,
-  h3 {
+  a {
     color: ${theme.color.white};
   }
 `;
 
 export const Title = styled.h1`
   margin-bottom: 40px;
+
+  svg {
+    margin-left: 16px;
+  }
 `;

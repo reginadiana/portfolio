@@ -5,11 +5,11 @@ const TitleSection = (props) => {
   const { title, description } = props;
 
   return (
-    <Styled.Section>
+    <Styled.Container>
       <Styled.Title>{title}</Styled.Title>
       <Styled.Paragraphy>{description}</Styled.Paragraphy>
       <Styled.Line />
-    </Styled.Section>
+    </Styled.Container>
   );
 };
 

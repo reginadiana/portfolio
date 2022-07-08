@@ -12,7 +12,7 @@ import * as Styled from "./style";
 import { link } from "../../services/links";
 
 const Footer = () => (
-  <Styled.Container id="contatos">
+  <Styled.Footer id="contatos">
     <Styled.IconToUp href="#main">
       <UpCircleFilled />
     </Styled.IconToUp>
@@ -21,23 +21,23 @@ const Footer = () => (
     <Styled.Title>Redes Sociais</Styled.Title>
 
     <Styled.Icons>
-      <Styled.Icon href={link.github}>
+      <Styled.Icon href={link.github} target="_blank">
         <GithubOutlined />
       </Styled.Icon>
 
-      <Styled.Icon href={link.linkedin}>
+      <Styled.Icon href={link.linkedin} target="_blank">
         <LinkedinOutlined />
       </Styled.Icon>
 
-      <Styled.Icon href={link.medium}>
+      <Styled.Icon href={link.medium} target="_blank">
         <MediumOutlined />
       </Styled.Icon>
 
-      <Styled.Icon href={link.instagram}>
+      <Styled.Icon href={link.instagram} target="_blank">
         <InstagramOutlined />
       </Styled.Icon>
 
-      <Styled.Icon href={link.dev}>
+      <Styled.Icon href={link.dev} target="_blank">
         <BookOutlined />
       </Styled.Icon>
     </Styled.Icons>
@@ -47,7 +47,7 @@ const Footer = () => (
       <br />
       <a href="https://www.linkedin.com/in/diana-regina/">Diana Regina</a>
     </p>
-  </Styled.Container>
+  </Styled.Footer>
 );
 
 export default Footer;

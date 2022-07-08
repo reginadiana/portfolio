@@ -1,14 +1,16 @@
 import React from "react";
-import { PhoneFilled } from "@ant-design/icons";
+import { MailOutlined } from "@ant-design/icons";
 import * as Styled from "./style";
 
 const Contact = () => (
-  <Styled.Container>
+  <Styled.Section>
     <Styled.Title>
-      Fale comigo <PhoneFilled />
+      Fale comigo <MailOutlined />
     </Styled.Title>
-    <h3>dianaregina22@outlook.com.br</h3>
-  </Styled.Container>
+    <a href="mailto:dianaregina22@outlook.com.br">
+      dianaregina22@outlook.com.br
+    </a>
+  </Styled.Section>
 );
 
 export default Contact;

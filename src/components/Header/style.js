@@ -1,26 +1,32 @@
-import styled from "styled-components";
-import wallpaper from "../../assets/header/wallpaper.jpg";
+import styled, { css } from "styled-components";
 import { theme } from "../../theme";
 
-export const Container = styled.div`
-  background-image: url(${wallpaper});
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-  height: 800px;
+const fixedMenuStyled = css`
+  position: fixed;
+  top: -95px; /* Altura do menu */
+  transition: transform 0.4s;
+  transform: translateY(100%);
+  box-shadow: 0px 10px 15px -3px ${theme.opacity.black[8]};
 `;
 
 export const Menu = styled.div`
-  padding-top: 30px;
-  background-color: transparent;
-  /* position: fixed;
-  background-color: honeydew;
+  padding: calc(95px / 4) 0;
+  background-color: white;
+  z-index: 1;
   width: 100%;
+  height: 95px;
+  position: relative;
   top: 0;
-  z-index: 1; */
+  text-align: center;
+
+  /*Mobile*/
+  @media screen and (max-width: 1101px) {
+    ${({ fixedMenu }) => fixedMenu && fixedMenuStyled};
+  }
 
   /*Desktop*/
   @media screen and (min-width: 1100px) {
+    ${fixedMenuStyled};
     display: flex;
     padding: 0;
     justify-content: center;
@@ -35,7 +41,6 @@ export const Logo = styled.button`
   height: 50px;
   font-size: 1.4rem;
   background-color: ${theme.color.white};
-  margin: auto;
   font-weight: bold;
   cursor: pointer;
 
@@ -48,21 +53,35 @@ export const Logo = styled.button`
 
 export const List = styled.ul`
   padding: 40px 0 20px;
-  display: grid;
+  display: flex;
 
-  ${({ openMenu }) => {
-    if (openMenu) return;
-    return {
-      display: "none",
-    };
-  }}
+  background-color: ${theme.color.white};
+  z-index: 1;
+
+  /*Mobile*/
+  @media screen and (max-width: 1101px) {
+    flex-direction: column;
+    height: 100vh;
+
+    ${({ openMenu }) => {
+      if (openMenu) return;
+      return {
+        display: "none",
+      };
+    }}
+  }
 
   /*Desktop*/
   @media screen and (min-width: 1100px) {
-    display: flex;
     padding: 30px 0 5px;
   }
 `;
+
+const activeStyled = css`
+  border-bottom: 3px ${theme.color.orange.light} solid;
+  color: ${theme.color.orange.light};
+`;
+
 export const ItemList = styled.a`
   color: black;
   list-style: none;
@@ -71,30 +90,40 @@ export const ItemList = styled.a`
   width: 150px;
   margin-bottom: 10px;
   cursor: pointer;
+  text-align: center;
 
   &:hover {
     color: ${theme.color.orange.light};
     transition: 0.5s;
   }
 
-  &:first-child {
-    border-bottom: 3px ${theme.color.orange.light} solid;
-  }
+  ${({ active }) => active && activeStyled};
 
-  @media screen and (max-width: 1100px) {
+  /* Mobile */
+  @media screen and (max-width: 1101px) {
     padding-left: 32px;
     text-align: left;
+    width: 100%;
   }
 `;
 
 export const Main = styled.div`
+  padding: 0 16px 2px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  background-color: #90acd1;
+  height: 100vh;
 
+  /*Mobile*/
+  @media screen and (max-width: 1101px) {
+    padding-top: ${({ fixedMenu, openMenu }) =>
+      (openMenu || fixedMenu) && "95px"};
+  }
+
+  /* Desktop */
   @media screen and (min-width: 1100px) {
-    margin-top: 80px;
+    align-items: center;
   }
 `;
 
@@ -140,4 +169,28 @@ export const Link = styled.a`
 
 export const Download = styled.div`
   margin-top: 80px;
+`;
+
+export const Hello = styled.h1`
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+`;
+
+export const Description = styled.p`
+  color: ${theme.color.white};
+  line-height: 39px;
+  font-size: 2rem;
+
+  span {
+    color: #000;
+    font-weight: 700;
+  }
+`;
+
+export const Diana = styled.h2`
+  color: ${theme.color.orange.light};
+  font-size: 2.5rem;
+  font-weight: 700;
 `;

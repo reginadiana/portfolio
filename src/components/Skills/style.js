@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { theme } from "../../theme";
 
 export const Section = styled.section`
-  padding: 5% 0;
+  padding: calc(95px + 32px) 0 5%;
   background-color: ${theme.color.gray.light};
 `;
 

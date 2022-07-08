@@ -5,7 +5,7 @@ export const link = {
   dev: "https://dev.to/dianaops",
   uri: "https://www.urionlinejudge.com.br/judge/en/profile/241809",
   revelo: "https://app.revelo.com.br/candidates/profile?locale=pt-BR",
-  instagram: "https://www.instagram.com/encantosfazenda/",
+  instagram: "https://www.instagram.com/reginadiana_rg/",
   etec: "http://www.etecjuliodemesquita.com.br/",
   fatec: "http://fatecsantoandre.edu.br/",
   womakerscode: "https://womakerscode.org/",

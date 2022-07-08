@@ -1,5 +1,4 @@
 import React from "react";
-import { Cards, Container } from "./style";
 import TitleSection from "../TitleSection/index";
 import WallpaperAmoPlantas from "../../assets/portfolio/frontend/amo_plantas.png";
 import WallpaperEcommerce from "../../assets/portfolio/frontend/ecommerce.png";
@@ -7,17 +6,18 @@ import WallpaperCertificates from "../../assets/portfolio/frontend/certificates_
 import WallpaperHeadhunters from "../../assets/portfolio/backend/headhunter.png";
 import WallpaperRentalCars from "../../assets/portfolio/backend/rental_cars.png";
 import { portfolio } from "../../services/links";
+import * as Styled from "./style";
 import Card from "./Card/index";
 
 const Projects = () => {
   return (
-    <Container id="projects">
+    <Styled.Section id="projects">
       <TitleSection
         title="Projetos"
         description="Conheça meus projetos no Github e em produção"
       />
 
-      <Cards>
+      <Styled.Cards>
         <Card
           project={portfolio.frontend.certificate}
           src={WallpaperCertificates}
@@ -44,8 +44,8 @@ const Projects = () => {
           src={WallpaperRentalCars}
           alt="Rental Cars"
         />
-      </Cards>
-    </Container>
+      </Styled.Cards>
+    </Styled.Section>
   );
 };
 

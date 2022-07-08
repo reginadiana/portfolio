@@ -1,17 +1,17 @@
 import React from "react";
-import { Cards, Container } from "../Projects/style";
 import TitleSection from "../TitleSection/index";
 import Card from "./Card";
 import WallpaperReadme from "../../assets/portfolio/lives/readme.jpeg";
 import WallpaperTreinaDev from "../../assets/portfolio/lives/treina.jpeg";
 // import WallpaperMindex from "../../assets/portfolio/articles/mindfex.jpeg";
 import { portfolio } from "../../services/links";
+import * as Styled from "../Projects/style";
 
 const Lives = () => {
   return (
-    <Container id="lives">
+    <Styled.Section id="lives">
       <TitleSection title="Lives" description="Me acompanhe na media" />
-      <Cards>
+      <Styled.Cards>
         {/* TODO: Abrir nova página para trazer os meus artigos */}
         {/* <Card
           project={portfolio.articles.readme}
@@ -41,8 +41,8 @@ const Lives = () => {
           src={WallpaperTreinaDev}
           alt="Live sobre Treina Dev"
         />
-      </Cards>
-    </Container>
+      </Styled.Cards>
+    </Styled.Section>
   );
 };
 
