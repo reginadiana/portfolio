@@ -1,33 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import * as Styled from "./style";
 import pdf from "../../services/document.pdf";
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
-  const [fixedMenu, setFixedMenu] = useState(false);
   const [active, setActive] = useState("about_me");
-
-  let pageYOffset = window.pageYOffset;
-  const minOffset = 1000;
-
-  const controlDirection = (e) => {
-    e.preventDefault();
-
-    if (window.pageYOffset <= minOffset) return;
-
-    const isUpScroll = pageYOffset >= window.pageYOffset;
-
-    setFixedMenu(isUpScroll);
-
-    pageYOffset = window.pageYOffset;
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", controlDirection);
-    return () => {
-      window.removeEventListener("scroll", controlDirection);
-    };
-  }, []);
 
   const handleOnClick = (e) => {
     setActive(e.target.name);
@@ -38,7 +15,7 @@ const Header = () => {
 
   return (
     <header>
-      <Styled.Menu fixedMenu={fixedMenu} openMenu={openMenu}>
+      <Styled.Menu openMenu={openMenu}>
         <Styled.Logo onClick={() => setOpenMenu(!openMenu)}>DR</Styled.Logo>
         <Styled.List openMenu={openMenu}>
           <Styled.ItemList
@@ -84,7 +61,7 @@ const Header = () => {
         </Styled.List>
       </Styled.Menu>
 
-      <Styled.Main fixedMenu={fixedMenu} openMenu={openMenu}>
+      <Styled.Main openMenu={openMenu}>
         <Styled.Hello>Hello.</Styled.Hello>
         <Styled.Description>
           Sou desenvolvedora de software <span>frontend</span>

@@ -19,14 +19,10 @@ export const Menu = styled.div`
   top: 0;
   text-align: center;
 
-  /*Mobile*/
-  @media screen and (max-width: 1101px) {
-    ${({ fixedMenu }) => fixedMenu && fixedMenuStyled};
-  }
+  ${fixedMenuStyled};
 
   /*Desktop*/
   @media screen and (min-width: 1100px) {
-    ${fixedMenuStyled};
     display: flex;
     padding: 0;
     justify-content: center;
@@ -54,7 +50,6 @@ export const Logo = styled.button`
 export const List = styled.ul`
   padding: 40px 0 20px;
   display: flex;
-
   background-color: ${theme.color.white};
   z-index: 1;
 
@@ -108,18 +103,12 @@ export const ItemList = styled.a`
 `;
 
 export const Main = styled.div`
-  padding: 0 16px 2px;
+  padding: 95px 16px 2px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   background-color: #90acd1;
   height: 100vh;
-
-  /*Mobile*/
-  @media screen and (max-width: 1101px) {
-    padding-top: ${({ fixedMenu, openMenu }) =>
-      (openMenu || fixedMenu) && "95px"};
-  }
 
   /* Desktop */
   @media screen and (min-width: 1100px) {
