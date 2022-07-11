@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../../../theme";
 
 export const Description = styled.div`
   text-align: justify;
@@ -7,15 +8,15 @@ export const Description = styled.div`
 
 export const Img = styled.img`
   width: 350px;
+  height: 200px;
   margin: 20px;
   border-radius: 5px;
-  opacity: 0.4;
   transition: 0.5s ease;
   backface-visibility: hidden;
   cursor: pointer;
 
   &:hover {
-    opacity: 1;
+    box-shadow: 0px 10px 15px -3px;
   }
 
   @media screen and (max-width: 400px) {

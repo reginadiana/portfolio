@@ -10,7 +10,7 @@
   <img src="http://img.shields.io/static/v1?label=vers%C3%A3o%20do%20projeto&message=v3.0.0&color=violet&style=for-the-badge&logo=github">
 </p>
 
-### Tópicos 
+### Tópicos
 
 :small_blue_diamond: [Descrição do projeto](#descrição-do-projeto)
 
@@ -26,7 +26,7 @@
 
 :small_blue_diamond: [Tarefas em aberto](#tarefas-em-aberto)
 
-## Descrição do projeto 
+## Descrição do projeto
 
 <p align="justify">
   Esta é uma aplicação frontend para o meu site pessoal, mostrando informações do meu currículo como skills, formação e projetos de forma criativa e divertida. 
@@ -34,14 +34,13 @@
 
 ## Funcionalidades
 
-:heavy_check_mark: Layout Responsívo 
+:heavy_check_mark: Layout Responsívo
 
 :heavy_check_mark: Descrição das informações do meu currículo
 
 ## Deploy da Aplicação :dash:
 
 > Acesse já: https://dianaregina.netlify.app/
-
 
 ## Pré-requisitos
 
@@ -51,27 +50,32 @@
 
 ## Como rodar a aplicação :arrow_forward:
 
-No terminal, clone o projeto: 
+No terminal, clone o projeto:
 
 ```
-git clone https://github.com/reginadiana/portfolio
+$ git clone https://github.com/reginadiana/portfolio
 ```
+
 Acesse a pasta
+
 ```
-cd portfolio
+$ cd portfolio
 ```
+
 Construa o docker e sua a aplicação com o container:
+
 ```
-docker-compose up -d --build
-docker-compose run --rm --service-ports app bash
+$ docker-compose up -d --build
 ```
+
+```
+$ docker-compose run --rm --service-ports app bash
+```
+
 Dentro do container, execute a aplicação:
+
 ```
-yarn start
+
+$ yarn start
+
 ```
-
-## Linguagens, dependencias e libs utilizadas 
-
-:books: [React](https://pt-br.reactjs.org/docs/create-a-new-react-app.html)
-
-:books: [Styled Components](https://styled-components.com/)

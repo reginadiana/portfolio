@@ -6,7 +6,7 @@ export const Section = styled.section`
   grid-template-columns: repeat(1, 1fr);
   justify-content: center;
 
-  /*Desktop*/
+  /* Desktop */
   @media screen and (min-width: 1200px) {
     padding: calc(95px + 32px) 70px 0;
     grid-template-columns: repeat(2, 600px);
@@ -15,33 +15,35 @@ export const Section = styled.section`
 
 export const Paragraphy = styled.p`
   margin: 0 auto 50px;
-  text-align: justify;
   width: 80%;
   font-size: 1rem;
   line-height: 40px;
 
-  /*Tablet*/
-  @media screen and (min-width: 600px) and (max-width: 1200px) {
-    width: 60%;
-    text-align: left;
+  /* Mobile */
+  @media screen and (max-width: 601px) {
+    text-align: justify;
   }
 
-  /*Desktop*/
+  /* Tablet */
+  @media screen and (min-width: 600px) and (max-width: 1200px) {
+    width: 60%;
+  }
+
+  /* Desktop */
   @media screen and (min-width: 1200px) {
     width: 70%;
-    text-align: left;
   }
 `;
 
 export const Img = styled.img`
-  display: none;
   width: 400px;
+  height: 600px;
   margin: auto;
   margin-bottom: 110px;
   box-shadow: 10px 10px 15px gray;
 
-  /*Desktop*/
-  @media screen and (min-width: 1200px) {
-    display: block;
+  /* Mobile */
+  @media screen and (max-width: 1201px) {
+    display: none;
   }
 `;

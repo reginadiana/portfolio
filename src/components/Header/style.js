@@ -53,6 +53,10 @@ export const List = styled.ul`
   background-color: ${theme.color.white};
   z-index: 1;
 
+  li {
+    list-style: none;
+  }
+
   /*Mobile*/
   @media screen and (max-width: 1101px) {
     flex-direction: column;

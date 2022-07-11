@@ -27,15 +27,15 @@ export const Tag = styled.p`
 
 export const Img = styled.img`
   width: 350px;
+  height: 200px;
   margin: 20px;
   border-radius: 5px;
   transition: 0.5s ease;
   backface-visibility: hidden;
   cursor: pointer;
-  opacity: 0.4;
 
-  &:hover {
-    opacity: 1;
+  :hover {
+    box-shadow: 0px 10px 15px -3px;
   }
 
   @media screen and (max-width: 400px) {
