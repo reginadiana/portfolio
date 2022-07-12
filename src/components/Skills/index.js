@@ -11,7 +11,7 @@ const Skills = () => (
       description="Conheça as tecnologias do meu dia a dia"
     />
     <Styled.Cards>
-      <Styled.Card color={theme.color.pink.light}>
+      <Styled.Card color={theme.color.orange.light}>
         <Styled.Span>
           <CodeSandboxOutlined />
         </Styled.Span>
@@ -21,7 +21,7 @@ const Skills = () => (
         </Styled.Paragraphy>
       </Styled.Card>
 
-      <Styled.Card color={theme.color.brown.light}>
+      <Styled.Card color={theme.color.orange.light}>
         <Styled.Span>
           <CodeSandboxOutlined />
         </Styled.Span>
@@ -91,7 +91,7 @@ const Skills = () => (
         </Styled.Paragraphy>
       </Styled.Card>
 
-      <Styled.Card color={theme.color.green}>
+      <Styled.Card color={theme.color.orange.light}>
         <Styled.Span>
           <CodeSandboxOutlined />
         </Styled.Span>
@@ -101,7 +101,7 @@ const Skills = () => (
         </Styled.Paragraphy>
       </Styled.Card>
 
-      <Styled.Card color={theme.color.blue.light}>
+      <Styled.Card color={theme.color.orange.light}>
         <Styled.Span>
           <CodeSandboxOutlined />
         </Styled.Span>
@@ -111,7 +111,7 @@ const Skills = () => (
         </Styled.Paragraphy>
       </Styled.Card>
 
-      <Styled.Card color={theme.color.orange.regular}>
+      <Styled.Card color={theme.color.orange.light}>
         <Styled.Span>
           <CodeSandboxOutlined />
         </Styled.Span>
@@ -121,7 +121,7 @@ const Skills = () => (
         </Styled.Paragraphy>
       </Styled.Card>
 
-      <Styled.Card color={theme.color.blue.regular}>
+      <Styled.Card color={theme.color.orange.light}>
         <Styled.Span>
           <CodeSandboxOutlined />
         </Styled.Span>

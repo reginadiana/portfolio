@@ -5,7 +5,7 @@ import WallpaperReadme from "../../assets/portfolio/lives/readme.jpeg";
 import WallpaperTreinaDev from "../../assets/portfolio/lives/treina.jpeg";
 // import WallpaperMindex from "../../assets/portfolio/articles/mindfex.jpeg";
 import { portfolio } from "../../services/links";
-import * as Styled from "../Projects/style";
+import * as Styled from "./style";
 
 const Lives = () => {
   return (

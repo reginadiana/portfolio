@@ -2,7 +2,8 @@ import styled from "styled-components";
 import { theme } from "../../theme";
 
 export const Section = styled.section`
-  padding-top: calc(95px + 32px);
+  padding-top: 32px;
+  // padding-top: calc(95px + 32px);
 `;
 
 export const Cards = styled.div`
@@ -50,10 +51,10 @@ export const Card = styled.div`
   border-radius: 7px;
   cursor: pointer;
 
-  &:hover {
+  /* &:hover {
     box-shadow: 5px 5px 15px gray;
     transition: 1.3s;
-  }
+  } */
 
   &:last-child {
     background-color: ${theme.color.blue.dark};

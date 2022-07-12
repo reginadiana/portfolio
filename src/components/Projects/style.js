@@ -3,9 +3,10 @@ import { theme } from "../../theme";
 
 export const Section = styled.section`
   background-color: ${theme.color.gray.light};
-  margin-bottom: 80px;
-  padding-bottom: 80px;
-  padding-top: calc(95px + 32px);
+  // margin-bottom: 80px;
+  padding-bottom: 32px;
+  padding-top: 32px;
+  // padding-top: calc(95px + 32px);
 `;
 
 export const Options = styled.div`

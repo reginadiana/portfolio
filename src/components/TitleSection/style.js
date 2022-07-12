@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { theme } from "../../theme";
 
 export const Container = styled.div`
-  margin-bottom: 40px;
+  margin-bottom: 32px;
   padding: 0 16px;
 `;
 
