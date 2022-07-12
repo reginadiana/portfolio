@@ -13,7 +13,7 @@ import { link } from "../../services/links";
 
 const Footer = () => (
   <Styled.Footer id="contatos">
-    <Styled.IconToUp href="#main">
+    <Styled.IconToUp href="#root">
       <UpCircleFilled />
     </Styled.IconToUp>
 
