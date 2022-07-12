@@ -39,6 +39,7 @@ export const Img = styled.img`
   }
 
   @media screen and (max-width: 400px) {
-    width: 250px;
+    width: 300px;
+    height: 170px;
   }
 `;
