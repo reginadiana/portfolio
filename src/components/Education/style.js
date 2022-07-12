@@ -33,7 +33,7 @@ export const Info = styled.div`
   @media screen and (min-width: 800px) {
     grid-template-columns: repeat(2, 1fr);
 
-    h3 {
+    h2 {
       position: relative;
       height: 45px;
       top: 5px;
@@ -73,15 +73,18 @@ export const Card = styled.div`
     text-align: center;
   }
 `;
+
 export const Title = styled.h1`
   font-size: 1.2rem;
   font-weight: 700;
 `;
+
 export const Location = styled.a`
   font-size: 1rem;
   color: black;
 `;
-export const Date = styled.h3`
+
+export const Date = styled.h2`
   background-color: ${theme.color.orange.light};
   width: 150px;
   text-align: center;
@@ -89,12 +92,14 @@ export const Date = styled.h3`
   border-radius: 25px;
   color: ${theme.color.white};
   margin-top: 10px;
+  font-size: 14px;
   margin-bottom: 20px;
 
   @media screen and (max-width: 400px) {
     margin: 20px auto 30px;
   }
 `;
+
 export const Description = styled.p`
   line-height: 30px;
 `;
