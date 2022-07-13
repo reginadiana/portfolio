@@ -151,7 +151,6 @@ export const Link = styled.a`
   font-size: 1rem;
   cursor: pointer;
   padding: 10px 20px;
-  // border-radius: 50px;
 
   &:hover {
     background-color: ${theme.color.blue.dark};
@@ -180,7 +179,6 @@ export const Description = styled.p`
   font-size: 2rem;
 
   span {
-    // color: #000;
     font-weight: 700;
   }
 `;

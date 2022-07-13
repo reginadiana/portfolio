@@ -1,23 +1,9 @@
-import React, { useState } from "react";
-import { Modal, Button } from "antd";
+import React from "react";
 import * as Styled from "./style";
+import { Button } from "antd";
 
-const Card = ({ project, src, alt }) => {
-  const [isModalVisible, setIsModalVisible] = useState(false);
-
-  const showModal = () => {
-    setIsModalVisible(true);
-  };
-
-  const handleCancel = () => {
-    setIsModalVisible(false);
-  };
-
-  const handleRedirect = (path) => {
-    setIsModalVisible(false);
-
-    window.location.href = path;
-  };
+const Card = ({ project }) => {
+  const handleRedirect = (path) => (window.location.href = path);
 
   return (
     <Styled.Container>
@@ -31,24 +17,6 @@ const Card = ({ project, src, alt }) => {
       >
         Acessar Live
       </Button>
-      {/* <Modal
-        title={project.title}
-        visible={isModalVisible}
-        onCancel={handleCancel}
-        footer={[
-          <Button
-            type="primary"
-            danger
-            disabled={!project.link}
-            onClick={() => handleRedirect(project.link)}
-          >
-            Acessar Live
-          </Button>,
-        ]}
-      >
-        <Styled.Description>{project.description}</Styled.Description>
-      </Modal>
-      <Styled.Img alt={alt} src={src} onClick={showModal} /> */}
     </Styled.Container>
   );
 };

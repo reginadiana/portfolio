@@ -3,7 +3,6 @@ import { theme } from "../../theme";
 
 export const Section = styled.section`
   padding-top: 32px;
-  // padding-top: calc(95px + 32px);
 `;
 
 export const Cards = styled.div`

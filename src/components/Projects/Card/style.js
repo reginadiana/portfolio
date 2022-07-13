@@ -6,7 +6,6 @@ export const Container = styled.div`
   border-radius: 4px;
   padding: 16px;
   width: 90%;
-  // margin-bottom: 16px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -17,8 +16,6 @@ export const Container = styled.div`
   }
 
   @media screen and (min-width: 1000px) {
-    // margin-bottom: 24px;
-    // margin-right: 24px;
     width: 400px;
   }
 `;
@@ -32,7 +29,6 @@ export const Title = styled.h2`
 export const Description = styled.div`
   color: ${theme.color.black};
   text-align: justify;
-  // margin-bottom: 32px;
 `;
 
 export const Tags = styled.div`

@@ -59,10 +59,7 @@ export const Line = styled.h2`
 
 export const Section = styled.section`
   background-color: ${theme.color.orange.light};
-  // margin-bottom: 80px;
-  padding-bottom: 48px;
-  padding-top: 48px;
-  // padding-top: calc(95px + 32px);
+  padding: 48px 0;
 `;
 
 export const Options = styled.div`

@@ -3,7 +3,6 @@ import { theme } from "../../theme";
 
 export const Section = styled.section`
   padding: 32px 0 5%;
-  // padding: calc(95px + 32px) 0 5%;
   background-color: ${theme.color.gray.light};
 `;
 
