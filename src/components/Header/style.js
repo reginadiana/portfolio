@@ -53,10 +53,6 @@ export const List = styled.ul`
   background-color: ${theme.color.white};
   z-index: 1;
 
-  li {
-    list-style: none;
-  }
-
   /*Mobile*/
   @media screen and (max-width: 1101px) {
     flex-direction: column;
@@ -125,10 +121,6 @@ export const Title = styled.h1`
   font-weight: 300;
   font-size: 2rem;
 
-  &:nth-child(6)::letter {
-    color: ${theme.color.white};
-  }
-
   /*Desktop*/
   @media screen and (min-width: 1100px) {
     font-size: 5rem;
@@ -177,14 +169,28 @@ export const Description = styled.p`
   color: ${theme.color.white};
   line-height: 39px;
   font-size: 2rem;
+
+  span {
+    font-weight: 700;
+  }
 `;
 
-export const Span = styled.span`
-  font-weight: 700;
-`;
-
-export const Diana = styled.h2`
+export const Author = styled.h2`
   color: ${theme.color.orange.light};
   font-size: 2.5rem;
   font-weight: 700;
+  text-transform: uppercase;
+`;
+
+export const I18nContainer = styled.div`
+  position: absolute;
+  top: 8px;
+  right: 8px;
+`;
+
+export const BtnI18n = styled.button`
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 8px;
 `;

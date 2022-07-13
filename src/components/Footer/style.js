@@ -25,7 +25,6 @@ export const Logo = styled.h1`
   padding: 5px;
   width: 60px;
   font-weight: bold;
-  cursor: pointer;
   font-size: 1.5rem;
   margin: 0 auto 40px;
 `;
@@ -50,4 +49,9 @@ export const Icon = styled.a`
     color: ${theme.color.orange.light};
     transition: 0.5s;
   }
+`;
+
+export const Author = styled.a`
+  font-weight: 700;
+  color: ${theme.color.blue.dark};
 `;
