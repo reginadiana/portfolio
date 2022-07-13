@@ -45,7 +45,9 @@ const Footer = () => (
       Copyright © 2020 - 2022 Todos os direitos reservados | Este site foi
       desenvolvido por
       <br />
-      <a href="https://www.linkedin.com/in/diana-regina/">Diana Regina</a>
+      <a href="https://www.linkedin.com/in/diana-regina/" target="_blank">
+        Diana Regina
+      </a>
     </p>
   </Styled.Footer>
 );

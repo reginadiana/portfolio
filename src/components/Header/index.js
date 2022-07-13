@@ -64,7 +64,7 @@ const Header = () => {
       <Styled.Main openMenu={openMenu}>
         <Styled.Hello>Hello.</Styled.Hello>
         <Styled.Description>
-          Sou desenvolvedora de software <span>frontend</span>
+          Sou desenvolvedora de software <Styled.Span>frontend</Styled.Span>
         </Styled.Description>
         <Styled.Diana>DIANA REGINA</Styled.Diana>
         <Styled.Download>

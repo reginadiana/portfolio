@@ -7,9 +7,9 @@ const Contact = () => (
     <Styled.Title>
       Fale comigo <MailOutlined />
     </Styled.Title>
-    <a href="mailto:dianaregina22@outlook.com.br">
+    <Styled.Email href="mailto:dianaregina22@outlook.com.br">
       dianaregina22@outlook.com.br
-    </a>
+    </Styled.Email>
   </Styled.Section>
 );
 

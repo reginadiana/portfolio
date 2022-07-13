@@ -11,10 +11,6 @@ export const Container = styled.div`
   align-items: flex-start;
   justify-content: space-between;
 
-  .actions button {
-    margin-right: 8px;
-  }
-
   @media screen and (min-width: 1000px) {
     width: 400px;
   }
@@ -50,21 +46,8 @@ export const Tag = styled.p`
   }
 `;
 
-export const Img = styled.img`
-  width: 350px;
-  height: 200px;
-  margin: 20px;
-  border-radius: 5px;
-  transition: 0.5s ease;
-  backface-visibility: hidden;
-  cursor: pointer;
-
-  :hover {
-    box-shadow: 0px 10px 15px -3px;
-  }
-
-  @media screen and (max-width: 400px) {
-    width: 300px;
-    height: 170px;
+export const Actions = styled.div`
+  button {
+    margin-right: 8px;
   }
 `;

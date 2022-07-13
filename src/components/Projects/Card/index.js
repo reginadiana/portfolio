@@ -14,7 +14,7 @@ const Card = ({ project }) => {
           <Styled.Tag key={key}>{tech}</Styled.Tag>
         ))}
       </Styled.Tags>
-      <div className="actions">
+      <Styled.Actions>
         <Button danger onClick={() => handleRedirect(project.github)}>
           Ver no Gihub
         </Button>
@@ -26,7 +26,7 @@ const Card = ({ project }) => {
         >
           Site
         </Button>
-      </div>
+      </Styled.Actions>
     </Styled.Container>
   );
 };

@@ -32,13 +32,6 @@ export const Info = styled.div`
 
   @media screen and (min-width: 800px) {
     grid-template-columns: repeat(2, 1fr);
-
-    h2 {
-      position: relative;
-      height: 45px;
-      top: 5px;
-      left: 50px;
-    }
   }
 `;
 
@@ -53,13 +46,13 @@ export const Card = styled.div`
   &:last-child {
     background-color: ${theme.color.blue.dark};
 
-    h1,
-    a,
-    p {
+    ${Title},
+    ${Location},
+    ${Description} {
       color: ${theme.color.white};
     }
 
-    p {
+    ${Description} {
       font-size: 1rem;
     }
   }
@@ -92,6 +85,13 @@ export const Date = styled.h2`
 
   @media screen and (max-width: 400px) {
     margin: 20px auto 30px;
+  }
+
+  @media screen and (min-width: 800px) {
+    position: relative;
+    height: 45px;
+    top: 5px;
+    left: 50px;
   }
 `;
 

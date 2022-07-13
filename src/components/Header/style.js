@@ -177,10 +177,10 @@ export const Description = styled.p`
   color: ${theme.color.white};
   line-height: 39px;
   font-size: 2rem;
+`;
 
-  span {
-    font-weight: 700;
-  }
+export const Span = styled.span`
+  font-weight: 700;
 `;
 
 export const Diana = styled.h2`
