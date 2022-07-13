@@ -14,7 +14,7 @@ export const IconToUp = styled.a`
   right: 20px;
 
   &:hover {
-    color: ${theme.color.brown.light};
+    color: ${theme.color.blue.dark};
     transition: 0.5s;
   }
 `;
