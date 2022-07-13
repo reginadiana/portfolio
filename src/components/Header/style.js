@@ -30,7 +30,7 @@ export const Menu = styled.div`
 `;
 
 export const Logo = styled.button`
-  color: ${theme.color.blue.light};
+  color: ${theme.color.orange.light};
   border: 3px ${theme.color.orange.light} solid;
   padding: 5px;
   width: 60px;
@@ -111,7 +111,7 @@ export const Main = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: #90acd1;
+  background-image: ${`linear-gradient(180deg, ${theme.color.orange.light} 0%, #fff 100%)`};
   height: 100vh;
 
   /* Desktop */
@@ -146,14 +146,15 @@ export const Subtitle = styled.p`
 `;
 
 export const Link = styled.a`
-  color: ${theme.color.orange.light};
+  background-color: ${theme.color.orange.light};
+  color: ${theme.color.white};
   font-size: 1rem;
   cursor: pointer;
   padding: 10px 20px;
-  border-radius: 50px;
+  // border-radius: 50px;
 
   &:hover {
-    background-color: ${theme.color.orange.light};
+    background-color: ${theme.color.blue.dark};
     color: ${theme.color.white};
     transition: 1s;
     padding: 10px 30px;
@@ -162,6 +163,7 @@ export const Link = styled.a`
 
 export const Download = styled.div`
   margin-top: 80px;
+  text-align: center;
 `;
 
 export const Hello = styled.h1`
@@ -169,6 +171,7 @@ export const Hello = styled.h1`
   text-transform: uppercase;
   font-weight: 700;
   margin: 0;
+  color: ${theme.color.white};
 `;
 
 export const Description = styled.p`
@@ -177,7 +180,7 @@ export const Description = styled.p`
   font-size: 2rem;
 
   span {
-    color: #000;
+    // color: #000;
     font-weight: 700;
   }
 `;

@@ -20,8 +20,18 @@ const Card = ({ project, src, alt }) => {
   };
 
   return (
-    <>
-      <Modal
+    <Styled.Container>
+      <Styled.Title>{project.title}</Styled.Title>
+      <Styled.Description>{project.description}</Styled.Description>
+      <Button
+        type="primary"
+        danger
+        disabled={!project.link}
+        onClick={() => handleRedirect(project.link)}
+      >
+        Acessar Live
+      </Button>
+      {/* <Modal
         title={project.title}
         visible={isModalVisible}
         onCancel={handleCancel}
@@ -38,8 +48,8 @@ const Card = ({ project, src, alt }) => {
       >
         <Styled.Description>{project.description}</Styled.Description>
       </Modal>
-      <Styled.Img alt={alt} src={src} onClick={showModal} />
-    </>
+      <Styled.Img alt={alt} src={src} onClick={showModal} /> */}
+    </Styled.Container>
   );
 };
 

@@ -6,6 +6,7 @@ import Skills from "../../components/Skills/index";
 import Education from "../../components/Education/index";
 import Projects from "../../components/Projects/index";
 import Lives from "../../components/Lives/index";
+import Articles from "../../components/Articles/index";
 import Contact from "../../components/Contact/index";
 import Footer from "../../components/Footer/index";
 import Spinner from "../../components/Spinner/index";
@@ -26,6 +27,7 @@ const Home = () => {
           <AboutMe />
           <Projects />
           <Lives />
+          <Articles />
           <Education />
           <Skills />
           <Contact />

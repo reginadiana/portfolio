@@ -78,35 +78,16 @@ export const portfolio = {
       techs: ["html", "css", "rails", "ruby", "tdd"],
     },
   },
-  // articles: {
-  //   mindlex: {
-  //     title: "Mindlex",
-  //     description:
-  //       "Artigo mostrando como usar o dispositivo para leitura de sinais cerebais (Mindflex) com o Arduino",
-  //     github:
-  //       "https://github.com/React-Bootcamp-WoMarkersCode/certificate-generator",
-  //     deploy: "https://certificates-for-everyone-womakerscode.netlify.app/",
-  //     techs: ["arduino", "mindflex", "linguagem c"],
-  //   },
-  //   readme: {
-  //     title: "Readme",
-  //     description:
-  //       "Artigo explicando como escrever e organizar um bom readme para os projetos dos devs no github",
-  //     github:
-  //       "https://github.com/React-Bootcamp-WoMarkersCode/certificate-generator",
-  //     deploy: "https://certificates-for-everyone-womakerscode.netlify.app/",
-  //     techs: ["github", "markdown", "doc"],
-  //   },
-  //   arduino: {
-  //     title: "Como fazer um pisca pisca com LEDS",
-  //     description:
-  //       "Plataforma para gerar certificados em PDF para participantes de eventos",
-  //     github:
-  //       "https://github.com/React-Bootcamp-WoMarkersCode/certificate-generator",
-  //     deploy: "https://certificates-for-everyone-womakerscode.netlify.app/",
-  //     techs: ["led", "eletronica", "arduino", "linguagem c"],
-  //   },
-  // },
+  articles: {
+    readme: {
+      title: "Como escrever um README.md sensacional no Github",
+      description:
+        "Depois de desenvolver aquele projeto incrível, ter passado vários perrengues com a aplicação e Git,\
+        você abriu no Github para a comunidade. Mas as suas tarefas não terminaram, está na hora de documentar\
+        o seu projeto! E nada melhor do que um bom README.md...",
+      link: "https://medium.com/@dianareginadr19/como-escrever-um-readme-md-sensacional-no-github-f6929e60eead",
+    },
+  },
   lives: {
     readme: {
       title: "Como escrever e personalizar um README no Github",

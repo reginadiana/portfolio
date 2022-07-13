@@ -23,49 +23,30 @@ const Card = ({ project, src, alt }) => {
     <Styled.Container>
       <Styled.Title>{project.title}</Styled.Title>
       <Styled.Description>{project.description}</Styled.Description>
-      <Styled.Tags>
-        {project.techs.map((tech, key) => (
-          <Styled.Tag key={key}>{tech}</Styled.Tag>
-        ))}
-      </Styled.Tags>
-      <div className="actions">
-        <Button danger onClick={() => handleRedirect(project.github)}>
-          Ver no Gihub
-        </Button>
-        ,
-        <Button
-          type="primary"
-          danger
-          disabled={!project.deploy}
-          onClick={() => handleRedirect(project.deploy)}
-        >
-          Deploy
-        </Button>
-      </div>
+      <Button
+        type="primary"
+        danger
+        disabled={!project.link}
+        onClick={() => handleRedirect(project.link)}
+      >
+        Artigo Completo
+      </Button>
       {/* <Modal
         title={project.title}
         visible={isModalVisible}
         onCancel={handleCancel}
         footer={[
-          <Button danger onClick={() => handleRedirect(project.github)}>
-            Ver no Gihub
-          </Button>,
           <Button
             type="primary"
             danger
-            disabled={!project.deploy}
-            onClick={() => handleRedirect(project.deploy)}
+            disabled={!project.link}
+            onClick={() => handleRedirect(project.link)}
           >
-            Deploy
+            Acessar Live
           </Button>,
         ]}
       >
         <Styled.Description>{project.description}</Styled.Description>
-        <Styled.Tags>
-          {project.techs.map((tech, key) => (
-            <Styled.Tag key={key}>{tech}</Styled.Tag>
-          ))}
-        </Styled.Tags>
       </Modal>
       <Styled.Img alt={alt} src={src} onClick={showModal} /> */}
     </Styled.Container>

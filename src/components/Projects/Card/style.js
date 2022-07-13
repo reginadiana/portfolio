@@ -1,15 +1,44 @@
 import styled from "styled-components";
 import { theme } from "../../../theme";
 
+export const Container = styled.div`
+  background-color: ${theme.color.gray.light};
+  border-radius: 4px;
+  padding: 16px;
+  width: 90%;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  .actions button {
+    margin-right: 8px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    margin-bottom: 24px;
+    margin-right: 24px;
+    width: 400px;
+  }
+`;
+
+export const Title = styled.h2`
+  color: ${theme.color.black};
+  line-height: 27px;
+  font-size: 18px;
+`;
+
 export const Description = styled.div`
+  color: ${theme.color.black};
   text-align: justify;
-  line-height: 30px;
+  // margin-bottom: 32px;
 `;
 
 export const Tags = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin-top: 16px;
+  margin: 16px 0;
 `;
 
 export const Tag = styled.p`

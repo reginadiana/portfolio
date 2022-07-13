@@ -12,10 +12,18 @@ import Card from "./Card/index";
 const Projects = () => {
   return (
     <Styled.Section id="projects">
-      <TitleSection
+      {/* <TitleSection
         title="Projetos"
         description="Conheça meus projetos no Github e em produção"
-      />
+      /> */}
+
+      <Styled.Container>
+        <Styled.Title>Projetos</Styled.Title>
+        <Styled.Paragraphy>
+          Conheça meus projetos no Github e em produção
+        </Styled.Paragraphy>
+        <Styled.Line />
+      </Styled.Container>
 
       <Styled.Cards>
         <Card

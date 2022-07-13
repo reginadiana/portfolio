@@ -67,9 +67,9 @@ const Header = () => {
           Sou desenvolvedora de software <span>frontend</span>
         </Styled.Description>
         <Styled.Diana>DIANA REGINA</Styled.Diana>
-        {/* <Styled.Download>
+        <Styled.Download>
           <Styled.Link href={pdf}>Ver Curriculo (PDF)</Styled.Link>
-        </Styled.Download> */}
+        </Styled.Download>
       </Styled.Main>
     </header>
   );

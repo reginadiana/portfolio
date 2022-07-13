@@ -20,7 +20,7 @@ export const IconToUp = styled.a`
 `;
 
 export const Logo = styled.h1`
-  color: ${theme.color.blue.light};
+  color: ${theme.color.orange.light};
   border: 3px ${theme.color.orange.light} solid;
   padding: 5px;
   width: 60px;
