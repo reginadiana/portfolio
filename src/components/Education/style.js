@@ -46,14 +46,9 @@ export const Card = styled.div`
   background-color: ${theme.color.gray.light};
   padding: 40px;
   margin: 15px;
-  color: gray;
+  color: ${theme.color.gray.self};
   border-radius: 7px;
   cursor: pointer;
-
-  /* &:hover {
-    box-shadow: 5px 5px 15px gray;
-    transition: 1.3s;
-  } */
 
   &:last-child {
     background-color: ${theme.color.blue.dark};
@@ -81,7 +76,7 @@ export const Title = styled.h1`
 
 export const Location = styled.a`
   font-size: 1rem;
-  color: black;
+  color: ${theme.color.black};
 `;
 
 export const Date = styled.h2`

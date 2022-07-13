@@ -32,7 +32,7 @@ export const Logo = styled.h1`
 
 export const Title = styled.h2`
   font-weight: bold;
-  color: gray;
+  color: ${theme.color.gray.self};
   font-size: 1.5rem;
 `;
 

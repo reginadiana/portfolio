@@ -22,7 +22,7 @@ export const Title = styled.h1`
 `;
 
 export const Paragraphy = styled.p`
-  color: gray;
+  color: ${theme.color.gray.self};
   text-align: center;
 `;
 

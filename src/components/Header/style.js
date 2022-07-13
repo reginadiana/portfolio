@@ -11,7 +11,7 @@ const fixedMenuStyled = css`
 
 export const Menu = styled.div`
   padding: calc(95px / 4) 0;
-  background-color: white;
+  background-color: ${theme.color.white};
   z-index: 1;
   width: 100%;
   height: 95px;
@@ -82,7 +82,7 @@ const activeStyled = css`
 `;
 
 export const ItemList = styled.a`
-  color: black;
+  color: ${theme.color.black};
   list-style: none;
   font-size: 1rem;
   padding-bottom: 8px;
@@ -111,7 +111,7 @@ export const Main = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-image: ${`linear-gradient(180deg, ${theme.color.orange.light} 0%, #fff 100%)`};
+  background-image: ${`linear-gradient(180deg, ${theme.color.orange.light} 0%, ${theme.color.white} 100%)`};
   height: 100vh;
 
   /* Desktop */

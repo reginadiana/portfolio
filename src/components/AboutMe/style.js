@@ -40,7 +40,7 @@ export const Img = styled.img`
   height: 600px;
   margin: auto;
   margin-bottom: 110px;
-  box-shadow: 10px 10px 15px gray;
+  box-shadow: 10px 10px 15px ${theme.color.gray.self};
 
   /* Mobile */
   @media screen and (max-width: 1201px) {

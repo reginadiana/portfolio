@@ -2,6 +2,7 @@ export const theme = {
   color: {
     white: "#fff",
     gray: {
+      self: "gray",
       regular: "#c1bdbe",
       light: "#f9f9ff",
     },
@@ -21,6 +22,7 @@ export const theme = {
       light: "#e45447",
     },
     green: "#49b675",
+    black: "#000",
   },
   opacity: {
     black: {
