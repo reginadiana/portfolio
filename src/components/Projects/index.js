@@ -13,11 +13,9 @@ const Projects = () => (
     />
 
     <Styled.Cards>
-      <Card project={portfolio.frontend.certificate} />
-      <Card project={portfolio.frontend.amoPlantas} />
-      <Card project={portfolio.frontend.ecommerce} />
-      <Card project={portfolio.backend.headhunter} />
-      <Card project={portfolio.backend.rentalCars} />
+      {portfolio.projects.map((project, index) => (
+        <Card key={index} project={project} />
+      ))}
     </Styled.Cards>
   </Styled.Section>
 );

@@ -2,18 +2,18 @@ import React from "react";
 import * as Styled from "./style";
 import { Button } from "antd";
 
-const Card = ({ project }) => {
+const Card = ({ live }) => {
   const handleRedirect = (path) => (window.location.href = path);
 
   return (
     <Styled.Container>
-      <Styled.Title>{project.title}</Styled.Title>
-      <Styled.Description>{project.description}</Styled.Description>
+      <Styled.Title>{live.title}</Styled.Title>
+      <Styled.Description>{live.description}</Styled.Description>
       <Button
         type="primary"
         danger
-        disabled={!project.link}
-        onClick={() => handleRedirect(project.link)}
+        disabled={!live.link}
+        onClick={() => handleRedirect(live.link)}
       >
         Acessar Live
       </Button>

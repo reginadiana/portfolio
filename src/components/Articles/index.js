@@ -1,14 +1,18 @@
 import React from "react";
 import TitleSection from "../TitleSection/index";
 import { portfolio } from "../../services/links";
-import Card from "./Card";
 import * as Styled from "./style";
+import Card from "./Card";
 
 const Articles = () => (
   <Styled.Section id="articles">
     <TitleSection title="Artigos" description="Acompanhe o que escrevo" />
     <Styled.Cards>
-      <Card project={portfolio.articles.readme} />
+      <Styled.Cards>
+        {portfolio.articles.map((article, index) => (
+          <Card key={index} article={article} />
+        ))}
+      </Styled.Cards>
     </Styled.Cards>
   </Styled.Section>
 );

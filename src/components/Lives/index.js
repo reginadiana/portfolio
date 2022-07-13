@@ -8,8 +8,11 @@ const Lives = () => (
   <Styled.Section id="lives">
     <TitleSection title="Lives" description="Me acompanhe na media" />
     <Styled.Cards>
-      <Card project={portfolio.lives.readme} />
-      <Card project={portfolio.lives.treinaDev} />
+      <Styled.Cards>
+        {portfolio.lives.map((live, index) => (
+          <Card key={index} live={live} />
+        ))}
+      </Styled.Cards>
     </Styled.Cards>
   </Styled.Section>
 );

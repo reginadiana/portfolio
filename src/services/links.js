@@ -14,8 +14,8 @@ export const link = {
 };
 
 export const portfolio = {
-  frontend: {
-    certificate: {
+  projects: [
+    {
       title: "Certificates for Everyone",
       description:
         "Plataforma para gerar certificados em PDF para participantes de eventos",
@@ -36,7 +36,7 @@ export const portfolio = {
         "docker",
       ],
     },
-    amoPlantas: {
+    {
       title: "Amo Plantas",
       description:
         "Plataforma para recomendação de plantas a partir da escolha da intensidade de raios solares,\
@@ -46,7 +46,7 @@ export const portfolio = {
       deploy: null,
       techs: ["html", "css", "js"],
     },
-    ecommerce: {
+    {
       title: "Ecommerce",
       description: "Plataforma para um e commerce de produtos",
       github:
@@ -54,9 +54,7 @@ export const portfolio = {
       deploy: "https://ecommercexgb.netlify.app/",
       techs: ["html", "css", "js", "react"],
     },
-  },
-  backend: {
-    headhunter: {
+    {
       title: "Headhunters",
       description:
         "O projeto é uma plataforma com foco em vagas de emprego para que recrutadores publiquem e\
@@ -66,7 +64,7 @@ export const portfolio = {
       deploy: "https://headhuntersjobs.herokuapp.com/",
       techs: ["html", "css", "rails", "ruby", "tdd"],
     },
-    rentalCars: {
+    {
       title: "Rental Cars",
       description:
         "O projeto é uma aplicação backend com Ruby on Rails para um sistema interno de aluguel de carros.\
@@ -77,9 +75,9 @@ export const portfolio = {
       deploy: null,
       techs: ["html", "css", "rails", "ruby", "tdd"],
     },
-  },
-  articles: {
-    readme: {
+  ],
+  articles: [
+    {
       title: "Como escrever um README.md sensacional no Github",
       description:
         "Depois de desenvolver aquele projeto incrível, ter passado vários perrengues com a aplicação e Git,\
@@ -87,9 +85,9 @@ export const portfolio = {
         o seu projeto! E nada melhor do que um bom README.md...",
       link: "https://medium.com/@dianareginadr19/como-escrever-um-readme-md-sensacional-no-github-f6929e60eead",
     },
-  },
-  lives: {
-    readme: {
+  ],
+  lives: [
+    {
       title: "Como escrever e personalizar um README no Github",
       description:
         "Participei dessa live para o canal das meninas da WomakersCode em 2020 junto com a cohost Laís Lima.\
@@ -97,7 +95,7 @@ export const portfolio = {
         mostrando tudo na prática e ainda respondendo as duvidas no final.",
       link: "https://www.youtube.com/watch?v=2A_ebBA3jzM",
     },
-    treinaDev: {
+    {
       title: "Apresentação da 5 turma do Treina Dev",
       description:
         "Participei dessa live para o canal da Campus Code em 2021 com o Gustavo Carvalho,\
@@ -105,5 +103,5 @@ export const portfolio = {
       do treinamento treina dev para a turma 5.",
       link: "https://www.youtube.com/watch?v=7D_zafaq0RA&t=2124s",
     },
-  },
+  ],
 };
