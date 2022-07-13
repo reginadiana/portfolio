@@ -1,9 +1,11 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { theme } from "../../theme";
 
 export const Container = styled.div`
   margin-bottom: 32px;
   padding: 0 16px;
+
+  ${({ invertedTheme }) => (invertedTheme ? invertedStyled : defaultStyled)};
 `;
 
 export const Title = styled.h1`
@@ -22,7 +24,6 @@ export const Title = styled.h1`
 `;
 
 export const Paragraphy = styled.p`
-  color: ${theme.color.gray.self};
   text-align: center;
 `;
 
@@ -31,14 +32,12 @@ export const Line = styled.h2`
   margin: auto;
   width: 300px;
   height: 2px;
-  background: ${theme.color.orange.light};
   position: relative;
 
   &::after {
     content: "";
     width: 10px;
     height: 10px;
-    background: ${theme.color.orange.light};
     border-radius: 50%;
     position: absolute;
     top: 50%;
@@ -52,6 +51,36 @@ export const Line = styled.h2`
 
     &::after {
       display: none;
+    }
+  }
+`;
+
+const defaultStyled = css`
+  ${Title} {
+    color: ${theme.color.black};
+  }
+
+  ${Paragraphy} {
+    color: ${theme.color.gray.self};
+  }
+
+  ${Line} {
+    &,
+    ::after {
+      background: ${theme.color.orange.light};
+    }
+  }
+`;
+
+const invertedStyled = css`
+  ${Title}, ${Paragraphy} {
+    color: ${theme.color.white};
+  }
+
+  ${Line} {
+    &,
+    ::after {
+      background: ${theme.color.white};
     }
   }
 `;

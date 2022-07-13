@@ -1,16 +1,16 @@
 export const link = {
-  github: "https://github.com/reginadiana",
-  medium: "https://medium.com/@dianareginadr19",
-  linkedin: "https://www.linkedin.com/in/diana-regina-a96840173/",
-  dev: "https://dev.to/dianaops",
-  uri: "https://www.urionlinejudge.com.br/judge/en/profile/241809",
   revelo: "https://app.revelo.com.br/candidates/profile?locale=pt-BR",
+  uri: "https://www.urionlinejudge.com.br/judge/en/profile/241809",
+  linkedin: "https://www.linkedin.com/in/diana-regina-a96840173/",
   instagram: "https://www.instagram.com/reginadiana_rg/",
   etec: "http://www.etecjuliodemesquita.com.br/",
-  fatec: "http://fatecsantoandre.edu.br/",
+  medium: "https://medium.com/@dianareginadr19",
   womakerscode: "https://womakerscode.org/",
+  github: "https://github.com/reginadiana",
+  fatec: "http://fatecsantoandre.edu.br/",
   campus: "https://www.treinadev.com.br/",
   rebase: "https://www.rebase.com.br/#/",
+  dev: "https://dev.to/dianaops",
 };
 
 export const portfolio = {

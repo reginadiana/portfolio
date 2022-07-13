@@ -1,7 +1,7 @@
 import React from "react";
-import * as Styled from "./style";
 import TitleSection from "../TitleSection/index";
 import { link } from "../../services/links";
+import * as Styled from "./style";
 
 const Education = () => (
   <Styled.Section id="education">

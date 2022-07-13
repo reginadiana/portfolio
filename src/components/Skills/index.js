@@ -1,8 +1,8 @@
 import React from "react";
 import { CodeSandboxOutlined } from "@ant-design/icons";
-import * as Styled from "./style";
 import TitleSection from "../TitleSection/index";
 import { theme } from "../../theme";
+import * as Styled from "./style";
 
 const Skills = () => (
   <Styled.Section id="skills">

@@ -1,7 +1,7 @@
 import React from "react";
 import TitleSection from "../TitleSection/index";
-import Card from "./Card";
 import { portfolio } from "../../services/links";
+import Card from "./Card";
 import * as Styled from "./style";
 
 const Articles = () => (

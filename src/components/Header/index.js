@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import * as Styled from "./style";
 import pdf from "../../services/document.pdf";
+import * as Styled from "./style";
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);

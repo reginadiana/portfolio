@@ -35,33 +35,6 @@ export const Info = styled.div`
   }
 `;
 
-export const Card = styled.div`
-  background-color: ${theme.color.gray.light};
-  padding: 40px;
-  margin: 15px;
-  color: ${theme.color.gray.self};
-  border-radius: 7px;
-  cursor: pointer;
-
-  &:last-child {
-    background-color: ${theme.color.blue.dark};
-
-    ${Title},
-    ${Location},
-    ${Description} {
-      color: ${theme.color.white};
-    }
-
-    ${Description} {
-      font-size: 1rem;
-    }
-  }
-
-  @media screen and (max-width: 400px) {
-    text-align: center;
-  }
-`;
-
 export const Title = styled.h1`
   font-size: 1.2rem;
   font-weight: 700;
@@ -97,4 +70,31 @@ export const Date = styled.h2`
 
 export const Description = styled.p`
   line-height: 30px;
+`;
+
+export const Card = styled.div`
+  background-color: ${theme.color.gray.light};
+  padding: 40px;
+  margin: 15px;
+  color: ${theme.color.gray.self};
+  border-radius: 7px;
+  cursor: pointer;
+
+  &:last-child {
+    background-color: ${theme.color.blue.dark};
+
+    ${Title},
+    ${Location},
+    ${Description} {
+      color: ${theme.color.white};
+    }
+
+    ${Description} {
+      font-size: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    text-align: center;
+  }
 `;

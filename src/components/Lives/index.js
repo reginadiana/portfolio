@@ -1,8 +1,8 @@
 import React from "react";
 import TitleSection from "../TitleSection/index";
-import Card from "./Card";
 import { portfolio } from "../../services/links";
 import * as Styled from "./style";
+import Card from "./Card";
 
 const Lives = () => (
   <Styled.Section id="lives">

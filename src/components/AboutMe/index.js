@@ -1,8 +1,8 @@
 import React from "react";
-import * as Styled from "./style";
-import TitleSection from "../TitleSection/index";
-import AboutMeImg from "../../assets/about/me.jpeg";
 import AboutWebsite from "../../assets/about/site.jpeg";
+import AboutMeImg from "../../assets/about/me.jpeg";
+import TitleSection from "../TitleSection/index";
+import * as Styled from "./style";
 
 const AboutMe = () => (
   <Styled.Section id="about_me">

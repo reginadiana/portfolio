@@ -1,4 +1,6 @@
 import React from "react";
+import { link } from "../../services/links";
+import * as Styled from "./style";
 import "antd/dist/antd.css";
 import {
   GithubOutlined,
@@ -8,8 +10,6 @@ import {
   BookOutlined,
   UpCircleFilled,
 } from "@ant-design/icons";
-import * as Styled from "./style";
-import { link } from "../../services/links";
 
 const Footer = () => (
   <Styled.Footer id="contatos">
