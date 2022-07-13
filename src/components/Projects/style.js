@@ -97,16 +97,28 @@ export const Button = styled.button`
 `;
 
 export const Cards = styled.div`
-  display: flex;
-  flex-direction: column;
-  // margin: auto;
-  align-items: center;
+  display: grid;
+
+  @media screen and (max-width: 1001px) {
+    row-gap: 16px;
+    justify-items: center;
+  }
 
   @media screen and (min-width: 1000px) {
-    flex-direction: row;
-    align-items: revert;
-    flex-wrap: wrap;
-    justify-content: center;
-    // width: 950px;
+    column-gap: 24px;
+    row-gap: 24px;
+    margin: auto;
+    width: 800px;
+    grid-template-columns: repeat(2, 400px);
+  }
+
+  @media screen and (min-width: 1500px) {
+    width: 1200px;
+    grid-template-columns: repeat(3, 400px);
+  }
+
+  @media screen and (min-width: 1800px) {
+    width: 1600px;
+    grid-template-columns: repeat(4, 400px);
   }
 `;
