@@ -34,7 +34,7 @@ export default {
       tentando fazer melhor, porque <strong>sempre dá.</strong>",
       },
       site: {
-        alt: "Imagem com um Iphone da cor preta acompanhdo de uma caneta também da cor preta",
+        alt: "Imagem com um Iphone da cor preta acompanhado de uma caneta também da cor preta",
         title: "Sobre este site",
         description: "Sempre foi uma evolução",
         p_1: "Esse site é uma prova disso, ele é a terceira versão do que tenho tentando fazer\
@@ -202,7 +202,7 @@ export default {
           "Para aproveitar recursos de layout para construir telas de forma mais rápida e dar manutenção de forma dinamica",
       },
       git: {
-        title: "Antd",
+        title: "Git",
         description:
           "Para realizar o controle de versão dos projetos, alterações em código, etc. Já trabalhei com as plataformas\
         Github, Gitlab, Bitbucket e um pouco de Azure.",

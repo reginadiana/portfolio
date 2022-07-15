@@ -10,11 +10,11 @@ export default {
       contacts: "Contacts",
     },
     translate: {
-      pt: "Apresentar site no idioma português",
-      en: "Apresentar site no idioma inglês",
+      pt: "Presentation of the website in Portuguese",
+      en: "Presentation of the website in English",
       alt: {
-        pt: "Bandeira do Brasil",
-        en: "Bandeira dos Estados Unidos",
+        pt: "Brazil's flag",
+        en: "United states's flag",
       },
     },
     welcome: {
@@ -24,217 +24,217 @@ export default {
     },
     about: {
       me: {
-        alt: "Imagem tipo pintura que mostra uma mulher com olhos castanhos em evidencia",
-        title: "Sobre mim",
-        description: "Quem é a Diana?",
-        p_1: "Sou uma mulher <strong>criativa</strong>, <strong>organizada</strong>, e <strong>muito dedicada</strong>.\
-        Gosto de ler, dançar, pintar, assistir séries sobre ficção cientifica, crimes e suspense.",
-        p_2: "Já deu para notar que gosto de arte e tudo que é intenso. Mas a calmaria é bem vinda sempre.",
-        p_3: "Se você veio aqui conhecer o meu trabalho, saiba que sou apaixonada pelo que faço e estou sempre\
-        tentando fazer melhor, porque <strong>sempre dá.</strong>",
+        alt: "Painting-like image that shows a woman with brown eyes in evidence",
+        title: "About Me",
+        description: "Who is Diana?",
+        p_1: "I am a <strong>creative</strong>, <strong>organized</strong>, and <strong>very dedicated</strong> woman.\
+        I like to read, dance, paint, watch series about science fiction, crimes and suspense.",
+        p_2: "I can already tell that I like art and everything that is intense. But the calm is always welcome.",
+        p_3: "If you came here to see my work, know that I am passionate about what I do and am always\
+        trying to do better, because <strong>always do.</strong>",
       },
       site: {
-        alt: "Imagem com um Iphone da cor preta acompanhdo de uma caneta também da cor preta",
-        title: "Sobre este site",
-        description: "Sempre foi uma evolução",
-        p_1: "Esse site é uma prova disso, ele é a terceira versão do que tenho tentando fazer\
-          desde 2019: o meu <strong>portfólio.</strong>",
-        p_2: "Entre ajustes no design, responsivo nas tecnologias ele veio da primeira versão com um simples HTML\
-          e CSS ao React, levando uma maturidade bem maior que quem está por trás de sua criação.",
-        p_3: "Novas alterações em 2022 incluiram uma mudança geral no layout, possibilidade\
-          de acessar o site tanto nos idiomas português como no inglês e navegação mais prática nas versões mobile e desktop",
+        alt: "Image with a black iPhone accompanied by a black pen",
+        title: "About this Website",
+        description: "It's always been an evolution",
+        p_1: "This site is proof of that, it's the third version of what I've been trying to do\
+        since 2019: my <strong>portfolio.</strong>",
+        p_2: "Between design adjustments, responsive in technologies it came from the first version with a simple HTML\
+        and CSS to React, taking a much greater maturity than who is behind its creation.",
+        p_3: "New changes in 2022 included a general layout change, possibility\
+        of accessing the site in both Portuguese and English and more practical navigation in the mobile and desktop versions.",
       },
     },
     projects: {
-      title: "Projetos",
-      description: "Conheça meus projetos no Github e em produção",
+      title: "Projects",
+      description: "Discover my projects on Github and in production",
       access: {
-        github: "Ver no Github",
-        site: "Site",
+        github: "Access github",
+        site: "Website",
       },
       certificates: {
         title: "Certificates for Everyone",
         description:
-          "Plataforma para gerar certificados em PDF para participantes de eventos",
+          "Platform to generate PDF certificates for event attendees",
       },
       plants: {
         title: "Amo Plantas",
         description:
-          "Plataforma para recomendação de plantas a partir da escolha da intensidade de raios solares,\
-          frenquencia de rigação e se o usuário possui pets.",
+          "Platform for plant recommendation based on the choice of the intensity of solar rays,\
+          irrigation frequency and if the user has pets.",
       },
       ecommerce: {
         title: "Ecommerce",
-        description: "Plataforma para um e commerce de produtos",
+        description: "Platform for an e-commerce of products",
       },
       headhunters: {
         title: "Headhunters",
         description:
-          "O projeto é uma plataforma com foco em vagas de emprego para que recrutadores publiquem\
-          e recebam instrições, assim como candidatos possam buscar e se canditadar a elas. ",
+          "The project is a platform focused on job vacancies for recruiters to post\
+          and receive instructions, as well as candidates can search and apply for them.",
       },
       rentals: {
         title: "Rental Cars",
         description:
-          "O projeto é uma aplicação backend com Ruby on Rails para um sistema interno de\
-          aluguel de carros. O administrador pode criar uma conta e agendar uma locação,\
-          escolhendo o modelo do carro, categoria, data de agendamento, etc.",
+          "The project is a Ruby on Rails backend application for an internal system of\
+          car rent. The administrator can create an account and schedule a rental,\
+          choosing the car model, category, appointment date, etc.",
       },
     },
     lives: {
       title: "Lives",
-      description: "Me acompanhe na media",
-      access: "Acessar Live",
+      description: "Follow me",
+      access: "Access Live",
       readme: {
-        title: "Como escrever e personalizar um README no Github",
+        title: "How to write and customize a README on Github",
         description:
-          "Participei dessa live para o canal das meninas da WomakersCode em 2020 junto com a cohost Laís Lima.\
-          Falei sobre a importancia do README para o portfólio de desenvolvedores no Github, como estruturá-lo\
-          mostrando tudo na prática e ainda respondendo as duvidas no final.",
+          "I participated in this live for the WomakersCode girls' channel in 2020 along with cohost Laís Lima.\
+          I talked about the importance of the README for the developer portfolio on Github, how to structure it\
+          showing everything in practice and still answering the doubts at the end.",
       },
       dev: {
-        title: "Apresentação da 5 turma do Treina Dev",
+        title: "Presentation of the 5th class of Treina Dev",
         description:
-          "Participei dessa live para o canal da Campus Code em 2021 com o Gustavo Carvalho,\
-          do Portal Solar e João Almeida da Campus Code. Juntos, respondemos as duvidas sobre as etapas\
-          do treinamento treina dev para a turma 5.",
+          "I participated in this live for the Campus Code channel in 2021 with Gustavo Carvalho,\
+          from Portal Solar and João Almeida from Campus Code. Together, we answer questions about the steps\
+          of training trains dev for class 5.",
       },
     },
     articles: {
-      title: "Artigos",
-      description: "Acompanhe o que escrevo",
-      access: "Artigo Completo",
+      title: "Articles",
+      description: "Follow what I write",
+      access: "Access Full Article",
       readme: {
-        title: "Como escrever um README.md sensacional no Github",
+        title: "How to write a sensational README.md on Github",
         description:
-          "Depois de desenvolver aquele projeto incrível, ter passado vários perrengues com a aplicação e Git,\
-            você abriu no Github para a comunidade. Mas as suas tarefas não terminaram, está na hora de documentar\
-            o seu projeto! E nada melhor do que um bom README.md...",
+          "After developing that amazing project, having gone through a lot of trouble with the application and Git,\
+          you opened it on Github for the community. But your tasks aren't finished, it's time to document\
+          your project! And nothing better than a good README.md...",
       },
     },
     education: {
-      title: "Formação e Bootcamps",
-      description: "Sabia onde estudei e os bootcamps que participei",
+      title: "Education",
+      description: "I knew where I studied and the bootcamps I attended",
       eletronic_collage: {
-        title: "Técnico em Eletrônica",
+        title: "Electronics Technician",
         location: "ETEC Julio de Mesquita",
         date: "2016 | 2017",
         description:
-          "Corroendo as primeiras plaquinhas e programando PIC's, tem coisa melhor do que ver um led piscando e saber que funciona?",
+          "Corroding the first boards and programming PIC's, is there anything better than seeing a flashing LED and knowing that it works?",
       },
       mecatronic_collage: {
-        title: "FATEC Santo André",
-        location: "Tecnologia em Mecatrônica Industrial",
+        title: "Technology in Industrial Mechatronics",
+        location: "FATEC Santo André",
         date: "2017 | 2019",
         description:
-          "Uma das coisas mais importantes da minha vida foi ter feito Mecatrônica. Foi lá que descobri a tecnologia",
+          "One of the most important things in my life was to have done Mechatronics. That's where I discovered the technology.",
       },
       eletronic_job: {
-        title: "ETEC Julio de Mesquita",
-        location: "Estágio em Eletrônica",
+        title: "Internship in Electronics",
+        location: "ETEC Julio de Mesquita",
         date: "2018",
         description:
-          "Mais do que consertar placas, aprendi a seguir meu coração ao tomar decisões na vida profissional",
+          "More than fixing signs, I learned to follow my heart when making decisions in my professional life.",
       },
       monitor: {
-        title: "FATEC Santo André",
-        location: "Monitorias de linguagem C",
+        title: "C Language Monitors",
+        location: "FATEC Santo André",
         date: "2019",
         description:
-          "Ajudei muitos alunos onde estudava, sempre tentando mostrar como programar é incrível",
+          "I helped many students where I studied, always trying to show how amazing coding is",
       },
       womakerscode: {
-        title: "WoMakersCode",
-        location: "Bootcamp de React",
-        date: "Abril | 2020",
+        title: "React Bootcamp",
+        location: "WoMakersCode",
+        date: "April | 2020",
         description:
-          "Lugar onde conheci mulheres incríveis e uma lib que me apaixonei",
+          "Place where I met amazing women and a lib that I fell in love with",
       },
       dev: {
-        title: "Campus Code",
-        location: "Treina Dev",
-        date: "Julho | 2020",
+        title: "Treina Dev - Student",
+        location: "Campus Code",
+        date: "July | 2020",
         description:
-          "Onde aprendi que o importante não é escrever código, é como escrever código",
+          "Where I learned that the important thing is not to write code, it's how to write code",
       },
       rebase: {
-        title: "Rebase",
-        location: "Desenvolvedora",
+        title: "Software Developer",
+        location: "Rebase ",
         date: "2020 | 2022",
         description:
-          "Friozinho na barriga, mas tudo certo. É aqui que vou enfrentar novos desafios.",
+          "Chills in the stomach, but all right. This is where I will face new challenges",
       },
     },
     skills: {
-      title: "Linguagens e Ferramentas",
-      description: "Conheça as tecnologias do meu dia a dia",
+      title: "Programming Languages and Tools",
+      description: "Discover the technologies of my daily life",
       html: {
         title: "HTML",
-        description: "Para construção da estrutura das páginas",
+        description: "To build the page structure",
       },
       css: {
         title: "CSS",
-        description: "Para estilização das telas",
+        description: "To stylize my frontend applications",
       },
       js: {
         title: "JS",
-        description: "Para o frontend das minhas aplicações",
+        description: "To develop my frontend applications",
       },
       react: {
         title: "React",
-        description: "Para o frontend das minhas aplicações",
+        description: "To develop my frontend applications",
       },
       vue: {
         title: "Vue",
-        description: "Para o frontend das minhas aplicações",
+        description: "To develop my frontend applications",
       },
       jest: {
         title: "Jest",
-        description: "Para testar o frontend das minhas aplicações",
+        description: "To test my frontend applications",
       },
       vimeo: {
         title: "Vimeo SDK",
-        description: "Para servir e gerenciar players do Vimeo",
+        description: "To serve and manage Vimeo players",
       },
       antd: {
         title: "Antd",
         description:
-          "Para aproveitar recursos de layout para construir telas de forma mais rápida e dar manutenção de forma dinamica",
+          "To take advantage of layout features to build screens faster and maintain dynamically",
       },
       git: {
-        title: "Antd",
+        title: "Git",
         description:
-          "Para realizar o controle de versão dos projetos, alterações em código, etc. Já trabalhei com as plataformas\
-          Github, Gitlab, Bitbucket e um pouco de Azure.",
+          "To perform version control of projects, code changes, etc. I've worked with the platforms\
+          Github, Gitlab, Bitbucket and a little bit of Azure.",
       },
       ror: {
         title: "Ruby e Ruby on Rails",
-        description: "Para o backend das minhas aplicações",
+        description: "To develop my backend applications",
       },
       elixir: {
         title: "Elixir e Phoenix",
-        description: "Para o backend das minhas aplicações",
+        description: "To develop my backend applications",
       },
       docker: {
         title: "Docker",
-        description: "Para executar minhas aplicações em ambientes virtuais",
+        description: "To run my applications in virtual environments",
       },
     },
-    talk_to_me: "Fale comigo",
+    talk_to_me: "Talk to me",
     social: {
-      title: "Redes Sociais",
+      title: "Social Media",
       access: {
-        github: "Acessar meu perfil no Github",
-        linkedin: "Acessar meu perfil no Linkedin",
-        mediumn: "Acessar meu perfil no Mediumn",
-        instagram: "Acessar meu perfil no Instagram",
-        dev: "Acessar meu perfil no Dev",
+        github: "Access my profile on Github",
+        linkedin: "Access my profile on Linkedin",
+        mediumn: "Access my profile on Mediumn",
+        instagram: "Access my profile on Instagram",
+        dev: "Access my profile on Dev",
       },
     },
     footer: {
       copyright:
-        "Copyright © 2020 - 2022 Todos os direitos reservados | Este site foi desenvolvido por",
-      up: "Voltar ao inicio",
+        "Copyright © 2020 - 2022 All rights reserved | This website was developed by",
+      up: "Go to top page",
     },
   },
 };
