@@ -137,12 +137,16 @@ export const Subtitle = styled.p`
   }
 `;
 
-export const Link = styled.a`
+const disabledLinkStyled = css`
+  background-color: ${theme.color.gray.light};
+  color: ${theme.color.gray.self};
+`;
+
+const availableLinkStyled = css`
   background-color: ${theme.color.orange.light};
   color: ${theme.color.white};
-  font-size: 1rem;
+
   cursor: pointer;
-  padding: 10px 20px;
 
   &:hover {
     background-color: ${theme.color.blue.dark};
@@ -150,6 +154,13 @@ export const Link = styled.a`
     transition: 1s;
     padding: 10px 30px;
   }
+`;
+
+export const Link = styled.a`
+  font-size: 1rem;
+  padding: 10px 20px;
+
+  ${({ disabled }) => (disabled ? disabledLinkStyled : availableLinkStyled)};
 `;
 
 export const Download = styled.div`

@@ -21,6 +21,7 @@ export default {
       hello: "Ola.",
       message: "Sou desenvolvedora de software <span>frontend<span>",
       resume: "Abrir Curriculo (PDF)",
+      resume_not_available: "Curriculo não disponível neste idioma",
     },
     about: {
       me: {
