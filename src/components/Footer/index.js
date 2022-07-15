@@ -17,7 +17,11 @@ const Footer = () => {
 
   return (
     <Styled.Footer id="contacts">
-      <Styled.IconToUp href="#root" title={t("footer.up")}>
+      <Styled.IconToUp
+        href="#root"
+        title={t("footer.up")}
+        aria-label={t("footer.up")}
+      >
         <UpCircleFilled />
       </Styled.IconToUp>
 

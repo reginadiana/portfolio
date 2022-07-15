@@ -7,6 +7,44 @@ import * as Styled from "./style";
 const Education = () => {
   const { t } = useTranslation();
 
+  const educations = [
+    {
+      title: "eletronic_collage",
+      link: link.etec,
+      current: false,
+    },
+    {
+      title: "mecatronic_collage",
+      link: link.fatec,
+      current: false,
+    },
+    {
+      title: "eletronic_job",
+      link: link.etec,
+      current: false,
+    },
+    {
+      title: "monitor",
+      link: link.fatec,
+      current: false,
+    },
+    {
+      title: "womakerscode",
+      link: link.womakerscode,
+      current: false,
+    },
+    {
+      title: "dev",
+      link: link.campus,
+      current: false,
+    },
+    {
+      title: "rebase",
+      link: link.rebase,
+      current: true,
+    },
+  ];
+
   return (
     <Styled.Section id="education">
       <TitleSection
@@ -14,114 +52,22 @@ const Education = () => {
         description={t("education.description")}
       />
       <Styled.Cards>
-        <Styled.Card>
-          <Styled.Info>
-            <div>
-              <Styled.Title>
-                {t("education.eletronic_collage.title")}
-              </Styled.Title>
-              <Styled.Location href={link.etec}>
-                {t("education.eletronic_collage.location")}
-              </Styled.Location>
-            </div>
-            <Styled.Date>{t("education.eletronic_collage.date")}</Styled.Date>
-          </Styled.Info>
-          <Styled.Description>
-            {t("education.eletronic_collage.description")}
-          </Styled.Description>
-        </Styled.Card>
-
-        <Styled.Card>
-          <Styled.Info>
-            <div>
-              <Styled.Title>
-                {t("education.mecatronic_collage.title")}
-              </Styled.Title>
-              <Styled.Location href={link.fatec}>
-                {t("education.mecatronic_collage.location")}
-              </Styled.Location>
-            </div>
-            <Styled.Date>{t("education.mecatronic_collage.date")}</Styled.Date>
-          </Styled.Info>
-          <Styled.Description>
-            {t("education.mecatronic_collage.description")}
-          </Styled.Description>
-        </Styled.Card>
-
-        <Styled.Card>
-          <Styled.Info>
-            <div>
-              <Styled.Title>{t("education.eletronic_job.title")}</Styled.Title>
-              <Styled.Location href={link.etec}>
-                {t("education.eletronic_job.location")}
-              </Styled.Location>
-            </div>
-            <Styled.Date>{t("education.eletronic_job.date")}</Styled.Date>
-          </Styled.Info>
-          <Styled.Description>
-            {t("education.eletronic_job.description")}
-          </Styled.Description>
-        </Styled.Card>
-
-        <Styled.Card>
-          <Styled.Info>
-            <div>
-              <Styled.Title>{t("education.monitor.title")}</Styled.Title>
-              <Styled.Location href={link.fatec}>
-                {t("education.monitor.location")}
-              </Styled.Location>
-            </div>
-            <Styled.Date>{t("education.monitor.date")}</Styled.Date>
-          </Styled.Info>
-          <Styled.Description>
-            {t("education.monitor.description")}
-          </Styled.Description>
-        </Styled.Card>
-
-        <Styled.Card>
-          <Styled.Info>
-            <div>
-              <Styled.Title>{t("education.womakerscode.title")}</Styled.Title>
-              <Styled.Location href={link.womakerscode}>
-                {t("education.womakerscode.location")}
-              </Styled.Location>
-            </div>
-            <Styled.Date>{t("education.womakerscode.date")}</Styled.Date>
-          </Styled.Info>
-          <Styled.Description>
-            {t("education.womakerscode.description")}
-          </Styled.Description>
-        </Styled.Card>
-
-        <Styled.Card>
-          <Styled.Info>
-            <div>
-              <Styled.Title>{t("education.dev.title")}</Styled.Title>
-              <Styled.Location href={link.campus}>
-                {t("education.dev.location")}
-              </Styled.Location>
-            </div>
-            <Styled.Date>{t("education.dev.date")}</Styled.Date>
-          </Styled.Info>
-          <Styled.Description>
-            {t("education.dev.description")}
-          </Styled.Description>
-        </Styled.Card>
-
-        <Styled.Card>
-          <Styled.Info>
-            <div>
-              <Styled.Title>{t("education.rebase.title")}</Styled.Title>
-              <Styled.Location href={link.rebase}>
-                {t("education.rebase.location")}
-              </Styled.Location>
-            </div>
-            <Styled.Date>{t("education.rebase.date")}</Styled.Date>
-          </Styled.Info>
-          <Styled.Description>
-            {t("education.rebase.description")}
-          </Styled.Description>
-        </Styled.Card>
+        {educations.map(({ title, link, current }, index) => (
+          <Styled.Card key={index} current={current}>
+            <Styled.Info>
+              <div>
+                <Styled.Title>{t(`education.${title}.title`)}</Styled.Title>
+                <Styled.Location href={link}>
+                  {t(`education.${title}.location`)}
+                </Styled.Location>
+              </div>
+              <Styled.Date>{t(`education.${title}.date`)}</Styled.Date>
+            </Styled.Info>
+            <Styled.Description>
+              {t(`education.${title}.description`)}
+            </Styled.Description>
+          </Styled.Card>
+        ))}
       </Styled.Cards>
     </Styled.Section>
   );

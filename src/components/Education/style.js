@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { theme } from "../../theme";
 
 export const Section = styled.section`
@@ -80,21 +80,23 @@ export const Card = styled.div`
   border-radius: 7px;
   cursor: pointer;
 
-  &:last-child {
-    background-color: ${theme.color.blue.dark};
-
-    ${Title},
-    ${Location},
-    ${Description} {
-      color: ${theme.color.white};
-    }
-
-    ${Description} {
-      font-size: 1rem;
-    }
-  }
+  ${({ current }) => current && activeCardStyled};
 
   @media screen and (max-width: 400px) {
     text-align: center;
+  }
+`;
+
+const activeCardStyled = css`
+  background-color: ${theme.color.blue.dark};
+
+  ${Title},
+  ${Location},
+  ${Description} {
+    color: ${theme.color.white};
+  }
+
+  ${Description} {
+    font-size: 1rem;
   }
 `;
