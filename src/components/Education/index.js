@@ -1,126 +1,130 @@
 import React from "react";
 import TitleSection from "../TitleSection/index";
+import { useTranslation } from "react-i18next";
 import { link } from "../../services/links";
 import * as Styled from "./style";
 
-const Education = () => (
-  <Styled.Section id="education">
-    <TitleSection
-      title="Formação e Bootcamps"
-      description="Sabia onde estudei e os bootcamps que participei"
-    />
-    <Styled.Cards>
-      <Styled.Card>
-        <Styled.Info>
-          <div>
-            <Styled.Title>Técnico em Eletrônica</Styled.Title>
-            <Styled.Location href={link.etec}>
-              ETEC Julio de Mesquita
-            </Styled.Location>
-          </div>
-          <Styled.Date>2016 | 2017</Styled.Date>
-        </Styled.Info>
+const Education = () => {
+  const { t } = useTranslation();
 
-        <Styled.Description>
-          Corroendo as primeiras plaquinhas e programando PIC's, tem coisa
-          melhor do que ver um led piscando e saber que funciona?
-        </Styled.Description>
-      </Styled.Card>
+  return (
+    <Styled.Section id="education">
+      <TitleSection
+        title={t("education.title")}
+        description={t("education.description")}
+      />
+      <Styled.Cards>
+        <Styled.Card>
+          <Styled.Info>
+            <div>
+              <Styled.Title>
+                {t("education.eletronic_collage.title")}
+              </Styled.Title>
+              <Styled.Location href={link.etec}>
+                {t("education.eletronic_collage.location")}
+              </Styled.Location>
+            </div>
+            <Styled.Date>{t("education.eletronic_collage.date")}</Styled.Date>
+          </Styled.Info>
+          <Styled.Description>
+            {t("education.eletronic_collage.description")}
+          </Styled.Description>
+        </Styled.Card>
 
-      <Styled.Card>
-        <Styled.Info>
-          <div>
-            <Styled.Title>Tecnologia em Mecatrônica Industrial</Styled.Title>
-            <Styled.Location href={link.fatec}>
-              FATEC Santo André
-            </Styled.Location>
-          </div>
-          <Styled.Date>2017 | 2019</Styled.Date>
-        </Styled.Info>
-        <Styled.Description>
-          Uma das coisas mais importantes da minha vida foi ter feito
-          Mecatrônica. Foi lá que descobri a tecnologia
-        </Styled.Description>
-      </Styled.Card>
+        <Styled.Card>
+          <Styled.Info>
+            <div>
+              <Styled.Title>
+                {t("education.mecatronic_collage.title")}
+              </Styled.Title>
+              <Styled.Location href={link.fatec}>
+                {t("education.mecatronic_collage.location")}
+              </Styled.Location>
+            </div>
+            <Styled.Date>{t("education.mecatronic_collage.date")}</Styled.Date>
+          </Styled.Info>
+          <Styled.Description>
+            {t("education.mecatronic_collage.description")}
+          </Styled.Description>
+        </Styled.Card>
 
-      <Styled.Card>
-        <Styled.Info>
-          <div>
-            <Styled.Title>Estágio em Eletrônica</Styled.Title>
-            <Styled.Location href={link.etec}>
-              ETEC Julio de Mesquita
-            </Styled.Location>
-          </div>
-          <Styled.Date>2018</Styled.Date>
-        </Styled.Info>
+        <Styled.Card>
+          <Styled.Info>
+            <div>
+              <Styled.Title>{t("education.eletronic_job.title")}</Styled.Title>
+              <Styled.Location href={link.etec}>
+                {t("education.eletronic_job.location")}
+              </Styled.Location>
+            </div>
+            <Styled.Date>{t("education.eletronic_job.date")}</Styled.Date>
+          </Styled.Info>
+          <Styled.Description>
+            {t("education.eletronic_job.description")}
+          </Styled.Description>
+        </Styled.Card>
 
-        <Styled.Description>
-          Mais do que consertar placas, aprendi a seguir meu coração ao tomar
-          decisões na vida profissional
-        </Styled.Description>
-      </Styled.Card>
+        <Styled.Card>
+          <Styled.Info>
+            <div>
+              <Styled.Title>{t("education.monitor.title")}</Styled.Title>
+              <Styled.Location href={link.fatec}>
+                {t("education.monitor.location")}
+              </Styled.Location>
+            </div>
+            <Styled.Date>{t("education.monitor.date")}</Styled.Date>
+          </Styled.Info>
+          <Styled.Description>
+            {t("education.monitor.description")}
+          </Styled.Description>
+        </Styled.Card>
 
-      <Styled.Card>
-        <Styled.Info>
-          <div>
-            <Styled.Title>Monitorias de linguagem C</Styled.Title>
-            <Styled.Location href={link.fatec}>
-              FATEC Santo André
-            </Styled.Location>
-          </div>
-          <Styled.Date>2019</Styled.Date>
-        </Styled.Info>
+        <Styled.Card>
+          <Styled.Info>
+            <div>
+              <Styled.Title>{t("education.womakerscode.title")}</Styled.Title>
+              <Styled.Location href={link.womakerscode}>
+                {t("education.womakerscode.location")}
+              </Styled.Location>
+            </div>
+            <Styled.Date>{t("education.womakerscode.date")}</Styled.Date>
+          </Styled.Info>
+          <Styled.Description>
+            {t("education.womakerscode.description")}
+          </Styled.Description>
+        </Styled.Card>
 
-        <Styled.Description>
-          Ajudei muitos alunos onde estudava, sempre tentando mostrar como
-          programar é incrível
-        </Styled.Description>
-      </Styled.Card>
+        <Styled.Card>
+          <Styled.Info>
+            <div>
+              <Styled.Title>{t("education.dev.title")}</Styled.Title>
+              <Styled.Location href={link.campus}>
+                {t("education.dev.location")}
+              </Styled.Location>
+            </div>
+            <Styled.Date>{t("education.dev.date")}</Styled.Date>
+          </Styled.Info>
+          <Styled.Description>
+            {t("education.dev.description")}
+          </Styled.Description>
+        </Styled.Card>
 
-      <Styled.Card>
-        <Styled.Info>
-          <div>
-            <Styled.Title>Bootcamp de React</Styled.Title>
-            <Styled.Location href={link.womakerscode}>
-              WoMakersCode
-            </Styled.Location>
-          </div>
-          <Styled.Date>Abril | 2020</Styled.Date>
-        </Styled.Info>
-        <Styled.Description>
-          Lugar onde conheci mulheres incríveis e uma lib que me apaixonei
-        </Styled.Description>
-      </Styled.Card>
-
-      <Styled.Card>
-        <Styled.Info>
-          <div>
-            <Styled.Title>Treina Dev</Styled.Title>
-            <Styled.Location href={link.campus}>Campus Code</Styled.Location>
-          </div>
-          <Styled.Date>Julho | 2020</Styled.Date>
-        </Styled.Info>
-        <Styled.Description>
-          Onde aprendi que o importante não é escrever código, é como escrever
-          código
-        </Styled.Description>
-      </Styled.Card>
-
-      <Styled.Card>
-        <Styled.Info>
-          <div>
-            <Styled.Title>Desenvolvedora</Styled.Title>
-            <Styled.Location href={link.rebase}>Rebase</Styled.Location>
-          </div>
-          <Styled.Date>2020</Styled.Date>
-        </Styled.Info>
-        <Styled.Description>
-          Friozinho na barriga, mas tudo certo. É aqui que vou enfrentar novos
-          desafios.
-        </Styled.Description>
-      </Styled.Card>
-    </Styled.Cards>
-  </Styled.Section>
-);
+        <Styled.Card>
+          <Styled.Info>
+            <div>
+              <Styled.Title>{t("education.rebase.title")}</Styled.Title>
+              <Styled.Location href={link.rebase}>
+                {t("education.rebase.location")}
+              </Styled.Location>
+            </div>
+            <Styled.Date>{t("education.rebase.date")}</Styled.Date>
+          </Styled.Info>
+          <Styled.Description>
+            {t("education.rebase.description")}
+          </Styled.Description>
+        </Styled.Card>
+      </Styled.Cards>
+    </Styled.Section>
+  );
+};
 
 export default Education;

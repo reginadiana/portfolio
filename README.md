@@ -75,7 +75,5 @@ $ docker-compose run --rm --service-ports app bash
 Dentro do container, execute a aplicação:
 
 ```
-
 $ yarn start
-
 ```

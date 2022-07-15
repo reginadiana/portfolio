@@ -16,19 +16,19 @@ const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <Styled.Footer id="contatos">
-      <Styled.IconToUp href="#root" title="Voltar para o inicio">
+    <Styled.Footer id="contacts">
+      <Styled.IconToUp href="#root" title={t("footer.up")}>
         <UpCircleFilled />
       </Styled.IconToUp>
 
-      <Styled.Logo>DR</Styled.Logo>
-      <Styled.Title>Redes Sociais</Styled.Title>
+      <Styled.Logo>{t("initials")}</Styled.Logo>
+      <Styled.Title>{t("social.title")}</Styled.Title>
 
       <Styled.Icons>
         <Styled.Icon
           href={link.github}
           target="_blank"
-          title="Ir para o meu perfil no Github"
+          title={t("social.access.github")}
         >
           <GithubOutlined />
         </Styled.Icon>
@@ -36,7 +36,7 @@ const Footer = () => {
         <Styled.Icon
           href={link.linkedin}
           target="_blank"
-          title="Ir para o meu perfil no Linkedin"
+          title={t("social.access.linkedin")}
         >
           <LinkedinOutlined />
         </Styled.Icon>
@@ -44,7 +44,7 @@ const Footer = () => {
         <Styled.Icon
           href={link.medium}
           target="_blank"
-          title="Ir para o meu perfil no Medium"
+          title={t("social.access.mediumn")}
         >
           <MediumOutlined />
         </Styled.Icon>
@@ -52,7 +52,7 @@ const Footer = () => {
         <Styled.Icon
           href={link.instagram}
           target="_blank"
-          title="Ir para o meu perfil no Instagram"
+          title={t("social.access.instagram")}
         >
           <InstagramOutlined />
         </Styled.Icon>
@@ -60,21 +60,20 @@ const Footer = () => {
         <Styled.Icon
           href={link.dev}
           target="_blank"
-          title="Ir para o meu perfil no Dev."
+          title={t("social.access.dev")}
         >
           <BookOutlined />
         </Styled.Icon>
       </Styled.Icons>
       <p>
-        Copyright © 2020 - 2022 Todos os direitos reservados | Este site foi
-        desenvolvido por
+        {t("footer.copyright")}
         <br />
         <Styled.Author
           href={link.linkedin}
           target="_blank"
-          title="Ir para o meu perfil no linkedin"
+          title={t("social.access.linkedin")}
         >
-          Diana Regina
+          {t("author")}
         </Styled.Author>
       </p>
     </Styled.Footer>

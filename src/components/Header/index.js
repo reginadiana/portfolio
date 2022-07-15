@@ -88,7 +88,7 @@ const Header = () => {
             }}
           />
         </Styled.Description>
-        <Styled.Author>{t("welcome.name")}</Styled.Author>
+        <Styled.Author>{t("author")}</Styled.Author>
         <Styled.Download>
           <Styled.Link href={pdf}>{t("welcome.resume")}</Styled.Link>
         </Styled.Download>

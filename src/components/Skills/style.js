@@ -39,7 +39,7 @@ export const Span = styled.span`
 `;
 
 export const Card = styled.div`
-  background-color: ${(props) => props.color};
+  background-color: ${theme.color.orange.light};
   padding: 30px;
   margin-bottom: 20px;
   border-radius: 5px;

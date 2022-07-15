@@ -1,47 +1,62 @@
 import React from "react";
 import AboutWebsite from "../../assets/about/site.jpeg";
+import { useTranslation, Trans } from "react-i18next";
 import AboutMeImg from "../../assets/about/me.jpeg";
 import TitleSection from "../TitleSection/index";
 import * as Styled from "./style";
 
-const AboutMe = () => (
-  <Styled.Section id="about_me">
-    <Styled.Img src={AboutMeImg} />
-    <div>
-      <TitleSection title="Sobre mim" description="Quem é a Diana?" />
-      <Styled.Paragraphy>
-        Sou uma mulher <strong>criativa</strong>, <strong>organizada</strong>, e{" "}
-        <strong>muito</strong> dedicada. Gosto de ler, dançar, pintar, assistir
-        séries sobre ficção cientifica, crimes e suspense.
-      </Styled.Paragraphy>
-      <Styled.Paragraphy>
-        Já deu para notar que gosto de arte e tudo que é intenso. Mas a calmaria
-        é bem vinda sempre.
-      </Styled.Paragraphy>
-      <Styled.Paragraphy>
-        Se você veio aqui conhecer o meu trabalho, saiba que sou apaixonada pelo
-        que faço e estou sempre tentando fazer melhor,{" "}
-        <strong>porque sempre dá.</strong>
-      </Styled.Paragraphy>
-    </div>
+const AboutMe = () => {
+  const { t } = useTranslation();
 
-    <div>
-      <TitleSection
-        title="Sobre este site"
-        description="Sempre foi uma evolução"
-      />
-      <Styled.Paragraphy>
-        Esse site é uma prova disso, ele é a terceira versão do que tenho
-        tentando fazer desde 2019: o meu <strong>portfólio.</strong>
-      </Styled.Paragraphy>
-      <Styled.Paragraphy>
-        Entre ajustes no design, responsivo nas tecnologias ele veio da primeira
-        versão com um simples HTML e CSS ao React, levando uma maturidade bem
-        maior que quem está por trás de sua criação.
-      </Styled.Paragraphy>
-    </div>
-    <Styled.Img src={AboutWebsite} />
-  </Styled.Section>
-);
+  return (
+    <Styled.Section id="about_me">
+      <Styled.Img src={AboutMeImg} alt={t("about.me.alt")} />
+      <div>
+        <TitleSection
+          title={t("about.me.title")}
+          description={t("about.me.description")}
+        />
+        <Styled.Paragraphy>
+          <Trans
+            i18nKey="about.me.p_1"
+            defaults={t("about.me.p_1")}
+            components={{
+              span: <span />,
+            }}
+          />
+        </Styled.Paragraphy>
+        <Styled.Paragraphy>{t("about.me.p_2")}</Styled.Paragraphy>
+        <Styled.Paragraphy>
+          <Trans
+            i18nKey="about.me.p_3"
+            defaults={t("about.me.p_3")}
+            components={{
+              span: <span />,
+            }}
+          />
+        </Styled.Paragraphy>
+      </div>
+
+      <div>
+        <TitleSection
+          title={t("about.site.title")}
+          description={t("about.site.description")}
+        />
+        <Styled.Paragraphy>
+          <Trans
+            i18nKey="about.site.p_1"
+            defaults={t("about.site.p_1")}
+            components={{
+              span: <span />,
+            }}
+          />
+        </Styled.Paragraphy>
+        <Styled.Paragraphy>{t("about.site.p_2")}</Styled.Paragraphy>
+        <Styled.Paragraphy>{t("about.site.p_3")}</Styled.Paragraphy>
+      </div>
+      <Styled.Img src={AboutWebsite} alt={t("about.site.alt")} />
+    </Styled.Section>
+  );
+};
 
 export default AboutMe;

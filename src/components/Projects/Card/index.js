@@ -1,14 +1,19 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import * as Styled from "./style";
 import { Button } from "antd";
 
 const Card = ({ project }) => {
+  const { t } = useTranslation();
+
   const handleRedirect = (path) => (window.location.href = path);
 
   return (
     <Styled.Container>
-      <Styled.Title>{project.title}</Styled.Title>
-      <Styled.Description>{project.description}</Styled.Description>
+      <Styled.Title>{t(`projects.${project.key}.title`)}</Styled.Title>
+      <Styled.Description>
+        {t(`projects.${project.key}.description`)}
+      </Styled.Description>
       <Styled.Tags>
         {project.techs.map((tech, key) => (
           <Styled.Tag key={key}>{tech}</Styled.Tag>
@@ -16,7 +21,7 @@ const Card = ({ project }) => {
       </Styled.Tags>
       <Styled.Actions>
         <Button danger onClick={() => handleRedirect(project.github)}>
-          Ver no Gihub
+          {t("projects.access.github")}
         </Button>
         <Button
           type="primary"
@@ -24,7 +29,7 @@ const Card = ({ project }) => {
           disabled={!project.deploy}
           onClick={() => handleRedirect(project.deploy)}
         >
-          Site
+          {t("projects.access.site")}
         </Button>
       </Styled.Actions>
     </Styled.Container>
