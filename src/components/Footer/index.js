@@ -32,6 +32,7 @@ const Footer = () => {
         <Styled.Icon
           href={link.github}
           target="_blank"
+          rel="noreferrer"
           title={t("social.access.github")}
         >
           <GithubOutlined />
@@ -40,6 +41,7 @@ const Footer = () => {
         <Styled.Icon
           href={link.linkedin}
           target="_blank"
+          rel="noreferrer"
           title={t("social.access.linkedin")}
         >
           <LinkedinOutlined />
@@ -48,6 +50,7 @@ const Footer = () => {
         <Styled.Icon
           href={link.medium}
           target="_blank"
+          rel="noreferrer"
           title={t("social.access.mediumn")}
         >
           <MediumOutlined />
@@ -56,6 +59,7 @@ const Footer = () => {
         <Styled.Icon
           href={link.instagram}
           target="_blank"
+          rel="noreferrer"
           title={t("social.access.instagram")}
         >
           <InstagramOutlined />
@@ -64,6 +68,7 @@ const Footer = () => {
         <Styled.Icon
           href={link.dev}
           target="_blank"
+          rel="noreferrer"
           title={t("social.access.dev")}
         >
           <BookOutlined />
@@ -75,6 +80,7 @@ const Footer = () => {
         <Styled.Author
           href={link.linkedin}
           target="_blank"
+          rel="noreferrer"
           title={t("social.access.linkedin")}
         >
           {t("author")}
