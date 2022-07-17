@@ -10,7 +10,11 @@ const AboutMe = () => {
 
   return (
     <Styled.Section id="about_me">
-      <Styled.Img src={AboutMeImg} alt={t("about.me.alt")} />
+      <Styled.Img
+        data-src={AboutMeImg}
+        alt={t("about.me.alt")}
+        class="lazyload"
+      />
       <div>
         <TitleSection
           title={t("about.me.title")}
@@ -54,7 +58,11 @@ const AboutMe = () => {
         <Styled.Paragraphy>{t("about.site.p_2")}</Styled.Paragraphy>
         <Styled.Paragraphy>{t("about.site.p_3")}</Styled.Paragraphy>
       </div>
-      <Styled.Img src={AboutWebsite} alt={t("about.site.alt")} />
+      <Styled.Img
+        data-src={AboutWebsite}
+        alt={t("about.site.alt")}
+        class="lazyload"
+      />
     </Styled.Section>
   );
 };
