@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { useTranslation, Trans } from "react-i18next";
 import IconBrasil from "./../../assets/brasil.png";
-import PDFResume from "../../services/pt-BR_resume.pdf";
+import PDFResumePT from "../../services/pt-BR_resume.pdf";
+import PDFResumeEN from "../../services/en_resume.pdf";
 import IconEUA from "./../../assets/eua.png";
 import * as Styled from "./style";
 
@@ -31,7 +32,10 @@ const Header = () => {
 
   const items = ["about_me", "projects", "education", "skills", "contacts"];
 
-  const isEnLang = i18n.language === "en";
+  const resume = {
+    "pt-BR": PDFResumePT,
+    en: PDFResumeEN,
+  };
 
   return (
     <header>
@@ -92,11 +96,8 @@ const Header = () => {
         </Styled.Description>
         <Styled.Author>{t("author")}</Styled.Author>
         <Styled.Download>
-          <Styled.Link
-            href={isEnLang ? "#" : PDFResume}
-            title={isEnLang ? t("welcome.resume_not_available") : ""}
-            disabled={isEnLang}
-          >
+          {/* Não há casos de cvs indisponíveis por idioma */}
+          <Styled.Link href={resume[i18n.language]} disabled={false}>
             {t("welcome.resume")}
           </Styled.Link>
         </Styled.Download>

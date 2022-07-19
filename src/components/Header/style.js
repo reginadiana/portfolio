@@ -137,6 +137,9 @@ export const Subtitle = styled.p`
   }
 `;
 
+/* Aplicável quando há curriculos 
+indisponíveis para algum idioma
+do site */
 const disabledLinkStyled = css`
   background-color: ${theme.color.gray.light};
   color: ${theme.color.gray.self};
