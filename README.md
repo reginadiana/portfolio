@@ -8,7 +8,8 @@
 
 ##  :dash: Descrição do projeto
 
-Esta é uma aplicação frontend para o meu site pessoal, mostrando informações do meu currículo como _skills_, formação e projetos de forma criativa e divertida. 
+Esta é uma aplicação frontend para o meu site pessoal, mostrando informações do meu currículo como _skills_, formação e projetos de forma criativa e divertida. O gerenciamento que faço da entrega de novas funcionalidades e correções pode ser visto neste [_board_](https://github.com/users/reginadiana/projects/6)
+
 ##  :dash: Funcionalidades
 
 :heavy_check_mark: Layout responsívo
