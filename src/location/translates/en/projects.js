@@ -5,25 +5,32 @@ export default {
     github: "Access github",
     site: "Website",
   },
-  certificates: {
-    title: "Certificates for Everyone",
-    description: "Platform to generate PDF certificates for event attendees",
+  trello: {
+    title: "Trello",
+    description: "Platform to manage tasks",
   },
-  plants: {
-    title: "Amo Plantas",
+  rebase: {
+    title: "Rebase",
     description:
-      "Platform for plant recommendation based on the choice of the intensity of solar rays,\
-        irrigation frequency and if the user has pets.",
+      "Rebase company UI/UX clone",
   },
-  ecommerce: {
-    title: "Ecommerce",
+  globoplay: {
+    title: 'Globoplay',
+    description: 'Rendering platform and player for films, series and more of the Globoplay type'
+  },
+  marisa: {
+    title: "Marisa",
     description: "Platform for an e-commerce of products",
+  },
+  giphy: {
+    title: 'Giphy',
+    description: 'Giphy-like animated image searcher'
   },
   headhunters: {
     title: "Headhunters",
     description:
-      "The project is a platform focused on job vacancies for recruiters to post\
-        and receive instructions, as well as candidates can search and apply for them.",
+      "The main objective is to present a list of items and build the entire flow\
+    to choose, pay and complete purchases. Also present layout based on the original site, but making UI improvements",
   },
   rentals: {
     title: "Rental Cars",
@@ -32,4 +39,12 @@ export default {
         car rent. The administrator can create an account and schedule a rental,\
         choosing the car model, category, appointment date, etc.",
   },
+  justinbieber: {
+    title: 'Justin Bieber',
+    description: "Justin Bieber website UI/UX clone"
+  },
+  flexblog: {
+    title: 'FlexBlog',
+    description: 'UX design for application of css flexbox concepts'
+  }
 };

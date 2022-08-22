@@ -5,20 +5,28 @@ export default {
     github: "Ver no Github",
     site: "Site",
   },
-  certificates: {
-    title: "Certificates for Everyone",
+  trello: {
+    title: "Trello",
     description:
-      "Plataforma para gerar certificados em PDF para participantes de eventos",
+      "Plataforma para gerenciamento de tarefas",
   },
-  plants: {
-    title: "Amo Plantas",
+  rebase: {
+    title: "Rebase",
+    description: "Clone de UI/UX do site da empresa Rebase",
+  },
+  globoplay: {
+    title: 'Globoplay',
+    description: 'Plataforma de renderização e player de filmes, séries e mais do tipo Globoplay'
+  },
+  giphy: {
+    title: 'Giphy',
+    description: 'Pesquisador de imagens animadas tipo Giphy'
+  },
+  marisa: {
+    title: "Marisa",
     description:
-      "Plataforma para recomendação de plantas a partir da escolha da intensidade de raios solares,\
-        frenquencia de rigação e se o usuário possui pets.",
-  },
-  ecommerce: {
-    title: "Ecommerce",
-    description: "Plataforma para um e commerce de produtos",
+      "O objetivo principal é apresentar uma lista de items e construir todo o fluxo para a escolher,\
+    pagar e finalizar compras. Também apresentar layout baseado no site original, mas realizando melhorias de UI.",
   },
   headhunters: {
     title: "Headhunters",
@@ -33,4 +41,12 @@ export default {
         aluguel de carros. O administrador pode criar uma conta e agendar uma locação,\
         escolhendo o modelo do carro, categoria, data de agendamento, etc.",
   },
+  justinbieber: {
+    title: "Justin Bieber",
+    description: "Clone de UI/UX do site do cantor Justin Bieber",
+  },
+  flexblog: {
+    title: 'FlexBlog',
+    description: 'Projeto de UX para aplicação de conceitos de flexbox do css'
+  }
 };

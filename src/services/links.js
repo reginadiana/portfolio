@@ -18,39 +18,6 @@ export const link = {
 export const portfolio = {
   projects: [
     {
-      key: "certificates",
-      github:
-        "https://github.com/React-Bootcamp-WoMarkersCode/certificate-generator",
-      deploy: "https://certificates-for-everyone-womakerscode.netlify.app/",
-      techs: [
-        "html",
-        "css",
-        "js",
-        "react",
-        "react pdf",
-        "react router",
-        "antd design",
-        "reactjs popup",
-        "react signature canvas",
-        "react spinkit",
-        "docker",
-      ],
-    },
-    {
-      key: "plants",
-      github:
-        "https://github.com/reginadiana/projects-of-selective-process/tree/master/red-venturess",
-      deploy: null,
-      techs: ["html", "css", "js"],
-    },
-    {
-      key: "ecommerce",
-      github:
-        "https://github.com/reginadiana/projects-of-selective-process/tree/master/xgb",
-      deploy: "https://ecommercexgb.netlify.app/",
-      techs: ["html", "css", "js", "react"],
-    },
-    {
       key: "headhunters",
       github:
         "https://github.com/React-Bootcamp-WoMarkersCode/certificate-generator",
@@ -64,6 +31,50 @@ export const portfolio = {
       deploy: null,
       techs: ["html", "css", "rails", "ruby", "tdd"],
     },
+    {
+      key: 'trello',
+      github: 'https://github.com/reginadiana/trello',
+      deploy: 'https://taskstrello.netlify.app/',
+      techs: ['react', 'redux', 'docker']
+    },
+    {
+      key: "marisa",
+      github:
+        "https://github.com/reginadiana/marisa",
+      deploy: "https://marisastore.netlify.app/",
+      techs: ["docker", "typescript"],
+    },
+    {
+      key: 'globoplay',
+      github: 'https://github.com/reginadiana/globoplay',
+      deploy: 'https://globoplay.netlify.app/',
+      techs: ['docker','vue']
+    },
+    {
+      key: 'giphy',
+      github: 'https://github.com/reginadiana/giphy',
+      deploy: 'https://gifsgiphy.netlify.app/',
+      techs: ['react', 'docker', 'Consumo de API']
+    },
+    {
+      key: "rebase",
+      github:
+        "https://github.com/reginadiana/rebase",
+      deploy: "https://rebaseclone.netlify.app/",
+      techs: ["html", "css", "js"],
+    },
+    {
+      key: 'justinbieber',
+      github: 'https://github.com/reginadiana/justinbieber',
+      deploy: 'https://justinbiebermusic.netlify.app/',
+      techs: ["html", "css", "js"],
+    },
+    {
+      key: 'flexblog',
+      github: 'https://github.com/reginadiana/flexblog',
+      deploy: 'https://cssflexblog.netlify.app/',
+      techs: ["html", "css", "js"],
+    }
   ],
   articles: [
     {

@@ -21,6 +21,10 @@ export default {
     title: "Vue",
     description: "To develop my frontend applications",
   },
+  typescript: {
+    title: 'Typescript',
+    description: 'To develop my frontend applications'
+  },
   jest: {
     title: "Jest",
     description: "To test my frontend applications",

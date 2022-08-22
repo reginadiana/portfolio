@@ -13,6 +13,7 @@ const Skills = () => {
     "js",
     "react",
     "vue",
+    "typescript",
     "jest",
     "antd",
     "vimeo",
