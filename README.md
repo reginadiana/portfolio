@@ -21,7 +21,7 @@ Esta é uma aplicação frontend para o meu site pessoal, mostrando informaçõe
 :heavy_check_mark: Curriculo bilíngue (português e inglês) disponível para download 
 ##  :dash: Deploy da Aplicação
 
-> Acesse já: https://dianaregina.netlify.app/
+> Acesse já: https://dianareginadr.netlify.app/
 
 ## :arrow_forward: Pré-requisitos
 
