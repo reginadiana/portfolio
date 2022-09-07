@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 import { theme } from "../../theme";
 
 const fixedMenuStyled = css`
-  position: fixed;
+  // position: fixed;
   top: -95px; /* Altura do menu */
   transition: transform 0.4s;
   transform: translateY(100%);
@@ -58,12 +58,21 @@ export const List = styled.ul`
     flex-direction: column;
     height: 100vh;
 
-    ${({ openMenu }) => {
-      if (openMenu) return;
-      return {
-        display: "none",
-      };
-    }}
+    animation-name: openning;
+    animation-duration: 1s;
+
+    @keyframes openning {
+      from {
+        height: 0;
+      }
+      to {
+        height: 100vh;
+      }
+    }
+
+    &.closed {
+      display: none;
+    }
   }
 
   /*Desktop*/
@@ -103,7 +112,7 @@ export const ItemList = styled.a`
 `;
 
 export const Main = styled.div`
-  padding: 95px 16px 2px;
+  padding: 0 16px 2px;
   display: flex;
   justify-content: center;
   flex-direction: column;

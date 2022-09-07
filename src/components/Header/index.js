@@ -69,7 +69,7 @@ const Header = () => {
             />
           </Styled.BtnI18n>
         </Styled.I18nContainer>
-        <Styled.List openMenu={openMenu}>
+        <Styled.List className={!openMenu && 'closed'}>
           {items.map((item, index) => (
             <Styled.ItemList
               key={index}
