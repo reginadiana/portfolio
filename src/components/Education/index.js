@@ -1,7 +1,7 @@
 import React from "react";
 import TitleSection from "../TitleSection/index";
 import { useTranslation } from "react-i18next";
-import { link } from "../../services/links";
+import { link } from "@services/links";
 import * as Styled from "./style";
 
 const Education = () => {

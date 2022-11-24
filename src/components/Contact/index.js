@@ -1,7 +1,7 @@
 import React from "react";
 import { MailOutlined } from "@ant-design/icons";
 import { useTranslation } from "react-i18next";
-import { email } from "../../services/links";
+import { email } from "@services/links";
 import * as Styled from "./style";
 
 const Contact = () => {

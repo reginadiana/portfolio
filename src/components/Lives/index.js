@@ -1,6 +1,6 @@
 import React from "react";
 import TitleSection from "../TitleSection/index";
-import { portfolio } from "../../services/links";
+import { portfolio } from "@services/links";
 import { useTranslation } from "react-i18next";
 import * as Styled from "./style";
 import Card from "./Card";

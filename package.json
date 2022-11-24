@@ -14,12 +14,12 @@
     "styled-components": "^5.3.5"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-app-rewired start",
     "start:lambda": "netlify-lambda serve src/lambda",
-    "build": "react-scripts build",
+    "build": "react-app-rewired build",
     "build:lambda": "netlify-lambda build src/lambda",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "test": "react-app-rewired test",
+    "eject": "react-app-rewired eject",
     "format": "prettier --write \"src/**/*.{js,jsx}\""
   },
   "eslintConfig": {
@@ -38,8 +38,9 @@
     ]
   },
   "devDependencies": {
-    "babel-plugin-module-resolver": "^4.1.0",
     "netlify-lambda": "^2.0.15",
-    "prettier": "^2.7.1"
+    "prettier": "^2.7.1",
+    "react-app-rewire-alias": "^1.1.7",
+    "react-app-rewired": "^2.2.1"
   }
 }

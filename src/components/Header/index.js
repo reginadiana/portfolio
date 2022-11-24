@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { useTranslation, Trans } from "react-i18next";
-import IconBrasil from "./../../assets/brasil.png";
-import PDFResumePT from "../../services/pt-BR_resume.pdf";
-import PDFResumeEN from "../../services/en_resume.pdf";
-import IconEUA from "./../../assets/eua.png";
+
+import IconBrasil from "@assets/brasil.png";
+import IconEUA from "@assets/eua.png";
+
+import PDFResumePT from "@services/pt-BR_resume.pdf";
+import PDFResumeEN from "@services/en_resume.pdf";
 import * as Styled from "./style";
 
 const Header = () => {

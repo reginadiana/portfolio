@@ -1,5 +1,5 @@
 import React from "react";
-import { portfolio } from "../../services/links";
+import { portfolio } from "@services/links";
 import TitleSection from "../TitleSection/index";
 import { useTranslation } from "react-i18next";
 import * as Styled from "./style";

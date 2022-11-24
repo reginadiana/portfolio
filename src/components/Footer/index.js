@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { link } from "../../services/links";
+import { link } from "@services/links";
 import * as Styled from "./style";
 import "antd/dist/antd.css";
 import {

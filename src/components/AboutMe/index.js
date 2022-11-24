@@ -1,7 +1,9 @@
 import React from "react";
-import AboutWebsite from "../../assets/about/site.jpeg";
+
+import AboutWebsite from "@assets/about/site.jpeg";
+import AboutMeImg from "@assets/about/me.jpeg";
+
 import { useTranslation, Trans } from "react-i18next";
-import AboutMeImg from "../../assets/about/me.jpeg";
 import TitleSection from "../TitleSection/index";
 import * as Styled from "./style";
 
