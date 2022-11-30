@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
-    "antd": "^4.21.0",
+    "antd": "^5.0.3",
     "i18next": "^21.8.13",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
