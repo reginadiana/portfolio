@@ -1,6 +1,6 @@
 export default {
-  title: "Lives",
-  description: "Me acompanhe na media",
+  title: "Youtube",
+  description: "Lives que participei (:",
   access: "Acessar Live",
   readme: {
     title: "Como escrever e personalizar um README no Github",
@@ -16,4 +16,8 @@ export default {
       do Portal Solar e João Almeida da Campus Code. Juntos, respondemos as duvidas sobre as etapas\
       do treinamento treina dev para a turma 5.",
   },
+  womakerscode: {
+    title: "Apresentação de formatura: React bootcamp WoMakersCode (Dia 2)",
+    description: "Participei dessa live aparesentar, junto ao time, o projeto final do Bootcamp de React feito com as mulheres da WoMakersCode"
+  }
 };

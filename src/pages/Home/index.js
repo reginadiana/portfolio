@@ -9,6 +9,7 @@ import Header from "@components/Header/index";
 import Skills from "@components/Skills/index";
 import Footer from "@components/Footer/index";
 import Lives from "@components/Lives/index";
+import Publis from "@components/Publis/index";
 import "./style.css";
 
 const TIME_LOADING_MILLISECONDS = 1000;
@@ -29,6 +30,7 @@ const Home = () => {
           <Projects />
           <Lives />
           <Articles />
+          <Publis />
           <Education />
           <Skills />
           <Contact />

@@ -1,5 +1,5 @@
 export default {
-  title: "Lives",
+  title: "Youtube",
   description: "Follow me",
   access: "Access Live",
   readme: {
@@ -15,5 +15,10 @@ export default {
       "I participated in this live for the Campus Code channel in 2021 with Gustavo Carvalho,\
           from Portal Solar and João Almeida from Campus Code. Together, we answer questions about the steps\
           of training trains dev for class 5.",
+  },
+  womakerscode: {
+    title: 'Apresentação de formatura: React bootcamp WoMakersCode (Dia 2)',
+    description:
+      'Participei dessa live aparesentar, junto ao time, o projeto final do Bootcamp de React feito com as mulheres da WoMakersCode',
   },
 };
