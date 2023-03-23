@@ -49,7 +49,7 @@ export default {
     },
     footer: {
       copyright:
-        "Copyright © 2020 - 2022 Todos os direitos reservados | Este site foi desenvolvido por",
+        "Copyright © 2020 - 2023 Todos os direitos reservados | Este site foi desenvolvido por",
       up: "Voltar ao inicio",
     },
   },

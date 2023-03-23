@@ -60,8 +60,8 @@ const Education = () => {
                 <Styled.Location href={link}>
                   {t(`education.${title}.location`)}
                 </Styled.Location>
+                <p>{t(`education.${title}.date`)}</p>
               </div>
-              <Styled.Date>{t(`education.${title}.date`)}</Styled.Date>
             </Styled.Info>
             <Styled.Description>
               {t(`education.${title}.description`)}

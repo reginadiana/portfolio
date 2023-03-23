@@ -12,7 +12,7 @@ export const Container = styled.div`
   justify-content: space-between;
 
   @media screen and (min-width: 1000px) {
-    width: 400px;
+    // width: 400px;
   }
 `;
 

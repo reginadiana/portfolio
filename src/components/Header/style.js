@@ -52,6 +52,7 @@ export const List = styled.ul`
   display: flex;
   background-color: ${theme.color.white};
   z-index: 1;
+  margin: 0;
 
   /*Mobile*/
   @media screen and (max-width: 1101px) {
@@ -77,22 +78,27 @@ export const List = styled.ul`
 
   /*Desktop*/
   @media screen and (min-width: 1100px) {
-    padding: 30px 0 5px;
+    // padding: 30px 0 5px;
   }
 `;
 
 const activeStyled = css`
   border-bottom: 3px ${theme.color.orange.light} solid;
   color: ${theme.color.orange.light};
+
+  /* Mobile */
+  @media screen and (max-width: 1101px) {
+    margin-bottom: 8px;
+  }
 `;
 
 export const ItemList = styled.a`
   color: ${theme.color.black};
   list-style: none;
   font-size: 1rem;
-  padding-bottom: 8px;
+  padding-bottom: 16px;
   width: 150px;
-  margin-bottom: 10px;
+  // margin-bottom: 10px;
   cursor: pointer;
   text-align: center;
 
