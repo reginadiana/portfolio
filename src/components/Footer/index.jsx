@@ -8,7 +8,6 @@ import {
   MediumOutlined,
   InstagramOutlined,
   BookOutlined,
-  UpCircleFilled,
 } from "@ant-design/icons";
 
 const Footer = () => {
@@ -16,14 +15,6 @@ const Footer = () => {
 
   return (
     <Styled.Footer id="contacts">
-      <Styled.IconToUp
-        href="#root"
-        title={t("footer.up")}
-        aria-label={t("footer.up")}
-      >
-        <UpCircleFilled />
-      </Styled.IconToUp>
-
       <Styled.Logo>{t("initials")}</Styled.Logo>
       <Styled.Title>{t("social.title")}</Styled.Title>
 

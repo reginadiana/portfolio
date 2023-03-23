@@ -6,19 +6,6 @@ export const Footer = styled.footer`
   padding: 40px;
 `;
 
-export const IconToUp = styled.a`
-  font-size: 3rem;
-  color: ${theme.color.blue.light};
-  position: fixed;
-  bottom: 10px;
-  right: 20px;
-
-  &:hover {
-    color: ${theme.color.blue.dark};
-    transition: 0.5s;
-  }
-`;
-
 export const Logo = styled.h1`
   color: ${theme.color.orange.light};
   border: 3px ${theme.color.orange.light} solid;
