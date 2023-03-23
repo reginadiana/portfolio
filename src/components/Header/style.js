@@ -2,7 +2,6 @@ import styled, { css } from "styled-components";
 import { theme } from "@theme";
 
 const fixedMenuStyled = css`
-  // position: fixed;
   top: -95px; /* Altura do menu */
   transition: transform 0.4s;
   transform: translateY(100%);
@@ -75,11 +74,6 @@ export const List = styled.ul`
       display: none;
     }
   }
-
-  /*Desktop*/
-  @media screen and (min-width: 1100px) {
-    // padding: 30px 0 5px;
-  }
 `;
 
 const activeStyled = css`
@@ -98,7 +92,6 @@ export const ItemList = styled.a`
   font-size: 1rem;
   padding-bottom: 16px;
   width: 150px;
-  // margin-bottom: 10px;
   cursor: pointer;
   text-align: center;
 

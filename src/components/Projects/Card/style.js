@@ -10,10 +10,6 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-
-  @media screen and (min-width: 1000px) {
-    // width: 400px;
-  }
 `;
 
 export const Title = styled.h2`
