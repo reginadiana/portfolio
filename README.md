@@ -6,6 +6,8 @@
   <img src="http://img.shields.io/static/v1?label=vers%C3%A3o%20do%20projeto&message=v3.0.0&color=violet&style=for-the-badge&logo=github">
 </p>
 
+:star: [Figma](https://www.figma.com/file/3hXtwB6U7DRJMdObzqEQus/Diana-Figma-Template-1?node-id=220-2&t=HED93qvoPNglYFap-0)
+
 ##  :dash: Descrição do projeto
 
 Esta é uma aplicação frontend para o meu site pessoal, mostrando informações do meu currículo como _skills_, formação e projetos de forma criativa e divertida. O gerenciamento que faço da entrega de novas funcionalidades e correções pode ser visto neste [_board_](https://github.com/users/reginadiana/projects/6).
