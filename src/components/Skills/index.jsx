@@ -8,19 +8,22 @@ const Skills = () => {
   const { t } = useTranslation();
 
   const skills = [
+    "react",
+    "typescript",
+    "vue",
     "html",
     "css",
-    "js",
-    "react",
-    "vue",
-    "typescript",
+    "javascript",
     "jest",
     "antd",
     "vimeo",
     "git",
-    "ror",
+    "ruby",
+    "rails",
     "elixir",
+    "phoenix",
     "docker",
+    "aws"
   ];
 
   return (
@@ -30,15 +33,12 @@ const Skills = () => {
         description={t("skills.description")}
       />
       <Styled.Cards>
-        {skills.map((skill, index) => (
-          <Styled.Card key={index}>
-            <Styled.Span>
+        {skills.map(skill => (
+          <Styled.Card key={skill}>
+            <Styled.Icon>
               <CodeSandboxOutlined />
-            </Styled.Span>
-            <Styled.TH3>{t(`skills.${skill}.title`)}</Styled.TH3>
-            <Styled.Paragraphy>
-              {t(`skills.${skill}.description`)}
-            </Styled.Paragraphy>
+            </Styled.Icon>
+            <Styled.Title>{t(`skills.${skill}.title`)}</Styled.Title>
           </Styled.Card>
         ))}
       </Styled.Cards>

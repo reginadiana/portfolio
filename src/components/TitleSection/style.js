@@ -13,6 +13,7 @@ export const Title = styled.h1`
   font-weight: 700;
   font-size: 1.6rem;
   line-height: 50px;
+  margin-top: 0;
 
   @media screen and (min-width: 800px) {
     font-size: 2rem;

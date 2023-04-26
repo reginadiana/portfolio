@@ -2,47 +2,40 @@ import styled from "styled-components";
 import { theme } from "@theme";
 
 export const Section = styled.section`
-  padding: 32px 0 5%;
+  padding: 16px 16px 32px;
   background-color: ${theme.color.gray.light};
+
+  /* Tablet */
+  @media screen and (min-width: 832px) {
+    padding: 24px 32px 32px;
+  }
 `;
 
 export const Cards = styled.div`
-  display: grid;
-  width: 90%;
+  display: flex;
+  flex-wrap: wrap;  
+  align-items: center;
   margin: auto;
-  text-align: center;
-  color: ${theme.color.white};
+  gap: 20px;
+  max-width: 1500px;
 
-  @media (min-width: 650px) {
-    gap: 2em;
+  /* Tablet */
+  @media screen and (min-width: 832px) {
     justify-content: center;
-    text-align: left;
-  }
-
-  @media screen and (max-width: 980px) and (min-width: 650px) {
-    grid-template-columns: repeat(2, 290px);
-  }
-
-  /*Tablet*/
-  @media screen and (max-width: 1500px) and (min-width: 980px) {
-    grid-template-columns: repeat(3, 290px);
-  }
-
-  /*Desktop*/
-  @media screen and (min-width: 1500px) {
-    grid-template-columns: repeat(4, 340px);
   }
 `;
 
-export const Span = styled.span`
-  font-size: 3rem;
+export const Icon = styled.span`
+  color: ${theme.color.white};
+  font-size: 2rem;
+  margin-right: 8px;
 `;
 
 export const Card = styled.div`
+  display: flex;
   background-color: ${theme.color.orange.light};
-  padding: 30px;
-  margin-bottom: 20px;
-  border-radius: 5px;
+  padding: 0 16px 0 8px;
+  border-radius: 10px;
 
   &:hover {
     transform: translateY(-3%);
@@ -50,14 +43,9 @@ export const Card = styled.div`
   }
 `;
 
-export const TH3 = styled.h3`
+export const Title = styled.h3`
   color: ${theme.color.white};
-  font-size: 21px;
-  line-height: 27px;
+  font-size: 14px;
+  line-height: 1.5;
   font-weight: 700;
-  margin: 20px 0;
-`;
-
-export const Paragraphy = styled.p`
-  font-size: 1rem;
 `;

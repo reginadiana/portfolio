@@ -9,8 +9,8 @@ export default {
     title: "CSS",
     description: "To stylize my frontend applications",
   },
-  js: {
-    title: "JS",
+  javascript: {
+    title: "Javascript",
     description: "To develop my frontend applications",
   },
   react: {
@@ -34,7 +34,7 @@ export default {
     description: "To serve and manage Vimeo players",
   },
   antd: {
-    title: "Antd",
+    title: "Antdesign",
     description:
       "To take advantage of layout features to build screens faster and maintain dynamically",
   },
@@ -44,16 +44,28 @@ export default {
       "To perform version control of projects, code changes, etc. I've worked with the platforms\
         Github, Gitlab, Bitbucket and a little bit of Azure.",
   },
-  ror: {
+  ruby: {
     title: "Ruby e Ruby on Rails",
     description: "To develop my backend applications",
   },
+  rails: {
+    title: "Ruby on Rails",
+    description: "To develop my backend applications",
+  },
   elixir: {
-    title: "Elixir e Phoenix",
+    title: "Elixir",
+    description: "To develop my backend applications",
+  },
+  phoenix: {
+    title: "Phoenix",
     description: "To develop my backend applications",
   },
   docker: {
     title: "Docker",
     description: "To run my applications in virtual environments",
   },
+  aws: {
+    title: "AWS (Amazon Web Services)",
+    description: ""
+  }
 };
