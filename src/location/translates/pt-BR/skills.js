@@ -65,7 +65,7 @@ export default {
     description: "Para executar minhas aplicações em ambientes virtuais",
   },
   aws: {
-    title: "AWS (Amazon Web Services)",
+    title: "AWS",
     description: ""
   }
 };

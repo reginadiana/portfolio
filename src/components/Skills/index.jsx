@@ -1,30 +1,11 @@
-import React from "react";
-import { CodeSandboxOutlined } from "@ant-design/icons";
-import TitleSection from "../TitleSection/index";
-import { useTranslation } from "react-i18next";
-import * as Styled from "./style";
+import React from 'react'
+import { CodeSandboxOutlined } from '@ant-design/icons'
+import TitleSection from '../TitleSection/index'
+import { useTranslation } from 'react-i18next'
+import * as Styled from './style'
 
 const Skills = () => {
-  const { t } = useTranslation();
-
-  const skills = [
-    "react",
-    "typescript",
-    "vue",
-    "html",
-    "css",
-    "javascript",
-    "jest",
-    "antd",
-    "vimeo",
-    "git",
-    "ruby",
-    "rails",
-    "elixir",
-    "phoenix",
-    "docker",
-    "aws"
-  ];
+  const { t } = useTranslation()
 
   return (
     <Styled.Section id="skills">
@@ -32,18 +13,110 @@ const Skills = () => {
         title={t("skills.title")}
         description={t("skills.description")}
       />
+
+      <Styled.Title>Frontend</Styled.Title>
       <Styled.Cards>
-        {skills.map(skill => (
-          <Styled.Card key={skill}>
-            <Styled.Icon>
-              <CodeSandboxOutlined />
-            </Styled.Icon>
-            <Styled.Title>{t(`skills.${skill}.title`)}</Styled.Title>
-          </Styled.Card>
-        ))}
+        <Styled.Card>
+          <Styled.Icon>
+            <CodeSandboxOutlined />
+          </Styled.Icon>
+          <Styled.Subtitle>{t('skills.react.title')}</Styled.Subtitle>
+        </Styled.Card>
+        <Styled.Card>
+          <Styled.Icon>
+            <CodeSandboxOutlined />
+          </Styled.Icon>
+          <Styled.Subtitle>{t('skills.typescript.title')}</Styled.Subtitle>
+        </Styled.Card>
+        <Styled.Card>
+          <Styled.Icon>
+            <CodeSandboxOutlined />
+          </Styled.Icon>
+          <Styled.Subtitle>{t('skills.vue.title')}</Styled.Subtitle>
+        </Styled.Card>
+        <Styled.Card>
+          <Styled.Icon>
+            <CodeSandboxOutlined />
+          </Styled.Icon>
+          <Styled.Subtitle>{t('skills.html.title')}</Styled.Subtitle>
+        </Styled.Card>
+        <Styled.Card>
+          <Styled.Icon>
+            <CodeSandboxOutlined />
+          </Styled.Icon>
+          <Styled.Subtitle>{t('skills.css.title')}</Styled.Subtitle>
+        </Styled.Card>
+        <Styled.Card>
+          <Styled.Icon>
+            <CodeSandboxOutlined />
+          </Styled.Icon>
+          <Styled.Subtitle>{t('skills.javascript.title')}</Styled.Subtitle>
+        </Styled.Card>
+        <Styled.Card>
+          <Styled.Icon>
+            <CodeSandboxOutlined />
+          </Styled.Icon>
+          <Styled.Subtitle>{t('skills.antd.title')}</Styled.Subtitle>
+        </Styled.Card>
+        <Styled.Card>
+          <Styled.Icon>
+            <CodeSandboxOutlined />
+          </Styled.Icon>
+          <Styled.Subtitle>{t('skills.vimeo.title')}</Styled.Subtitle>
+        </Styled.Card>
+      </Styled.Cards>
+      <Styled.Title>Backend</Styled.Title>
+      <Styled.Cards>
+        <Styled.Card>
+          <Styled.Icon>
+            <CodeSandboxOutlined />
+          </Styled.Icon>
+          <Styled.Subtitle>{t('skills.ruby.title')}</Styled.Subtitle>
+        </Styled.Card>
+        <Styled.Card>
+          <Styled.Icon>
+            <CodeSandboxOutlined />
+          </Styled.Icon>
+          <Styled.Subtitle>{t('skills.rails.title')}</Styled.Subtitle>
+        </Styled.Card>
+        <Styled.Card>
+          <Styled.Icon>
+            <CodeSandboxOutlined />
+          </Styled.Icon>
+          <Styled.Subtitle>{t('skills.elixir.title')}</Styled.Subtitle>
+        </Styled.Card>
+        <Styled.Card>
+          <Styled.Icon>
+            <CodeSandboxOutlined />
+          </Styled.Icon>
+          <Styled.Subtitle>{t('skills.phoenix.title')}</Styled.Subtitle>
+        </Styled.Card>
+      </Styled.Cards>
+
+      <Styled.Title>Ferramentas</Styled.Title>
+
+      <Styled.Cards className='last__card__g'>
+        <Styled.Card>
+          <Styled.Icon>
+            <CodeSandboxOutlined />
+          </Styled.Icon>
+          <Styled.Subtitle>{t('skills.docker.title')}</Styled.Subtitle>
+        </Styled.Card>
+        <Styled.Card>
+          <Styled.Icon>
+            <CodeSandboxOutlined />
+          </Styled.Icon>
+          <Styled.Subtitle>{t('skills.git.title')}</Styled.Subtitle>
+        </Styled.Card>
+        <Styled.Card className='last__card'>
+          <Styled.Icon>
+            <CodeSandboxOutlined />
+          </Styled.Icon>
+          <Styled.Subtitle>{t('skills.aws.title')}</Styled.Subtitle>
+        </Styled.Card>
       </Styled.Cards>
     </Styled.Section>
-  );
-};
+  )
+}
 
-export default Skills;
+export default Skills
