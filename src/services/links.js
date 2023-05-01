@@ -1,9 +1,9 @@
-export const email = "dianaregina22@outlook.com.br";
+export const email = "dianareginadr19@gmail.com";
 
 export const link = {
   revelo: "https://app.revelo.com.br/candidates/profile?locale=pt-BR",
   uri: "https://www.urionlinejudge.com.br/judge/en/profile/241809",
-  linkedin: "https://www.linkedin.com/in/diana-regina-a96840173/",
+  linkedin: "https://www.linkedin.com/in/diana-regina/",
   instagram: "https://www.instagram.com/reginadiana_rg/",
   etec: "http://www.etecjuliodemesquita.com.br/",
   medium: "https://medium.com/@dianareginadr19",
