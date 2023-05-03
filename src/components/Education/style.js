@@ -1,94 +1,55 @@
-import styled, { css } from "styled-components";
-import { theme } from "@theme";
+import styled, { css } from 'styled-components'
+import { theme } from '@theme'
 
 export const Section = styled.section`
-  padding-top: 32px;
-`;
+  padding: 16px 16px 8px;
+
+   /* Tablet */
+   @media screen and (min-width: 832px) {
+    padding: 24px 32px 64px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 1170px;
+    margin: auto;
+  }
+`
 
 export const Cards = styled.div`
-  display: grid;
-  justify-content: center;
-  margin-bottom: 50px;
-
-  /*Tablet*/
-  @media screen and (min-width: 600px) and (max-width: 1200px) {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-
-  /*Tablet*/
-  @media screen and (min-width: 1200px) and (max-width: 1500px) {
-    grid-template-columns: repeat(2, 500px);
-  }
-
-  /*Desktop*/
-  @media screen and (min-width: 1500px) {
-    grid-template-columns: repeat(3, 500px);
-  }
-`;
-
-export const Info = styled.div`
-  display: grid;
-
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 832px) {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
   }
-`;
+`
 
 export const Title = styled.h1`
   font-size: 1.2rem;
   font-weight: 700;
-`;
+`
 
 export const Location = styled.a`
   font-size: 1rem;
   color: ${theme.color.black};
-`;
-
-export const Date = styled.h2`
-  background-color: ${theme.color.orange.light};
-  width: 150px;
-  text-align: center;
-  padding: 10px;
-  border-radius: 25px;
-  color: ${theme.color.white};
-  margin-top: 10px;
-  font-size: 14px;
-  margin-bottom: 20px;
-
-  @media screen and (max-width: 400px) {
-    margin: 20px auto 30px;
-  }
-
-  @media screen and (min-width: 800px) {
-    position: relative;
-    height: 45px;
-    top: 5px;
-    left: 50px;
-  }
-`;
+`
 
 export const Description = styled.p`
   line-height: 30px;
-`;
+`
 
 export const Card = styled.div`
   background-color: ${theme.color.gray.light};
-  padding: 40px;
-  margin: 15px;
+  padding: 8px 24px;
   color: ${theme.color.gray.self};
-  border-radius: 7px;
+  border-radius: 10px;
   cursor: pointer;
 
   ${({ current }) => current && activeCardStyled};
-
-  @media screen and (max-width: 400px) {
-    text-align: center;
-  }
-`;
+`
 
 const activeCardStyled = css`
-  background-color: ${theme.color.blue.dark};
+  background-color: ${theme.color.orange.light};
+  color: ${theme.color.white};
 
   ${Title},
   ${Location},
@@ -99,4 +60,4 @@ const activeCardStyled = css`
   ${Description} {
     font-size: 1rem;
   }
-`;
+`

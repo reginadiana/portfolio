@@ -54,15 +54,13 @@ const Education = () => {
       <Styled.Cards>
         {educations.map(({ title, link, current }, index) => (
           <Styled.Card key={index} current={current}>
-            <Styled.Info>
-              <div>
+            <div>
                 <Styled.Title>{t(`education.${title}.title`)}</Styled.Title>
                 <Styled.Location href={link}>
                   {t(`education.${title}.location`)}
                 </Styled.Location>
                 <p>{t(`education.${title}.date`)}</p>
-              </div>
-            </Styled.Info>
+            </div>
             <Styled.Description>
               {t(`education.${title}.description`)}
             </Styled.Description>
