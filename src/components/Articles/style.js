@@ -3,8 +3,11 @@ import { theme } from "@theme";
 
 export const Section = styled.section`
   background-color: ${theme.color.gray.light};
-  padding-bottom: 32px;
-  padding-top: 32px;
+  padding: 16px 16px 32px;
+
+  @media screen and (min-width: 1440px) {
+    padding: 48px 0;
+  }
 `;
 
 export const Options = styled.div`
@@ -39,14 +42,9 @@ export const Button = styled.button`
 `;
 
 export const Cards = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  align-items: center;
-
-  @media screen and (min-width: 1500px) {
-    flex-direction: row;
-    align-items: revert;
-    width: 1450px;
+  /* Desktop */
+  @media screen and (min-width: 1440px) {
+    width: 1170px;
+    margin: auto;
   }
 `;

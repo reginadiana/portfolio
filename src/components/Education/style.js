@@ -16,10 +16,11 @@ export const Section = styled.section`
 `
 
 export const Cards = styled.div`
+  display: grid;
+  gap: 16px;
+  
   @media screen and (min-width: 832px) {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
   }
 `
 

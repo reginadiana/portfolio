@@ -1,10 +1,14 @@
-import styled from "styled-components";
-import { theme } from "@theme";
+import styled from 'styled-components'
+import { theme } from '@theme'
 
 export const Section = styled.section`
   background-color: ${theme.color.gray.light};
-  padding: 32px 0;
-`;
+  padding: 16px 16px 32px;
+
+  @media screen and (min-width: 1440px) {
+    padding: 48px 0;
+  }
+`
 
 export const Options = styled.div`
   display: flex;
@@ -13,7 +17,7 @@ export const Options = styled.div`
   @media screen and (max-width: 600px) {
     flex-direction: column;
   }
-`;
+`
 
 export const Button = styled.button`
   width: 130px;
@@ -35,17 +39,12 @@ export const Button = styled.button`
     width: 130px;
     margin: 5px;
   }
-`;
+`
 
 export const Cards = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  align-items: center;
-
-  @media screen and (min-width: 1500px) {
-    flex-direction: row;
-    align-items: revert;
-    width: 1450px;
+  /* Desktop */
+  @media screen and (min-width: 1440px) {
+    width: 1170px;
+    margin: auto;
   }
-`;
+`

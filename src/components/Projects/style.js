@@ -3,7 +3,11 @@ import { theme } from "@theme";
 
 export const Section = styled.section`
   background-color: ${theme.color.orange.light};
-  padding: 48px 0;
+  padding: 16px 16px 32px;
+
+  @media screen and (min-width: 1440px) {
+    padding: 48px 0;
+  }
 `;
 
 export const Options = styled.div`
@@ -39,27 +43,18 @@ export const Button = styled.button`
 
 export const Cards = styled.div`
   display: grid;
+  gap: 16px;
+  justify-content: center;
 
-  @media screen and (max-width: 1001px) {
-    row-gap: 16px;
-    justify-items: center;
+  /* Tablet */
+  @media screen and (min-width: 832px) {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  @media screen and (min-width: 1000px) {
-    column-gap: 24px;
-    row-gap: 24px;
+  /* Desktop */
+  @media screen and (min-width: 1440px) {
+    grid-template-columns: repeat(3, 1fr);
+    width: 1170px;
     margin: auto;
-    width: 800px;
-    grid-template-columns: repeat(2, 400px);
-  }
-
-  @media screen and (min-width: 1500px) {
-    width: 1200px;
-    grid-template-columns: repeat(3, 400px);
-  }
-
-  @media screen and (min-width: 1800px) {
-    width: 1600px;
-    grid-template-columns: repeat(4, 400px);
   }
 `;

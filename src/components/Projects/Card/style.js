@@ -1,15 +1,10 @@
 import styled from "styled-components";
-import { theme } from "../../../theme";
+import { theme } from "@theme";
 
 export const Container = styled.div`
   background-color: ${theme.color.gray.light};
   border-radius: 4px;
   padding: 16px;
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
 `;
 
 export const Title = styled.h2`
