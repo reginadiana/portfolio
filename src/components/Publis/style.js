@@ -1,19 +1,32 @@
-import styled from "styled-components";
-import { theme } from "@theme";
+import styled from 'styled-components'
+import { theme } from '@theme'
 
 export const Section = styled.section`
   background-color: ${theme.color.orange.light};
-  padding: 48px 0;
-`;
+  padding: 16px 16px 32px;
+
+  @media screen and (min-width: 1440px) {
+    padding: 48px 0;
+  }
+`
 
 export const Images = styled.div`
-  display: grid;
-  justify-content: center;
-  
-  gap: 25px;
+  display: flex;
 
-    /* Desktop */
-    @media screen and (min-width: 1350px) {
-      grid-template-columns: repeat(3, 300px);
+  @media screen and (max-width: calc((300px * 2) + 16px + 16px - 1px)) {
+    flex-direction: column;
+    align-items: center;
   }
-`;
+
+  @media screen and (min-width: calc((300px * 2) + 16px + 16px)) {
+    flex-wrap: wrap;
+
+    img {
+      max-width: 300px;
+    }
+  }
+
+  @media screen and (min-width: calc((300px * 3) + 16px + 16px)) {
+    justify-content: center;
+  }
+`

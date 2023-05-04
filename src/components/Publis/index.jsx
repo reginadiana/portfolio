@@ -22,17 +22,17 @@ const Publis = () => {
 
       <Styled.Images>
         <Image
-          width={300}
+          
           src={ImgTreinaDev9}
         />
 
         <Image
-          width={300}
+          
           src={ImgTreinaDev5}
         />
 
         <Image
-          width={300}
+          
           src={ImgTreinaDev9Meet}
         />
       </Styled.Images>
