@@ -18,9 +18,6 @@ Esta é uma aplicação frontend para o meu site pessoal, mostrando informaçõe
 
 :heavy_check_mark: Descrição das informações do meu currículo
 
-:heavy_check_mark: Apresentação bilíngue (português e inglês) das informações do site
-
-:heavy_check_mark: Curriculo bilíngue (português e inglês) disponível para download 
 ##  :dash: Deploy da Aplicação
 
 > Acesse já: https://dianareginadr.netlify.app/
