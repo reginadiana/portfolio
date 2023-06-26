@@ -20,49 +20,55 @@ const Skills = () => {
           <Styled.Icon>
             <CodeSandboxOutlined />
           </Styled.Icon>
-          <Styled.Subtitle>{t('skills.react.title')}</Styled.Subtitle>
+          <Styled.Subtitle>React</Styled.Subtitle>
         </Styled.Card>
         <Styled.Card>
           <Styled.Icon>
             <CodeSandboxOutlined />
           </Styled.Icon>
-          <Styled.Subtitle>{t('skills.typescript.title')}</Styled.Subtitle>
+          <Styled.Subtitle>Typescript</Styled.Subtitle>
         </Styled.Card>
         <Styled.Card>
           <Styled.Icon>
             <CodeSandboxOutlined />
           </Styled.Icon>
-          <Styled.Subtitle>{t('skills.vue.title')}</Styled.Subtitle>
+          <Styled.Subtitle>Vue</Styled.Subtitle>
         </Styled.Card>
         <Styled.Card>
           <Styled.Icon>
             <CodeSandboxOutlined />
           </Styled.Icon>
-          <Styled.Subtitle>{t('skills.html.title')}</Styled.Subtitle>
+          <Styled.Subtitle>HTML</Styled.Subtitle>
         </Styled.Card>
         <Styled.Card>
           <Styled.Icon>
             <CodeSandboxOutlined />
           </Styled.Icon>
-          <Styled.Subtitle>{t('skills.css.title')}</Styled.Subtitle>
+          <Styled.Subtitle>CSS</Styled.Subtitle>
         </Styled.Card>
         <Styled.Card>
           <Styled.Icon>
             <CodeSandboxOutlined />
           </Styled.Icon>
-          <Styled.Subtitle>{t('skills.javascript.title')}</Styled.Subtitle>
+          <Styled.Subtitle>Javascript</Styled.Subtitle>
         </Styled.Card>
         <Styled.Card>
           <Styled.Icon>
             <CodeSandboxOutlined />
           </Styled.Icon>
-          <Styled.Subtitle>{t('skills.antd.title')}</Styled.Subtitle>
+          <Styled.Subtitle>Antd Design (design system)</Styled.Subtitle>
         </Styled.Card>
         <Styled.Card>
           <Styled.Icon>
             <CodeSandboxOutlined />
           </Styled.Icon>
-          <Styled.Subtitle>{t('skills.vimeo.title')}</Styled.Subtitle>
+          <Styled.Subtitle>MUI (design system)</Styled.Subtitle>
+        </Styled.Card>
+        <Styled.Card>
+          <Styled.Icon>
+            <CodeSandboxOutlined />
+          </Styled.Icon>
+          <Styled.Subtitle>Vimeo SDK</Styled.Subtitle>
         </Styled.Card>
       </Styled.Cards>
       <Styled.Title>Backend</Styled.Title>
@@ -71,25 +77,25 @@ const Skills = () => {
           <Styled.Icon>
             <CodeSandboxOutlined />
           </Styled.Icon>
-          <Styled.Subtitle>{t('skills.ruby.title')}</Styled.Subtitle>
+          <Styled.Subtitle>Ruby</Styled.Subtitle>
         </Styled.Card>
         <Styled.Card>
           <Styled.Icon>
             <CodeSandboxOutlined />
           </Styled.Icon>
-          <Styled.Subtitle>{t('skills.rails.title')}</Styled.Subtitle>
+          <Styled.Subtitle>Rails</Styled.Subtitle>
         </Styled.Card>
         <Styled.Card>
           <Styled.Icon>
             <CodeSandboxOutlined />
           </Styled.Icon>
-          <Styled.Subtitle>{t('skills.elixir.title')}</Styled.Subtitle>
+          <Styled.Subtitle>Elixir</Styled.Subtitle>
         </Styled.Card>
         <Styled.Card>
           <Styled.Icon>
             <CodeSandboxOutlined />
           </Styled.Icon>
-          <Styled.Subtitle>{t('skills.phoenix.title')}</Styled.Subtitle>
+          <Styled.Subtitle>Phoenix</Styled.Subtitle>
         </Styled.Card>
       </Styled.Cards>
 
@@ -100,19 +106,19 @@ const Skills = () => {
           <Styled.Icon>
             <CodeSandboxOutlined />
           </Styled.Icon>
-          <Styled.Subtitle>{t('skills.docker.title')}</Styled.Subtitle>
+          <Styled.Subtitle>Docker</Styled.Subtitle>
         </Styled.Card>
         <Styled.Card>
           <Styled.Icon>
             <CodeSandboxOutlined />
           </Styled.Icon>
-          <Styled.Subtitle>{t('skills.git.title')}</Styled.Subtitle>
+          <Styled.Subtitle>Git</Styled.Subtitle>
         </Styled.Card>
         <Styled.Card className='last__card'>
           <Styled.Icon>
             <CodeSandboxOutlined />
           </Styled.Icon>
-          <Styled.Subtitle>{t('skills.aws.title')}</Styled.Subtitle>
+          <Styled.Subtitle>AWS</Styled.Subtitle>
         </Styled.Card>
       </Styled.Cards>
     </Styled.Section>
