@@ -48,6 +48,6 @@ export default {
       },
     },
     copyright:
-      'Copyright © 2023. <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/diana-regina/">Diana Regina.</a> Todos os direitos reservados.',
+      'Copyright © 2020 | 2023. <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/diana-regina/">Diana Regina.</a> Todos os direitos reservados.',
   },
 }
