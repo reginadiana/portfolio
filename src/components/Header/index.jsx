@@ -30,8 +30,6 @@ const Header = () => {
 
   const closeMenu = () => setOpenMenu(false);
 
-  const changeLangTo = (lang) => i18n.changeLanguage(lang);
-
   const items = ["about_me", "projects", "education", "skills", "contacts"];
 
   const resume = {
@@ -45,32 +43,6 @@ const Header = () => {
         <Styled.Logo onClick={() => setOpenMenu(!openMenu)}>
           {t("initials")}
         </Styled.Logo>
-        <Styled.I18nContainer>
-          <Styled.BtnI18n
-            title={t("translate.pt")}
-            aria-label={t("translate.pt")}
-            onClick={() => changeLangTo("pt-BR")}
-          >
-            <img
-              src={IconBrasil}
-              alt={t("translate.alt.pt")}
-              width="24"
-              height="24"
-            />
-          </Styled.BtnI18n>
-          <Styled.BtnI18n
-            title={t("translate.en")}
-            aria-label={t("translate.en")}
-            onClick={() => changeLangTo("en")}
-          >
-            <img
-              src={IconEUA}
-              alt={t("translate.alt.en")}
-              width="24"
-              height="24"
-            />
-          </Styled.BtnI18n>
-        </Styled.I18nContainer>
         <Styled.List className={!openMenu && 'closed'}>
           {items.map((item, index) => (
             <Styled.ItemList

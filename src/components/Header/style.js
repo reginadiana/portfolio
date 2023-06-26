@@ -9,7 +9,7 @@ const fixedMenuStyled = css`
 `;
 
 export const Menu = styled.div`
-  padding: calc(95px / 4) 0;
+  // padding: calc(95px / 4) 0;
   background-color: ${theme.color.white};
   z-index: 1;
   width: 100%;
@@ -38,6 +38,7 @@ export const Logo = styled.button`
   background-color: ${theme.color.white};
   font-weight: bold;
   cursor: pointer;
+  margin-top: 20px;
 
   /*Desktop*/
   @media screen and (min-width: 1100px) {
@@ -56,7 +57,8 @@ export const List = styled.ul`
   /*Mobile*/
   @media screen and (max-width: 1101px) {
     flex-direction: column;
-    height: 100vh;
+    height: calc(100vh - 45px); // Altura do menu
+    padding: 20px 0 20px;
 
     animation-name: openning;
     animation-duration: 1s;
@@ -202,17 +204,4 @@ export const Author = styled.h2`
   font-size: 2.5rem;
   font-weight: 700;
   text-transform: uppercase;
-`;
-
-export const I18nContainer = styled.div`
-  position: absolute;
-  top: 8px;
-  right: 8px;
-`;
-
-export const BtnI18n = styled.button`
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  margin-left: 8px;
 `;
