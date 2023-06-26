@@ -41,6 +41,6 @@ export default {
     title: "Formação em Cloud Computing",
     date: "o momento",
     description:
-      "Formação com foco em computação em nuvem para uma turna de 200 alunas feita por instrutores da consultoria dataRain com apoio da AWS e comunidade WoMakersCode.",
+      "Formação com foco em computação em nuvem para uma turma de 200 alunas feita por instrutores da consultoria dataRain com apoio da AWS e comunidade WoMakersCode.",
   },
 };
