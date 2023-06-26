@@ -10,7 +10,7 @@ export const Section = styled.section`
   }
 
   @media screen and (min-width: 1440px) {
-    width: 1170px;
+    width: 80%;
     margin: auto;
   }
 `
@@ -24,21 +24,7 @@ export const Cards = styled.div`
   }
 `
 
-export const Title = styled.h1`
-  font-size: 1.2rem;
-  font-weight: 700;
-`
-
-export const Location = styled.a`
-  font-size: 1rem;
-  color: ${theme.color.black};
-`
-
-export const Description = styled.p`
-  line-height: 30px;
-`
-
-export const Card = styled.div`
+export const Card = styled.a`
   background-color: ${theme.color.gray.light};
   padding: 8px 24px;
   color: ${theme.color.gray.self};
@@ -48,12 +34,25 @@ export const Card = styled.div`
   ${({ current }) => current && activeCardStyled};
 `
 
+export const Title = styled.h1`
+  font-size: 1.2rem;
+  font-weight: 700;
+`
+
+export const Subtitle = styled.h2`
+  font-size: 1rem;
+  font-weight: 500;
+`
+
+export const Description = styled.p`
+  line-height: 30px;
+`
+
 const activeCardStyled = css`
   background-color: ${theme.color.orange.light};
   color: ${theme.color.white};
 
   ${Title},
-  ${Location},
   ${Description} {
     color: ${theme.color.white};
   }

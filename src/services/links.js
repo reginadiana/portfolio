@@ -8,11 +8,12 @@ export const link = {
   etec: "http://www.etecjuliodemesquita.com.br/",
   medium: "https://medium.com/@dianareginadr19",
   womakerscode: "https://womakerscode.org/",
+  girls_in_cloud: 'https://girlsincloud.datarain.com.br/',
   github: "https://github.com/reginadiana",
   fatec: "http://fatecsantoandre.edu.br/",
   campus: "https://www.treinadev.com.br/",
   rebase: "https://www.rebase.com.br/#/",
-  dev: "https://dev.to/dianaops",
+  dev: "https://dev.to/reginadiana",
 };
 
 export const portfolio = {

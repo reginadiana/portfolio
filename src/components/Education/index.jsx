@@ -1,65 +1,64 @@
-import React from "react";
-import TitleSection from "../TitleSection/index";
-import { useTranslation } from "react-i18next";
-import { link } from "@services/links";
-import * as Styled from "./style";
+import React from 'react'
+import TitleSection from '../TitleSection/index'
+import { useTranslation } from 'react-i18next'
+import { link } from '@services/links'
+import * as Styled from './style'
 
 const Education = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
 
   const educations = [
     {
-      title: "eletronic_collage",
-      link: link.etec,
-      current: false,
-    },
-    {
-      title: "mecatronic_collage",
+      title: 'mecatronic_collage',
       link: link.fatec,
       current: false,
     },
     {
-      title: "eletronic_job",
-      link: link.etec,
-      current: false,
-    },
-    {
-      title: "monitor",
+      title: 'monitor',
       link: link.fatec,
       current: false,
     },
     {
-      title: "womakerscode",
+      title: 'womakerscode',
       link: link.womakerscode,
       current: false,
     },
     {
-      title: "dev",
+      title: 'dev',
       link: link.campus,
       current: false,
     },
     {
-      title: "rebase",
+      title: 'rebase',
       link: link.rebase,
       current: true,
     },
-  ];
+    {
+      title: 'girls_in_cloud',
+      link: link.girls_in_cloud,
+      current: true,
+    },
+  ]
 
   return (
     <Styled.Section id="education">
       <TitleSection
-        title={t("education.title")}
-        description={t("education.description")}
+        title={t('education.title')}
+        description={t('education.description')}
       />
       <Styled.Cards>
         {educations.map(({ title, link, current }, index) => (
-          <Styled.Card key={index} current={current}>
+          <Styled.Card
+            key={index}
+            current={current}
+            href={link}
+            target="_blank"
+            rel="noreferrer"
+          >
             <div>
-                <Styled.Title>{t(`education.${title}.title`)}</Styled.Title>
-                <Styled.Location href={link}>
-                  {t(`education.${title}.location`)}
-                </Styled.Location>
-                <p>{t(`education.${title}.date`)}</p>
+              <Styled.Title>{t(`education.${title}.title`)}</Styled.Title>
+              <Styled.Subtitle>{t(`education.${title}.location`)}</Styled.Subtitle>
+              <p>{t(`education.${title}.date`)}</p>
             </div>
             <Styled.Description>
               {t(`education.${title}.description`)}
@@ -68,7 +67,7 @@ const Education = () => {
         ))}
       </Styled.Cards>
     </Styled.Section>
-  );
-};
+  )
+}
 
-export default Education;
+export default Education
