@@ -1,18 +1,29 @@
 export const email = "dianareginadr19@gmail.com";
 
 export const link = {
-  revelo: "https://app.revelo.com.br/candidates/profile?locale=pt-BR",
-  uri: "https://www.urionlinejudge.com.br/judge/en/profile/241809",
+  // Social Media
   linkedin: "https://www.linkedin.com/in/diana-regina/",
   instagram: "https://www.instagram.com/reginadiana_rg/",
+  github: "https://github.com/reginadiana",
+  
+  // Education and Experience
   etec: "http://www.etecjuliodemesquita.com.br/",
-  medium: "https://medium.com/@dianareginadr19",
   womakerscode: "https://womakerscode.org/",
   girls_in_cloud: 'https://girlsincloud.datarain.com.br/',
-  github: "https://github.com/reginadiana",
   fatec: "http://fatecsantoandre.edu.br/",
   campus: "https://www.treinadev.com.br/",
   rebase: "https://www.rebase.com.br/#/",
+  
+  // Posts on Social Media
+  treina_dev_delas: 'https://www.instagram.com/p/CffMA3gvrMc/',
+  treina_dev_visit: 'https://www.instagram.com/p/ClPI0KsAdbw/',
+  treina_dev_5: 'https://www.instagram.com/p/CGitDfqgEn1/',
+  womakerscode_live: 'https://www.youtube.com/watch?v=K0mvk8zctoM',
+  readme_live: 'https://www.youtube.com/watch?v=2A_ebBA3jzM',
+
+  revelo: "https://app.revelo.com.br/candidates/profile?locale=pt-BR",
+  uri: "https://www.urionlinejudge.com.br/judge/en/profile/241809",
+  medium: "https://medium.com/@dianareginadr19",
   dev: "https://dev.to/reginadiana",
 };
 

@@ -1,32 +1,46 @@
 import styled from 'styled-components'
 import { theme } from '@theme'
 
+const MIN_WIDTH = '1440px';
+const MAX_WIDTH = '1439px';
+
 export const Section = styled.section`
   background-color: ${theme.color.orange.light};
   padding: 16px 16px 32px;
-
-  @media screen and (min-width: 1440px) {
-    padding: 48px 0;
-  }
 `
 
 export const Images = styled.div`
-  display: flex;
-
-  @media screen and (max-width: calc((300px * 2) + 16px + 16px - 1px)) {
+  @media screen and (min-width: ${MIN_WIDTH}) {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-  }
+    justify-content: center;
+    align-items: end;
 
-  @media screen and (min-width: calc((300px * 2) + 16px + 16px)) {
-    flex-wrap: wrap;
+    .w-200 {
+      width: 600px;
+    }
 
-    img {
+    .w-300 {
       max-width: 300px;
     }
   }
 
-  @media screen and (min-width: calc((300px * 3) + 16px + 16px)) {
-    justify-content: center;
+  @media screen and (min-width: ${MIN_WIDTH}) {
+    width: 80%;
+    margin: auto;
+  }
+`
+
+export const Container = styled.div`
+  @media screen and (max-width: ${MAX_WIDTH}) {
+    .desktop {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: ${MIN_WIDTH}) {
+    .mobile {
+      display: none;
+    }
   }
 `
