@@ -6,7 +6,11 @@ const MAX_WIDTH = '1439px';
 
 export const Section = styled.section`
   background-color: ${theme.color.orange.light};
-  padding: 16px 16px 32px;
+  padding: 16px 16px 8px;
+
+  @media screen and (min-width: ${MIN_WIDTH}) {
+    padding: 24px 32px 64px;
+  }
 `
 
 export const Images = styled.div`

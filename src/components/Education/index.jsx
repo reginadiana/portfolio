@@ -1,70 +1,122 @@
 import React from 'react'
 import TitleSection from '../TitleSection/index'
-import { useTranslation } from 'react-i18next'
-import { link } from '@services/links'
 import * as Styled from './style'
 
 const Education = () => {
-  const { t } = useTranslation()
-
-  const educations = [
-    {
-      title: 'mecatronic_collage',
-      link: link.fatec,
-      current: false,
-    },
-    {
-      title: 'monitor',
-      link: link.fatec,
-      current: false,
-    },
-    {
-      title: 'womakerscode',
-      link: link.womakerscode,
-      current: false,
-    },
-    {
-      title: 'dev',
-      link: link.campus,
-      current: false,
-    },
-    {
-      title: 'rebase',
-      link: link.rebase,
-      current: true,
-    },
-    {
-      title: 'girls_in_cloud',
-      link: link.girls_in_cloud,
-      current: true,
-    },
-  ]
-
   return (
     <Styled.Section id="education">
       <TitleSection
-        title={t('education.title')}
-        description={t('education.description')}
+        title="Formação e Bootcamps"
+        description="Sabia onde estudei e os bootcamps que participei"
       />
       <Styled.Cards>
-        {educations.map(({ title, link, current }, index) => (
-          <Styled.Card
-            key={index}
-            current={current}
-            href={link}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div>
-              <Styled.Title>{t(`education.${title}.title`)}</Styled.Title>
-              <Styled.Subtitle>{t(`education.${title}.location`)}</Styled.Subtitle>
-              <p>{t(`education.${title}.date`)}</p>
-            </div>
-            <Styled.Description>
-              {t(`education.${title}.description`)}
-            </Styled.Description>
-          </Styled.Card>
-        ))}
+        <Styled.Card
+          current={false}
+          href='http://fatecsantoandre.edu.br/'
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div>
+            <Styled.Title>Tecnologia em Mecatrônica Industrial</Styled.Title>
+            <Styled.Subtitle>FATEC Santo André</Styled.Subtitle>
+            <p>2017 | 2019</p>
+          </div>
+          <Styled.Description>
+            Tecnologia em Mecatrônica Industrial com foco em robótica,
+            eletronica, linguagem de programação C, automação e mecânica.
+          </Styled.Description>
+        </Styled.Card>
+
+        <Styled.Card
+          current={false}
+          href='http://fatecsantoandre.edu.br/'
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div>
+            <Styled.Title>Monitorias de linguagem C</Styled.Title>
+            <Styled.Subtitle>FATEC Santo André</Styled.Subtitle>
+            <p>2019</p>
+          </div>
+          <Styled.Description>
+            Atuei como monitora na disciplina Programação de Programadores I e
+            II com foco em lógica de programação e algoritmos e linguagem C e
+            Python.
+          </Styled.Description>
+        </Styled.Card>
+
+        <Styled.Card
+          current={false}
+          href='https://womakerscode.org/'
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div>
+            <Styled.Title>Bootcamp de React</Styled.Title>
+            <Styled.Subtitle>WoMakersCode</Styled.Subtitle>
+            <p>Abril | 2020</p>
+          </div>
+          <Styled.Description>
+            Treinamento com foco no desenvolvimento e aprendizado da biblioteca
+            React.
+          </Styled.Description>
+        </Styled.Card>
+
+        <Styled.Card
+          current={false}
+          href='https://www.treinadev.com.br/'
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div>
+            <Styled.Title>Treina Dev</Styled.Title>
+            <Styled.Subtitle>Campus Code</Styled.Subtitle>
+            <p>Fevereiro/Julho | 2020</p>
+          </div>
+          <Styled.Description>
+            Treinamento com foco no desenvolvimento de aplicações Ruby e Ruby on
+            Rails em time, utilizando de metodologias ágeis e boas práticas como
+            pair programming, code review e cerimonias (dailys e plannings).
+          </Styled.Description>
+        </Styled.Card>
+
+        <Styled.Card
+          current
+          href='https://www.rebase.com.br/#/'
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div>
+            <Styled.Title>Desenvolvedora de Software</Styled.Title>
+            <Styled.Subtitle>Rebase</Styled.Subtitle>
+            <p>2020 | o momento</p>
+          </div>
+          <Styled.Description>
+            Atuo como desenvolvedora de software na criação e manutenção de
+            aplicações frontend e backend com Typescript, Elixir, Rails, React,
+            entre outros.
+          </Styled.Description>
+        </Styled.Card>
+
+        <Styled.Card
+          current
+          href= 'https://girlsincloud.datarain.com.br/'
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div>
+            <Styled.Title>Formação em Cloud Computing</Styled.Title>
+            <Styled.Subtitle>
+              GirlsInCloud - dataRain - WoMakersCode
+            </Styled.Subtitle>
+            <p>o momento</p>
+          </div>
+          <Styled.Description>
+            Formação com foco em computação em nuvem para uma turma de 200
+            alunas feita por instrutores da consultoria dataRain com apoio da
+            AWS e comunidade WoMakersCode.
+          </Styled.Description>
+        </Styled.Card>
       </Styled.Cards>
     </Styled.Section>
   )

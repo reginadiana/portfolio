@@ -11,6 +11,11 @@ body {
   font-weight: 300;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   scroll-behavior: smooth;
 }

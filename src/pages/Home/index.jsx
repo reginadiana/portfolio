@@ -1,15 +1,15 @@
 import React, { useState } from 'react'
 import { FloatButton } from 'antd'
-import Education from '@components/Education/index'
-import Projects from '@components/Projects/index'
-import Articles from '@components/Articles/index'
-import AboutMe from '@components/AboutMe/index'
-import Spinner from '@components/Spinner/index'
-import Header from '@components/Header/index'
-import Skills from '@components/Skills/index'
-import Footer from '@components/Footer/index'
-import Lives from '@components/Lives/index'
-import Publis from '@components/Publis/index'
+import Education from '@components/Education'
+import Projects from '@components/Projects'
+import Articles from '@components/Articles'
+import AboutMe from '@components/AboutMe'
+import Spinner from '@components/Spinner'
+import Header from '@components/Header'
+import Skills from '@components/Skills'
+import Footer from '@components/Footer'
+import Lives from '@components/Lives'
+import Publications from '@components/Publications'
 import Copyright  from '@components/Copyright'
 import './style.css'
 
@@ -31,7 +31,7 @@ const Home = () => {
           <Projects />
           <Lives />
           <Articles />
-          <Publis />
+          <Publications />
           <Education />
           <Skills />
           <Footer />

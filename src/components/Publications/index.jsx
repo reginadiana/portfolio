@@ -1,20 +1,19 @@
 import React from 'react'
 import TitleSection from '../TitleSection/index'
 import * as Styled from './style'
-import { link } from '@services/links'
 import { Carousel } from 'antd'
 
-import ImgBootcampReact from '@assets/publis/bootcamp-react.png'
-import ImgWomakersCodeLive from '@assets/publis/womakerscode-live.png'
-import ImgTreinaDev5 from '@assets/publis/treina-dev-5.png'
-import ImgTreinaDev9 from '@assets/publis/treina-dev-9.png'
-import ImgTreinaDev9Meet from '@assets/publis/treina-dev-9-meet.png'
+import ImgBootcampReact from '@assets/images/publications/bootcamp-react.png'
+import ImgWomakersCodeLive from '@assets/images/publications/womakerscode-live.png'
+import ImgTreinaDev5 from '@assets/images/publications/treina-dev-5.png'
+import ImgTreinaDev9 from '@assets/images/publications/treina-dev-9.png'
+import ImgTreinaDev9Meet from '@assets/images/publications/treina-dev-9-meet.png'
 
 import { Image } from 'antd'
 
-const Publis = () => {
+const Publications = () => {
   return (
-    <Styled.Section id="publis">
+    <Styled.Section id="publications">
       <TitleSection
         title='Publicações'
         description='Publicações mencionadas'
@@ -24,15 +23,15 @@ const Publis = () => {
       <Styled.Container>
         <Styled.Images className="desktop">
           <div style={{ display: 'flex' }}>
-            <a href={link.treina_dev_delas} target="_blank" rel="noreferrer">
+            <a href='https://www.instagram.com/p/CffMA3gvrMc/' target="_blank" rel="noreferrer">
               <Image className="w-300" preview={false} src={ImgTreinaDev9} />
             </a>
 
-            <a href={link.treina_dev_5} target="_blank" rel="noreferrer">
+            <a href='https://www.instagram.com/p/CGitDfqgEn1/' target="_blank" rel="noreferrer">
               <Image className="w-300" preview={false} src={ImgTreinaDev5} />
             </a>
 
-            <a href={link.treina_dev_visit} target="_blank" rel="noreferrer">
+            <a href='https://www.instagram.com/p/ClPI0KsAdbw/' target="_blank" rel="noreferrer">
               <Image
                 className="w-300"
                 preview={false}
@@ -42,11 +41,11 @@ const Publis = () => {
           </div>
 
           <div style={{ display: 'flex' }}>
-            <a href={link.womakerscode_live} target="_blank" rel="noreferrer">
+            <a href='https://www.youtube.com/watch?v=K0mvk8zctoM' target="_blank" rel="noreferrer">
               <Image className="w-200" preview={false} src={ImgBootcampReact} />
             </a>
 
-            <a href={link.readme_live} target="_blank" rel="noreferrer">
+            <a href='https://www.youtube.com/watch?v=2A_ebBA3jzM' target="_blank" rel="noreferrer">
               <Image
                 className="w-200"
                 preview={false}
@@ -56,15 +55,15 @@ const Publis = () => {
           </div>
         </Styled.Images>
         <Carousel className="mobile">
-          <a href={link.treina_dev_delas} target="_blank" rel="noreferrer">
+          <a href='https://www.instagram.com/p/CffMA3gvrMc/' target="_blank" rel="noreferrer">
             <Image preview={false} src={ImgTreinaDev9} />
           </a>
 
-          <a href={link.treina_dev_5} target="_blank" rel="noreferrer">
+          <a href='https://www.instagram.com/p/CGitDfqgEn1/' target="_blank" rel="noreferrer">
             <Image preview={false} src={ImgTreinaDev5} />
           </a>
 
-          <a href={link.treina_dev_visit} target="_blank" rel="noreferrer">
+          <a href='https://www.instagram.com/p/ClPI0KsAdbw/' target="_blank" rel="noreferrer">
             <Image preview={false} src={ImgTreinaDev9Meet} />
           </a>
         </Carousel>
@@ -73,4 +72,4 @@ const Publis = () => {
   )
 }
 
-export default Publis
+export default Publications

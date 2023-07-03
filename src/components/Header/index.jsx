@@ -1,83 +1,68 @@
-import React, { useState } from "react";
-import { useTranslation, Trans } from "react-i18next";
-
-import IconBrasil from "@assets/brasil.png";
-import IconEUA from "@assets/eua.png";
-
-import PDFResumePT from "@services/pt-BR_resume.pdf";
-import PDFResumeEN from "@services/en_resume.pdf";
-import * as Styled from "./style";
+import React, { useState } from 'react'
+import CV from '@assets/documents/cv.pdf'
+import * as Styled from './style'
 
 const Header = () => {
-  const { t, i18n } = useTranslation();
-  const [openMenu, setOpenMenu] = useState(false);
-  const [active, setActive] = useState("about_me");
+  const [openMenu, setOpenMenu] = useState(false)
+  const [active, setActive] = useState('about_me')
 
   const handleOnClick = (e) => {
-    const name = e.target.name;
-    setActive(name);
-    scrollToSection(name);
-    closeMenu();
-  };
+    const name = e.target.name
+    setActive(name)
+    scrollToSection(name)
+    closeMenu()
+  }
 
   const scrollToSection = (id) => {
-    const element = document.getElementById(id);
+    const element = document.getElementById(id)
 
     if (element) {
-      element.scrollIntoView();
+      element.scrollIntoView()
     }
-  };
+  }
 
-  const closeMenu = () => setOpenMenu(false);
+  const closeMenu = () => setOpenMenu(false)
 
-  const items = ["about_me", "projects", "education", "skills", "contacts"];
-
-  const resume = {
-    "pt-BR": PDFResumePT,
-    en: PDFResumeEN,
-  };
+  const navigations = [
+    { name: 'Sobre mim', key: 'about_me'}, 
+    { name: 'Projetos', key: 'projects'}, 
+    { name: 'Educação', key: 'education'},
+    { name: 'Habilidades', key: 'skills'},
+    { name: 'Contatos', key: 'contacts'}
+  ]
 
   return (
     <header>
       <Styled.Menu openMenu={openMenu}>
-        <Styled.Logo onClick={() => setOpenMenu(!openMenu)}>
-          {t("initials")}
-        </Styled.Logo>
+        <Styled.Logo onClick={() => setOpenMenu(!openMenu)}>DR</Styled.Logo>
         <Styled.List className={!openMenu && 'closed'}>
-          {items.map((item, index) => (
+          {navigations.map(({ name, key }, index) => (
             <Styled.ItemList
               key={index}
-              active={active === item}
+              active={active === key}
               onClick={handleOnClick}
-              name={item}
+              name={key}
             >
-              {t(`menu.${item}`)}
+              {name}
             </Styled.ItemList>
           ))}
         </Styled.List>
       </Styled.Menu>
 
       <Styled.Main openMenu={openMenu}>
-        <Styled.Hello>{t("welcome.hello")}</Styled.Hello>
+        <Styled.Hello>Olá</Styled.Hello>
         <Styled.Description>
-          <Trans
-            i18nKey="welcome.message"
-            defaults={t("welcome.message")}
-            components={{
-              span: <span />,
-            }}
-          />
+          Sou desenvolvedora de software <span>frontend</span>
         </Styled.Description>
-        <Styled.Author>{t("author")}</Styled.Author>
+        <Styled.Author>Diana Regina</Styled.Author>
         <Styled.Download>
-          {/* Não há casos de cvs indisponíveis por idioma */}
-          <Styled.Link href={resume[i18n.language]} disabled={false}>
-            {t("welcome.resume")}
+          <Styled.Link href={CV}>
+            Abrir Curriculo (PDF)
           </Styled.Link>
         </Styled.Download>
       </Styled.Main>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

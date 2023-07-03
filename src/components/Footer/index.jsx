@@ -1,84 +1,70 @@
 import React from 'react'
-import { useTranslation } from 'react-i18next'
-import { email, link } from '@services/links'
 import * as Styled from './style'
 import {
   GithubOutlined,
   LinkedinOutlined,
   MediumOutlined,
-  InstagramOutlined,
   BookOutlined,
   EnvironmentOutlined,
   MailOutlined,
 } from '@ant-design/icons'
 
 const Footer = () => {
-  const { t } = useTranslation()
-
   return (
     <Styled.Footer id="contacts">
       <div>
-        <Styled.Logo>{t('initials')}</Styled.Logo>
-        <p>
+        <Styled.Logo>DR</Styled.Logo>
+        <p style={{ marginBottom: '16px' }}>
           Sou uma desenvolvedora de software (focada em frontend) que trabalha
           com diversas ferramentas como React, Vue, Rails e Elixir.
         </p>
 
         <Styled.Icon
-          href={link.github}
+          href='https://github.com/reginadiana'
           target="_blank"
           rel="noreferrer"
-          title={t('social.access.github')}
+          title='Acessar meu perfil no Github'
         >
           <GithubOutlined />
         </Styled.Icon>
 
         <Styled.Icon
-          href={link.linkedin}
+          href='https://www.linkedin.com/in/diana-regina/'
           target="_blank"
           rel="noreferrer"
-          title={t('social.access.linkedin')}
+          title='Acessar meu perfil no Linkedin'
         >
           <LinkedinOutlined />
         </Styled.Icon>
 
         <Styled.Icon
-          href={link.medium}
+          href="https://medium.com/@dianareginadr19"
           target="_blank"
           rel="noreferrer"
-          title={t('social.access.mediumn')}
+          title='Acessar meu perfil no Mediumn'
         >
           <MediumOutlined />
         </Styled.Icon>
 
         <Styled.Icon
-          href={link.instagram}
+          href="https://dev.to/reginadiana"
           target="_blank"
           rel="noreferrer"
-          title={t('social.access.instagram')}
-        >
-          <InstagramOutlined />
-        </Styled.Icon>
-
-        <Styled.Icon
-          href={link.dev}
-          target="_blank"
-          rel="noreferrer"
-          title={t('social.access.dev')}
+          title='Acessar meu perfil no Dev'
         >
           <BookOutlined />
         </Styled.Icon>
       </div>
 
       <div>
-        <Styled.Title>Let’s work together!</Styled.Title>
+        <Styled.Title>Let's work together!</Styled.Title>
         <Styled.Contact>
           <EnvironmentOutlined />
           <address>Santo André - SP, Brasil</address>
         </Styled.Contact>
         <Styled.Contact>
           <MailOutlined />
-          <a href={`mailto:${email}`}>{email}</a>
+          <a href='mailto:dianareginadr19@gmail.com'>dianareginadr19@gmail.com</a>
         </Styled.Contact>
       </div>
 
@@ -95,6 +81,9 @@ const Footer = () => {
         </li>
         <li>
           <a href="#articles">Artigos</a>
+        </li>
+        <li>
+          <a href="#publications">Publicações</a>
         </li>
         <li>
           <a href="#education">Educação</a>

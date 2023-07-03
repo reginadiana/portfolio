@@ -26,7 +26,7 @@ export const Cards = styled.div`
 
 export const Card = styled.a`
   background-color: ${theme.color.gray.light};
-  padding: 8px 24px;
+  padding: 8px 24px 16px;
   color: ${theme.color.gray.self};
   border-radius: 10px;
   cursor: pointer;

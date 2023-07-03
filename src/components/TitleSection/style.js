@@ -26,6 +26,7 @@ export const Title = styled.h1`
 
 export const Paragraphy = styled.p`
   text-align: center;
+  padding-bottom: 24px;
 `;
 
 export const Line = styled.h2`

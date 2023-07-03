@@ -10,8 +10,8 @@ const Skills = () => {
   return (
     <Styled.Section id="skills">
       <TitleSection
-        title={t("skills.title")}
-        description={t("skills.description")}
+        title='Linguagens e Ferramentas'
+        description='Conheça as tecnologias do meu dia a dia'
       />
 
       <Styled.Title>Frontend</Styled.Title>
