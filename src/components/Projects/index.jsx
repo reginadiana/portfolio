@@ -3,7 +3,7 @@ import { Button, Card, Tag } from 'antd'
 
 import { GithubOutlined } from '@ant-design/icons'
 
-import TitleSection from '../TitleSection/index'
+import Title from '@ui/Title'
 import * as Styled from './style'
 
 const { CheckableTag } = Tag
@@ -11,7 +11,7 @@ const { CheckableTag } = Tag
 const Projects = () => {
   return (
     <Styled.Section id="projects">
-      <TitleSection
+      <Title
         title="Projetos"
         description="Conheça meus projetos no Github e em produção"
         invertedTheme

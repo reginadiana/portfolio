@@ -1,5 +1,5 @@
 import React from 'react'
-import TitleSection from '../TitleSection/index'
+import Title from '@ui/Title'
 import * as Styled from './style'
 import { Carousel } from 'antd'
 
@@ -14,7 +14,7 @@ import { Image } from 'antd'
 const Publications = () => {
   return (
     <Styled.Section id="publications">
-      <TitleSection
+      <Title
         title='Publicações'
         description='Publicações mencionadas'
         invertedTheme

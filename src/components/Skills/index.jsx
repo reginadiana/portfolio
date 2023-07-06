@@ -1,6 +1,6 @@
 import React from 'react'
 import { CodeSandboxOutlined } from '@ant-design/icons'
-import TitleSection from '../TitleSection/index'
+import Title from '@ui/Title'
 import { useTranslation } from 'react-i18next'
 import * as Styled from './style'
 
@@ -9,7 +9,7 @@ const Skills = () => {
 
   return (
     <Styled.Section id="skills">
-      <TitleSection
+      <Title
         title='Linguagens e Ferramentas'
         description='Conheça as tecnologias do meu dia a dia'
       />

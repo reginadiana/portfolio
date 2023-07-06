@@ -1,16 +1,16 @@
 import React from 'react'
 import { Button } from 'antd'
 
-import TitleSection from '../TitleSection/index'
+import Title from '@ui/Title'
 import * as Styled from './style'
 
 const Articles = () => {
   return (
     <Styled.Section id="articles">
-      <TitleSection title="Artigos" description="Acompanhe o que escrevo" />
+      <Title title="Artigos" description="Acompanhe o que escrevo" />
       <Styled.Cards>
         <Styled.Cards>
-          <Styled.Container>
+          <Styled.Card>
             <Styled.Title>
               Como escrever um README.md sensacional no Github
             </Styled.Title>
@@ -23,13 +23,35 @@ const Articles = () => {
             </Styled.Description>
             <Button
               as="link"
+              target="_blank"
+              rel="noreferrer"
               type="primary"
               danger
               href="https://medium.com/@dianareginadr19/como-escrever-um-readme-md-sensacional-no-github-f6929e60eead"
             >
               Artigo Completo
             </Button>
-          </Styled.Container>
+          </Styled.Card>
+
+          <Styled.Card>
+            <Styled.Title>
+              Salvando arquivos em realtime com devtools na sua máquina
+            </Styled.Title>
+            <Styled.Description>
+              É bastante comum no dia a dia de um programador puxar uma tarefa de frontend, 
+              ter que desenvolver um layout e... 
+            </Styled.Description>
+            <Button
+              as="link"
+              target="_blank"
+              rel="noreferrer"
+              type="primary"
+              danger
+              href="https://medium.com/@dianareginadr19/salvando-arquivos-em-realtime-com-devtools-na-sua-m%C3%A1quina-7e99e111c3b4"
+            >
+              Artigo Completo
+            </Button>
+          </Styled.Card>
         </Styled.Cards>
       </Styled.Cards>
     </Styled.Section>

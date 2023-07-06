@@ -1,9 +1,8 @@
 import React from "react";
+
 import * as Styled from "./style";
 
-const TitleSection = (props) => {
-  const { title, description, invertedTheme = false } = props;
-
+const Title = ({ title, description, invertedTheme = false }) => {
   return (
     <Styled.Container invertedTheme={invertedTheme}>
       <Styled.Title>{title}</Styled.Title>
@@ -13,4 +12,4 @@ const TitleSection = (props) => {
   );
 };
 
-export default TitleSection;
+export default Title;

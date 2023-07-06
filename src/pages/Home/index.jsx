@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FloatButton } from 'antd'
+import { FloatButton, ConfigProvider } from 'antd'
 import Education from '@components/Education'
 import Projects from '@components/Projects'
 import Articles from '@components/Articles'
@@ -10,7 +10,7 @@ import Skills from '@components/Skills'
 import Footer from '@components/Footer'
 import Lives from '@components/Lives'
 import Publications from '@components/Publications'
-import Copyright  from '@components/Copyright'
+import Copyright from '@components/Copyright'
 import './style.css'
 
 const TIME_LOADING_MILLISECONDS = 1000
@@ -25,7 +25,13 @@ const Home = () => {
       {isLoading ? (
         <Spinner />
       ) : (
-        <>
+        <ConfigProvider
+          theme={{
+            token: {
+              fontFamily: 'Poppins',
+            },
+          }}
+        >
           <Header />
           <AboutMe />
           <Projects />
@@ -37,7 +43,7 @@ const Home = () => {
           <Footer />
           <Copyright />
           <FloatButton.BackTop />
-        </>
+        </ConfigProvider>
       )}
     </>
   )

@@ -1,11 +1,11 @@
 import React from 'react'
-import TitleSection from '../TitleSection/index'
+import Title from '@ui/Title'
 import * as Styled from './style'
 
 const Education = () => {
   return (
     <Styled.Section id="education">
-      <TitleSection
+      <Title
         title="Formação e Bootcamps"
         description="Sabia onde estudei e os bootcamps que participei"
       />

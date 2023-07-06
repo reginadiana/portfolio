@@ -6,6 +6,7 @@ module.exports = function override(config) {
     '@theme': 'src/theme.js',
     '@pages': 'src/pages',
     '@components': 'src/components',
+    '@ui': 'src/ui',
     '@services': 'src/services'
   })(config);
 

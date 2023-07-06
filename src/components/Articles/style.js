@@ -10,57 +10,30 @@ export const Section = styled.section`
   }
 `;
 
-export const Options = styled.div`
-  display: flex;
-  align-items: center;
-
-  @media screen and (max-width: 600px) {
-    flex-direction: column;
-  }
-`;
-
-export const Button = styled.button`
-  width: 130px;
-  background-color: transparent;
-  border-color: transparent;
-  color: ${({ active }) => active && theme.color.orange.light};
-  cursor: pointer;
-  margin: 0 15px 40px;
-  border-radius: 20px;
-  outline: none;
-
-  &:hover {
-    background-color: ${theme.color.orange.light};
-    color: ${theme.color.white};
-    transition: 1s;
-  }
-
-  @media screen and (max-width: 600px) {
-    width: 130px;
-    margin: 5px;
-  }
-`;
-
 export const Cards = styled.div`
+  display: grid;
+
   /* Desktop */
   @media screen and (min-width: 1440px) {
+    grid-template-columns: repeat(2, 50%);
+    gap: 64px;
     width: 1170px;
     margin: auto;
   }
-`;
-
-export const Container = styled.div`
+`
+export const Card = styled.div`
   background-color: ${theme.color.gray.light};
   border-radius: 4px;
 `;
 
 export const Title = styled.h2`
+  font-weight: 500;
   color: ${theme.color.black};
   line-height: 27px;
   font-size: 18px;
 `;
 
-export const Description = styled.div`
+export const Description = styled.p`
   color: ${theme.color.black};
   text-align: justify;
   margin-bottom: 32px;
