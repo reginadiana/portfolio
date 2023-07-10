@@ -1,19 +1,21 @@
 import React from 'react'
-import { Button } from 'antd'
+import { Button, Typography } from 'antd'
 
-import Title from '@ui/Title'
+import SectionTitle from '@ui/SectionTitle'
 import * as Styled from './style'
+
+const { Title } = Typography
 
 const Articles = () => {
   return (
     <Styled.Section id="articles">
-      <Title title="Artigos" description="Acompanhe o que escrevo" />
+      <SectionTitle title="Artigos" description="Acompanhe o que escrevo" />
       <Styled.Cards>
         <Styled.Cards>
           <Styled.Card>
-            <Styled.Title>
+            <Title level={4} style={{ fontWeight: 500 }}>
               Como escrever um README.md sensacional no Github
-            </Styled.Title>
+            </Title>
             <Styled.Description>
               Depois de desenvolver aquele projeto incrível, ter passado vários
               perrengues com a aplicação e Git, você abriu no Github para a
@@ -34,9 +36,9 @@ const Articles = () => {
           </Styled.Card>
 
           <Styled.Card>
-            <Styled.Title>
+            <Title level={4} style={{ fontWeight: 500 }}>
               Salvando arquivos em realtime com devtools na sua máquina
-            </Styled.Title>
+            </Title>
             <Styled.Description>
               É bastante comum no dia a dia de um programador puxar uma tarefa de frontend, 
               ter que desenvolver um layout e... 

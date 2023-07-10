@@ -6,12 +6,10 @@ export const Copyright = styled.div`
   text-align: center;
   padding: 16px;
 
-  p,
-  a {
+  &, a {
     color: ${theme.color.white};
-    margin: 0;
   }
-
+  
   a {
     font-weight: 500;
   }

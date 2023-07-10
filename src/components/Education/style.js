@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import { theme } from '@theme'
 
 export const Section = styled.section`
@@ -29,35 +29,4 @@ export const Card = styled.a`
   padding: 8px 24px 16px;
   color: ${theme.color.gray.self};
   border-radius: 10px;
-  cursor: pointer;
-
-  ${({ current }) => current && activeCardStyled};
-`
-
-export const Title = styled.h1`
-  font-size: 1.2rem;
-  font-weight: 700;
-`
-
-export const Subtitle = styled.h2`
-  font-size: 1rem;
-  font-weight: 500;
-`
-
-export const Description = styled.p`
-  line-height: 30px;
-`
-
-const activeCardStyled = css`
-  background-color: ${theme.color.orange.light};
-  color: ${theme.color.white};
-
-  ${Title},
-  ${Description} {
-    color: ${theme.color.white};
-  }
-
-  ${Description} {
-    font-size: 1rem;
-  }
 `

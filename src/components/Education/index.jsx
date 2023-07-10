@@ -1,121 +1,143 @@
 import React from 'react'
-import Title from '@ui/Title'
+import { Typography } from 'antd'
+
+import SectionTitle from '@ui/SectionTitle'
+
+import { theme } from '@theme'
 import * as Styled from './style'
+
+const { Title, Paragraph } = Typography
 
 const Education = () => {
   return (
     <Styled.Section id="education">
-      <Title
+      <SectionTitle
         title="Formação e Bootcamps"
         description="Sabia onde estudei e os bootcamps que participei"
       />
       <Styled.Cards>
         <Styled.Card
-          current={false}
-          href='http://fatecsantoandre.edu.br/'
+          href="http://fatecsantoandre.edu.br/"
           target="_blank"
           rel="noreferrer"
         >
           <div>
-            <Styled.Title>Tecnologia em Mecatrônica Industrial</Styled.Title>
-            <Styled.Subtitle>FATEC Santo André</Styled.Subtitle>
+            <Title level={4}>Tecnologia em Mecatrônica Industrial</Title>
+            <Title level={5} style={{ fontWeight: 500 }}>
+              FATEC Santo André
+            </Title>
             <p>2017 | 2019</p>
           </div>
-          <Styled.Description>
+          <Paragraph style={{ lineHeight: '30px' }}>
             Tecnologia em Mecatrônica Industrial com foco em robótica,
             eletronica, linguagem de programação C, automação e mecânica.
-          </Styled.Description>
+          </Paragraph>
         </Styled.Card>
 
         <Styled.Card
-          current={false}
-          href='http://fatecsantoandre.edu.br/'
+          href="http://fatecsantoandre.edu.br/"
           target="_blank"
           rel="noreferrer"
         >
           <div>
-            <Styled.Title>Monitorias de linguagem C</Styled.Title>
-            <Styled.Subtitle>FATEC Santo André</Styled.Subtitle>
+            <Title level={4}>Monitorias de linguagem C</Title>
+            <Title level={5} style={{ fontWeight: 500 }}>
+              FATEC Santo André
+            </Title>
             <p>2019</p>
           </div>
-          <Styled.Description>
+          <Paragraph style={{ lineHeight: '30px' }}>
             Atuei como monitora na disciplina Programação de Programadores I e
             II com foco em lógica de programação e algoritmos e linguagem C e
             Python.
-          </Styled.Description>
+          </Paragraph>
         </Styled.Card>
 
         <Styled.Card
-          current={false}
-          href='https://womakerscode.org/'
+          href="https://womakerscode.org/"
           target="_blank"
           rel="noreferrer"
         >
           <div>
-            <Styled.Title>Bootcamp de React</Styled.Title>
-            <Styled.Subtitle>WoMakersCode</Styled.Subtitle>
+            <Title level={4}>Bootcamp de React</Title>
+            <Title level={5} style={{ fontWeight: 500 }}>
+              WoMakersCode
+            </Title>
             <p>Abril | 2020</p>
           </div>
-          <Styled.Description>
+          <Paragraph style={{ lineHeight: '30px' }}>
             Treinamento com foco no desenvolvimento e aprendizado da biblioteca
             React.
-          </Styled.Description>
+          </Paragraph>
         </Styled.Card>
 
         <Styled.Card
-          current={false}
-          href='https://www.treinadev.com.br/'
+          href="https://www.treinadev.com.br/"
           target="_blank"
           rel="noreferrer"
         >
           <div>
-            <Styled.Title>Treina Dev</Styled.Title>
-            <Styled.Subtitle>Campus Code</Styled.Subtitle>
+            <Title level={4}>Treina Dev</Title>
+            <Title level={5} style={{ fontWeight: 500 }}>
+              Campus Code
+            </Title>
             <p>Fevereiro/Julho | 2020</p>
           </div>
-          <Styled.Description>
+          <Paragraph style={{ lineHeight: '30px' }}>
             Treinamento com foco no desenvolvimento de aplicações Ruby e Ruby on
             Rails em time, utilizando de metodologias ágeis e boas práticas como
             pair programming, code review e cerimonias (dailys e plannings).
-          </Styled.Description>
+          </Paragraph>
         </Styled.Card>
 
         <Styled.Card
-          current
-          href='https://www.rebase.com.br/#/'
+          href="https://www.rebase.com.br/#/"
           target="_blank"
           rel="noreferrer"
+          style={{ backgroundColor: theme.color.orange.light }}
         >
           <div>
-            <Styled.Title>Desenvolvedora de Software</Styled.Title>
-            <Styled.Subtitle>Rebase</Styled.Subtitle>
-            <p>2020 | o momento</p>
+            <Title level={4} style={{ color: theme.color.white }}>
+              Desenvolvedora de Software
+            </Title>
+            <Title
+              level={5}
+              style={{ fontWeight: 500, color: theme.color.white }}
+            >
+              Rebase
+            </Title>
+            <p style={{ color: theme.color.white }}>2020 | o momento</p>
           </div>
-          <Styled.Description>
+          <Paragraph style={{ color: theme.color.white, lineHeight: '30px' }}>
             Atuo como desenvolvedora de software na criação e manutenção de
             aplicações frontend e backend com Typescript, Elixir, Rails, React,
             entre outros.
-          </Styled.Description>
+          </Paragraph>
         </Styled.Card>
 
         <Styled.Card
-          current
-          href= 'https://girlsincloud.datarain.com.br/'
+          href="https://girlsincloud.datarain.com.br/"
           target="_blank"
           rel="noreferrer"
+          style={{ backgroundColor: theme.color.orange.light }}
         >
           <div>
-            <Styled.Title>Formação em Cloud Computing</Styled.Title>
-            <Styled.Subtitle>
+            <Title level={4} style={{ color: theme.color.white }}>
+              Formação em Cloud Computing
+            </Title>
+            <Title
+              level={5}
+              style={{ fontWeight: 500, color: theme.color.white }}
+            >
               GirlsInCloud - dataRain - WoMakersCode
-            </Styled.Subtitle>
-            <p>o momento</p>
+            </Title>
+            <p style={{ color: theme.color.white }}>o momento</p>
           </div>
-          <Styled.Description>
+          <Paragraph style={{ color: theme.color.white, lineHeight: '30px' }}>
             Formação com foco em computação em nuvem para uma turma de 200
             alunas feita por instrutores da consultoria dataRain com apoio da
             AWS e comunidade WoMakersCode.
-          </Styled.Description>
+          </Paragraph>
         </Styled.Card>
       </Styled.Cards>
     </Styled.Section>

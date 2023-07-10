@@ -27,13 +27,6 @@ export const Card = styled.div`
   border-radius: 4px;
 `;
 
-export const Title = styled.h2`
-  font-weight: 500;
-  color: ${theme.color.black};
-  line-height: 27px;
-  font-size: 18px;
-`;
-
 export const Description = styled.p`
   color: ${theme.color.black};
   text-align: justify;

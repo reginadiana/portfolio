@@ -1,5 +1,5 @@
 import React from 'react'
-import * as Styled from './style'
+import { Typography } from 'antd'
 import {
   GithubOutlined,
   LinkedinOutlined,
@@ -9,15 +9,19 @@ import {
   MailOutlined,
 } from '@ant-design/icons'
 
+import * as Styled from './style'
+
+const { Title, Paragraph } = Typography;
+
 const Footer = () => {
   return (
     <Styled.Footer id="contacts">
       <div>
         <Styled.Logo>DR</Styled.Logo>
-        <p style={{ marginBottom: '16px' }}>
+        <Paragraph>
           Sou uma desenvolvedora de software (focada em frontend) que trabalha
           com diversas ferramentas como React, Vue, Rails e Elixir.
-        </p>
+        </Paragraph>
 
         <Styled.Icon
           href='https://github.com/reginadiana'
@@ -57,7 +61,7 @@ const Footer = () => {
       </div>
 
       <div>
-        <Styled.Title>Let's work together!</Styled.Title>
+        <Title level={3}>Let's work together!</Title>
         <Styled.Contact>
           <EnvironmentOutlined />
           <address>Santo André - SP, Brasil</address>
@@ -69,7 +73,7 @@ const Footer = () => {
       </div>
 
       <Styled.ContentList>
-        <Styled.Subtitle>Conteúdos</Styled.Subtitle>
+        <Title level={4}>Conteúdos</Title>
         <li>
           <a href="#about_me">Sobre mim</a>
         </li>

@@ -147,15 +147,13 @@ export const Subtitle = styled.p`
   }
 `;
 
-/* Aplicável quando há curriculos 
-indisponíveis para algum idioma
-do site */
-const disabledLinkStyled = css`
-  background-color: ${theme.color.gray.light};
-  color: ${theme.color.gray.self};
-`;
+export const Download = styled.a`
+  font-size: 1rem;
+  padding: 10px 20px;
 
-const availableLinkStyled = css`
+  margin-top: 80px;
+  text-align: center;
+
   background-color: ${theme.color.orange.light};
   color: ${theme.color.white};
 
@@ -169,26 +167,6 @@ const availableLinkStyled = css`
   }
 `;
 
-export const Link = styled.a`
-  font-size: 1rem;
-  padding: 10px 20px;
-
-  ${({ disabled }) => (disabled ? disabledLinkStyled : availableLinkStyled)};
-`;
-
-export const Download = styled.div`
-  margin-top: 80px;
-  text-align: center;
-`;
-
-export const Hello = styled.h1`
-  font-size: 5rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  margin: 0;
-  color: ${theme.color.white};
-`;
-
 export const Description = styled.p`
   color: ${theme.color.white};
   line-height: 39px;
@@ -197,11 +175,4 @@ export const Description = styled.p`
   span {
     font-weight: 700;
   }
-`;
-
-export const Author = styled.h2`
-  color: ${theme.color.orange.light};
-  font-size: 2.5rem;
-  font-weight: 700;
-  text-transform: uppercase;
 `;

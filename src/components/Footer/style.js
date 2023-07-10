@@ -30,13 +30,6 @@ export const Logo = styled.h1`
   margin-bottom: 16px;
 `
 
-export const Title = styled.h2`
-  font-weight: bold;
-  color: ${theme.color.gray.self};
-  font-size: 1.5rem;
-  margin-bottom: 16px;
-`
-
 export const Contact = styled.div`
   display: flex;
   align-items: center;
@@ -79,10 +72,4 @@ export const ContentList = styled.ul`
   a {
     color: black;
   }
-`
-
-export const Subtitle = styled.h3`
-  margin-bottom: 8px;
-  font-weight: 500;
-  color: ${theme.color.gray.self};
 `

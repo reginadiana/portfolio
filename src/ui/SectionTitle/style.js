@@ -8,22 +8,6 @@ export const Container = styled.div`
   ${({ invertedTheme }) => (invertedTheme ? invertedStyled : defaultStyled)};
 `;
 
-export const Title = styled.h1`
-  text-align: center;
-  font-weight: 700;
-  font-size: 1.6rem;
-  line-height: 50px;
-  margin-top: 0;
-
-  @media screen and (min-width: 800px) {
-    font-size: 2rem;
-  }
-
-  @media screen and (max-width: 400px) {
-    font-size: 1.2rem;
-  }
-`;
-
 export const Paragraphy = styled.p`
   text-align: center;
   padding-bottom: 24px;
@@ -58,10 +42,6 @@ export const Line = styled.h2`
 `;
 
 const defaultStyled = css`
-  ${Title} {
-    color: ${theme.color.black};
-  }
-
   ${Paragraphy} {
     color: ${theme.color.gray.self};
   }
@@ -75,7 +55,7 @@ const defaultStyled = css`
 `;
 
 const invertedStyled = css`
-  ${Title}, ${Paragraphy} {
+  ${Paragraphy} {
     color: ${theme.color.white};
   }
 

@@ -1,8 +1,10 @@
 import React from 'react'
-import { Button } from 'antd'
+import { Button, Typography } from 'antd'
 
-import SectionTitle from '@ui/Title'
+import SectionTitle from '@ui/SectionTitle'
 import * as Styled from './style'
+
+const { Title } = Typography
 
 const Lives = () => {
   return (
@@ -10,9 +12,9 @@ const Lives = () => {
       <SectionTitle title="Youtube" description="Lives que participei (:" />
       <Styled.Cards>
         <Styled.Card>
-          <Styled.Title>
+          <Title level={4} style={{ fontWeight: 500 }}>
             Como escrever e personalizar um README no Github
-          </Styled.Title>
+          </Title>
           <Styled.Description>
             Participei dessa live para o canal das meninas da WomakersCode em
             2020 junto com a cohost Laís Lima. Falei sobre a importancia do
@@ -33,7 +35,7 @@ const Lives = () => {
         </Styled.Card>
 
         <Styled.Card>
-          <Styled.Title>Apresentação da 5 turma do Treina Dev</Styled.Title>
+          <Title level={4} style={{ fontWeight: 500 }}>Apresentação da 5 turma do Treina Dev</Title>
           <Styled.Description>
             Participei dessa live para o canal da Campus Code em 2021 com o
             Gustavo Carvalho, do Portal Solar e João Almeida da Campus Code.
@@ -53,9 +55,9 @@ const Lives = () => {
         </Styled.Card>
 
         <Styled.Card>
-          <Styled.Title>
+          <Title level={4} style={{ fontWeight: 500 }}>
             Apresentação de formatura: React bootcamp WoMakersCode (Dia 2)
-          </Styled.Title>
+          </Title>
           <Styled.Description>
             Participei dessa live aparesentar, junto ao time, o projeto final do
             Bootcamp de React feito com as mulheres da WoMakersCode

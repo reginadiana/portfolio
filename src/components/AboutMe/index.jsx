@@ -3,7 +3,7 @@ import React from 'react'
 import AboutWebsite from '@assets/images/about/site.jpeg'
 import AboutMeImg from '@assets/images/about/me.jpeg'
 
-import Title from '@ui/Title'
+import SectionTitle from '@ui/SectionTitle'
 import * as Styled from './style'
 
 const AboutMe = () => {
@@ -14,7 +14,7 @@ const AboutMe = () => {
         alt="Mulher com olhos castanhos em evidência"
       />
       <div>
-        <Title title="Sobre mim" description="Quem é a Diana?" />
+        <SectionTitle title="Sobre mim" description="Quem é a Diana?" />
         <Styled.Paragraphy>
           Sou uma mulher <strong>criativa</strong>, <strong>organizada</strong>,
           e <strong>muito dedicada</strong>. Gosto de ler, dançar, pintar,
@@ -32,7 +32,7 @@ const AboutMe = () => {
       </div>
 
       <div>
-        <Title
+        <SectionTitle
           title="Sobre este site"
           description="Sempre foi uma evolução"
         />
