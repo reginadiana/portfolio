@@ -10,7 +10,7 @@ export const Section = styled.section`
   }
 
   @media screen and (min-width: 1440px) {
-    width: 80%;
+    width: 1170px;
     margin: auto;
   }
 `

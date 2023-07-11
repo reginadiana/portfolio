@@ -30,7 +30,7 @@ export const Images = styled.div`
   }
 
   @media screen and (min-width: ${MIN_WIDTH}) {
-    width: 80%;
+    width: 1170px;
     margin: auto;
   }
 `

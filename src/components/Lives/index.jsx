@@ -30,7 +30,7 @@ const Lives = () => {
             danger
             href="https://www.youtube.com/watch?v=2A_ebBA3jzM"
           >
-            Acessar live
+            Ver no youtube
           </Button>
         </Styled.Card>
 
@@ -50,7 +50,7 @@ const Lives = () => {
             danger
             href="https://www.youtube.com/watch?v=7D_zafaq0RA&t=2124s"
           >
-            Acessar live
+            Ver no youtube
           </Button>
         </Styled.Card>
 
@@ -68,7 +68,7 @@ const Lives = () => {
             danger
             href="https://www.youtube.com/watch?v=K0mvk8zctoM"
           >
-            Acessar live
+            Ver no youtube
           </Button>
         </Styled.Card>
       </Styled.Cards>
