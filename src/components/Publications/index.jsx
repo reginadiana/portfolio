@@ -1,15 +1,13 @@
 import React from 'react'
 import SectionTitle from '@ui/SectionTitle'
 import * as Styled from './style'
-import { Carousel } from 'antd'
+import { Carousel, Image } from 'antd'
 
 import ImgBootcampReact from '@assets/images/publications/bootcamp-react.png'
 import ImgWomakersCodeLive from '@assets/images/publications/womakerscode-live.png'
 import ImgTreinaDev5 from '@assets/images/publications/treina-dev-5.png'
 import ImgTreinaDev9 from '@assets/images/publications/treina-dev-9.png'
 import ImgTreinaDev9Meet from '@assets/images/publications/treina-dev-9-meet.png'
-
-import { Image } from 'antd'
 
 const Publications = () => {
   return (
