@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { FloatButton, ConfigProvider } from 'antd'
-import Education from '@components/Education'
+import Experience from '@components/Experience'
 import Projects from '@components/Projects'
 import Articles from '@components/Articles'
 import AboutMe from '@components/AboutMe'
@@ -38,7 +38,7 @@ const Home = () => {
           <Lives />
           <Articles />
           <Publications />
-          <Education />
+          <Experience />
           <Skills />
           <Footer />
           <Copyright />

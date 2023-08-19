@@ -90,7 +90,7 @@ const Footer = () => {
           <a href="#publications">Publicações</a>
         </li>
         <li>
-          <a href="#education">Educação</a>
+          <a href="#experience">Experiências</a>
         </li>
         <li>
           <a href="#skills">Habilidades</a>

@@ -31,7 +31,7 @@ const Header = () => {
   const navigations = [
     { name: 'Sobre mim', key: 'about_me' },
     { name: 'Projetos', key: 'projects' },
-    { name: 'Educação', key: 'education' },
+    { name: 'Experiências', key: 'experience' },
     { name: 'Habilidades', key: 'skills' },
     { name: 'Contatos', key: 'contacts' },
   ]

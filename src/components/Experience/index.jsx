@@ -8,12 +8,12 @@ import * as Styled from './style'
 
 const { Title, Paragraph } = Typography
 
-const Education = () => {
+const Experience = () => {
   return (
-    <Styled.Section id="education">
+    <Styled.Section id="experience">
       <SectionTitle
-        title="Formação e Bootcamps"
-        description="Sabia onde estudei e os bootcamps que participei"
+        title="Experiências"
+        description="Formação, bootcamps, cursos e experiências profissionais"
       />
       <Styled.Cards>
         <Styled.Card
@@ -63,7 +63,7 @@ const Education = () => {
             <Title level={5} style={{ fontWeight: 500 }}>
               WoMakersCode
             </Title>
-            <p>Abril | 2020</p>
+            <p>Janeiro - Abril de 2020</p>
           </div>
           <Paragraph style={{ lineHeight: '30px' }}>
             Treinamento com foco no desenvolvimento e aprendizado da biblioteca
@@ -81,12 +81,36 @@ const Education = () => {
             <Title level={5} style={{ fontWeight: 500 }}>
               Campus Code
             </Title>
-            <p>Fevereiro/Julho | 2020</p>
+            <p>Fevereiro - Julho de 2020</p>
           </div>
           <Paragraph style={{ lineHeight: '30px' }}>
             Treinamento com foco no desenvolvimento de aplicações Ruby e Ruby on
             Rails em time, utilizando de metodologias ágeis e boas práticas como
             pair programming, code review e cerimonias (dailys e plannings).
+          </Paragraph>
+        </Styled.Card>
+
+        <Styled.Card
+          href="https://girlsincloud.datarain.com.br/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div>
+            <Title level={4}>
+              Formação em Cloud Computing
+            </Title>
+            <Title
+              level={5}
+              style={{ fontWeight: 500 }}
+            >
+              GirlsInCloud - dataRain - WoMakersCode
+            </Title>
+            <p>Junho - Agosto de 2023</p>
+          </div>
+          <Paragraph style={{  lineHeight: '30px' }}>
+            Formação com foco em computação em nuvem para uma turma de 200
+            alunas feita por instrutores da consultoria dataRain com apoio da
+            AWS e comunidade WoMakersCode.
           </Paragraph>
         </Styled.Card>
 
@@ -114,34 +138,9 @@ const Education = () => {
             entre outros.
           </Paragraph>
         </Styled.Card>
-
-        <Styled.Card
-          href="https://girlsincloud.datarain.com.br/"
-          target="_blank"
-          rel="noreferrer"
-          style={{ backgroundColor: theme.color.orange.light }}
-        >
-          <div>
-            <Title level={4} style={{ color: theme.color.white }}>
-              Formação em Cloud Computing
-            </Title>
-            <Title
-              level={5}
-              style={{ fontWeight: 500, color: theme.color.white }}
-            >
-              GirlsInCloud - dataRain - WoMakersCode
-            </Title>
-            <p style={{ color: theme.color.white }}>o momento</p>
-          </div>
-          <Paragraph style={{ color: theme.color.white, lineHeight: '30px' }}>
-            Formação com foco em computação em nuvem para uma turma de 200
-            alunas feita por instrutores da consultoria dataRain com apoio da
-            AWS e comunidade WoMakersCode.
-          </Paragraph>
-        </Styled.Card>
       </Styled.Cards>
     </Styled.Section>
   )
 }
 
-export default Education
+export default Experience
