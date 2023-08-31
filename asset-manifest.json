@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.b228b625.chunk.css",
+    "main.js": "/portfolio/static/js/main.050069d5.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.050069d5.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.152d1686.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.152d1686.js.map",
+    "static/js/2.e870c678.chunk.js": "/portfolio/static/js/2.e870c678.chunk.js",
+    "static/js/2.e870c678.chunk.js.map": "/portfolio/static/js/2.e870c678.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/main.b228b625.chunk.css.map": "/portfolio/static/css/main.b228b625.chunk.css.map",
+    "static/js/2.e870c678.chunk.js.LICENSE.txt": "/portfolio/static/js/2.e870c678.chunk.js.LICENSE.txt",
+    "static/media/bootcamp-react.43b5791a.png": "/portfolio/static/media/bootcamp-react.43b5791a.png",
+    "static/media/cv.c7747000.pdf": "/portfolio/static/media/cv.c7747000.pdf",
+    "static/media/me.ab80dd23.jpeg": "/portfolio/static/media/me.ab80dd23.jpeg",
+    "static/media/site.00e5fcf7.jpeg": "/portfolio/static/media/site.00e5fcf7.jpeg",
+    "static/media/treina-dev-5.8d8a164c.png": "/portfolio/static/media/treina-dev-5.8d8a164c.png",
+    "static/media/treina-dev-9-meet.15a758ef.png": "/portfolio/static/media/treina-dev-9-meet.15a758ef.png",
+    "static/media/treina-dev-9.89e6ae20.png": "/portfolio/static/media/treina-dev-9.89e6ae20.png",
+    "static/media/womakerscode-live.ae7c2428.png": "/portfolio/static/media/womakerscode-live.ae7c2428.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.152d1686.js",
+    "static/js/2.e870c678.chunk.js",
+    "static/css/main.b228b625.chunk.css",
+    "static/js/main.050069d5.chunk.js"
+  ]
+}
