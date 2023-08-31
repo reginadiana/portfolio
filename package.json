@@ -1,7 +1,7 @@
 {
   "name": "portfolio_diana_regina",
   "version": "0.1.0",
-  "homepage": "https://reginadiana.github.io/portfolio/",
+  "homepage": "https://reginadiana.github.io/portfolio",
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
