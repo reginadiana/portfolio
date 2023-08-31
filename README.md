@@ -17,10 +17,6 @@ Esta é uma aplicação frontend para o meu site pessoal, mostrando informaçõe
 
 :heavy_check_mark: Descrição das informações do meu currículo
 
-##  :dash: Deploy da Aplicação
-
-> Acesse já: https://dianareginadr.netlify.app/
-
 ## :arrow_forward: Pré-requisitos
 
 :books: [Yarn](https://yarnpkg.com/lang/pt-BR/docs/install/)
